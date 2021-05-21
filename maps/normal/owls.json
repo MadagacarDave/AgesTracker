@@ -1,0 +1,465 @@
+﻿[
+	{
+		"name": "Owls",
+		"chest_unopened_img": "images/owl_closed.png",
+		"chest_opened_img": "images/owl_open.png",
+		"color": "#06435c",
+		"children": [
+			{
+				"name": "Deku Forest",
+				"access_rules": [
+						"bracelet",
+						"ages"
+					],
+				"sections": [
+				  {
+					"name": "Tree owl",
+					"access_rules": [
+						"$check_hint, [bracelet], feather, sword1",
+						"$check_hint, [bracelet], feather, bombs",
+						"$check_hint, bracelet, hook1",
+						"$check_hint, bracelet, emberseeds",
+						"$check_hint, ages",
+						"$check_hint, satchel, galeseeds"
+					],
+					"item_count": 1
+				  }
+				],
+				"map_locations": [
+				  {
+					"map": "owls_past",
+					"x": 17,
+					"y": 274
+				  }
+				]
+			},
+			{
+				"name": "Wing Dungeon",
+				"access_rules": [
+						"bracelet, bombs",
+						"bracelet, currents",
+						"ages"
+					],
+				"sections": [
+				  {
+					"name": "Entrance owl",
+					"access_rules": [
+						"$check_hint"
+					],
+					"item_count": 1
+				  },
+				  {
+					"name": "Basement owl",
+					"access_rules": [
+						// Can get every single chest in D2
+						"$check_hint, $d2clear",
+						
+						// keyless, with feather
+						"$check_hint, $kill_beetle, $kill_swoop, feather",
+						"$check_hint, $kill_beetle_hard, [$kill_beetle], $kill_swoop, feather",
+						"$check_hint, $kill_beetle, $kill_swoop_hard, [$kill_swoop], feather",
+						"$check_hint, $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], feather",
+						
+						// vanilla route
+						"$check_hint, d2sk:2, $kill_beetle, $kill_swoop",
+						"$check_hint, d2sk:2, $kill_beetle_hard, [$kill_beetle], $kill_swoop",
+						"$check_hint, d2sk:2, $kill_beetle, $kill_swoop_hard, [$kill_swoop]",
+						"$check_hint, d2sk:2, $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop]",
+					],
+					"item_count": 1
+				  },
+				  {
+					"name": "Head Thwomp owl",
+					"access_rules": [
+						// Can get every single chest in D2
+						"$check_hint, $d2clear",
+							
+						"$check_hint, d2bk, d2sk:5, $kill_beetle, $kill_swoop, cane, feather",
+						"$check_hint, d2bk, d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop, cane, feather",
+						"$check_hint, d2bk, d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop, cane, feather",
+						"$check_hint, d2bk, d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop, cane, feather",
+						"$check_hint, d2bk, d2sk:5, $kill_beetle, $kill_swoop_hard, [$kill_swoop], cane, feather",
+						"$check_hint, d2bk, d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop_hard, [$kill_swoop], cane, feather",
+						"$check_hint, d2bk, d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], cane, feather",
+						"$check_hint, d2bk, d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], cane, feather",
+							
+						"$check_hint, d2bk, d2sk:5, $kill_beetle, $kill_swoop, bracelet, feather",
+						"$check_hint, d2bk, d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop, bracelet, feather",
+						"$check_hint, d2bk, d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop, bracelet, feather",
+						"$check_hint, d2bk, d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop, bracelet, feather",
+						"$check_hint, d2bk, d2sk:5, $kill_beetle, $kill_swoop_hard, [$kill_swoop], bracelet, feather",
+						"$check_hint, d2bk, d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop_hard, [$kill_swoop], bracelet, feather",
+						"$check_hint, d2bk, d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], bracelet, feather",
+						"$check_hint, d2bk, d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], bracelet, feather",
+							
+						"$check_hint, d2bk, d2sk:5, $kill_beetle, $kill_swoop, [bracelet], hook1, $push_enemy, feather",
+						"$check_hint, d2bk, d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop, [bracelet], hook1, $push_enemy, feather",
+						"$check_hint, d2bk, d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop, [bracelet], hook1, $push_enemy, feather",
+						"$check_hint, d2bk, d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop, [bracelet], hook1, $push_enemy, feather",
+						"$check_hint, d2bk, d2sk:5, $kill_beetle, $kill_swoop_hard, [$kill_swoop], [bracelet], hook1, $push_enemy, feather",
+						"$check_hint, d2bk, d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop_hard, [$kill_swoop], [bracelet], hook1, $push_enemy, feather",
+						"$check_hint, d2bk, d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [bracelet], hook1, $push_enemy, feather",
+						"$check_hint, d2bk, d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [bracelet], hook1, $push_enemy, feather",
+							
+						"$check_hint, d2bk, d2sk:5, $kill_beetle, $kill_swoop, [cane], hook1, $push_enemy, feather",
+						"$check_hint, d2bk, d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop, [cane], hook1, $push_enemy, feather",
+						"$check_hint, d2bk, d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop, [cane], hook1, $push_enemy, feather",
+						"$check_hint, d2bk, d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop, [cane], hook1, $push_enemy, feather",
+						"$check_hint, d2bk, d2sk:5, $kill_beetle, $kill_swoop_hard, [$kill_swoop], [cane], hook1, $push_enemy, feather",
+						"$check_hint, d2bk, d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop_hard, [$kill_swoop], [cane], hook1, $push_enemy, feather",
+						"$check_hint, d2bk, d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [cane], hook1, $push_enemy, feather",
+						"$check_hint, d2bk, d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [cane], hook1, $push_enemy, feather",
+					],
+					"item_count": 1
+				  },
+				],
+				"map_locations": [
+				  {
+						"map": "owls_present",
+						"x": 114,
+						"y": 274
+					},
+					{
+						"map": "owls_past",
+						"x": 114,
+						"y": 274
+					},
+				]
+			},
+			{
+				"name": "Moonlit Grotto",
+				"access_rules": [
+						"$crescent_present",
+					],
+				"sections": [
+				  {
+					"name": "S crystal owl",
+					"access_rules": [
+						// Can get every single chest in D3
+						"$check_hint, $d3clear",
+							
+						"$check_hint, bombs, [$kill_moldorm]",
+						"$check_hint, bombs, bracelet",
+					],
+					"item_count": 1
+				  },
+				  {
+					"name": "N crystal owl",
+					"access_rules": [
+						// Can get every single chest in D3
+						"$check_hint, $d3clear",
+							
+						"$check_hint, d3sk:1",
+					],
+					"item_count": 1
+				  },
+				],
+				"map_locations": [
+				  {
+					"map": "owls_present",
+					"x": 338,
+					"y": 369
+				  }
+				]
+			},
+			{
+				"name": "Talus Peaks",
+				"access_rules": [
+						"$nuun, currents, $destroy_bush",
+						"$nuun, flute_generic, echoes, $destroy_bush",
+						"$nuun, ages",
+					],
+				"sections": [
+				  {
+					"name": "West owl",
+					"access_rules": [
+						"$check_hint",
+					],
+					"item_count": 1
+				  },
+				],
+				"map_locations": [
+				  {
+					"map": "owls_past",
+					"x": 17,
+					"y": 114
+				  }
+				]
+			},
+			{
+				"name": "Behind Moblin Keep",
+				"access_rules": [
+						// Vanilla way, by beating Moblin Keep
+						"$west_ridge_present, satchel, pegasusseeds, bracelet", 
+					
+						// From East Ridge
+						"$lynna, feather, mermaidsuit, hook1, bracelet, currents",
+						"$lynna, feather, ages, mermaidsuit, hook1",
+					],
+				"sections": [
+				  {
+					"name": "Cave owl",
+					"access_rules": [
+						"$check_hint",
+					],
+					"item_count": 1
+				  },
+				],
+				"map_locations": [
+				  {
+					"map": "owls_present",
+					"x": 306,
+					"y": 17
+				  }
+				]
+			},
+			{
+				"name": "Crown Dungeon",
+				"access_rules": [
+					// Vanilla way, by beating Moblin Keep
+					"$west_ridge_present, satchel, pegasusseeds, bracelet, feather, d5key", 
+					
+					// From East Ridge
+					"$lynna, feather, mermaidsuit, hook1, bracelet, currents, d5key",
+					"$lynna, ages, mermaidsuit, hook1, d5key",
+					],
+				"sections": [
+				  {
+					"name": "Final puzzle owl",
+					"access_rules": [
+						// Can get every single chest in D5
+						"$check_hint, $d5clear",
+							
+						"$check_hint, d5sk:5, $kill_normal, feather, bracelet, cane, $hit_far_switch",
+						"$check_hint, d5sk:4, [d5sk:5], $kill_normal, feather, bracelet, cane, $hit_far_switch",
+						"$check_hint, d5sk:5, $kill_normal, feather, bracelet, sword1, hook1, [cane], $hit_far_switch",
+						"$check_hint, d5sk:4, [d5sk:5], $kill_normal, feather, bracelet, sword1, hook1, [cane], $hit_far_switch",
+						"$check_hint, d5sk:5, $kill_normal, $max_jump:2, bracelet, [cane], $hit_far_switch",
+						"$check_hint, d5sk:4, [d5sk:5], $kill_normal, $max_jump:2, bracelet, [cane], $hit_far_switch",
+						
+						// key skip with peace ring or boomerang (not in logic, ever)
+						"$check_hint, d5sk:3, [d5sk:5], $kill_normal, feather, bracelet, cane, $hit_far_switch, boomerang",
+						"$check_hint, d5sk:3, [d5sk:5], $kill_normal, feather, bracelet, cane, $hit_far_switch, ring_peace, bombs",
+						"$check_hint, d5sk:3, [d5sk:5], $kill_normal, feather, bracelet, [cane], sword1, hook1, $hit_far_switch, boomerang",
+						"$check_hint, d5sk:3, [d5sk:5], $kill_normal, feather, bracelet, [cane], sword1, hook1, $hit_far_switch, ring_peace, bombs",
+						"$check_hint, d5sk:3, [d5sk:5], $kill_normal, $max_jump:2, bracelet, [cane], $hit_far_switch, boomerang",
+						"$check_hint, d5sk:3, [d5sk:5], $kill_normal, $max_jump:2, bracelet, [cane], $hit_far_switch, ring_peace, bombs",
+						
+						"$check_hint, d5sk:5, $kill_hard, [$kill_normal], $max_jump:2, bracelet, [cane], $hit_far_switch",
+						"$check_hint, d5sk:4, [d5sk:5], $kill_hard, [$kill_normal], $max_jump:2, bracelet, [cane], $hit_far_switch",
+						"$check_hint, d5sk:3, [d5sk:5], $kill_hard, [$kill_normal], $max_jump:2, bracelet, [cane], $hit_far_switch, boomerang",
+						"$check_hint, d5sk:3, [d5sk:5], $kill_hard, [$kill_normal], $max_jump:2, bracelet, [cane], $hit_far_switch, ring_peace, bombs",
+					],
+					"item_count": 1
+				  },
+				],
+				"map_locations": [
+				  {
+					"map": "owls_present",
+					"x": 338,
+					"y": 17
+				  }
+				]
+			},
+			{
+				"name": "D6 entrance",
+				"access_rules": [
+						"$lynna, feather, mermaidsuit, currents",
+						"$lynna, ages, mermaidsuit",
+
+						"$west_ridge_present, satchel, pegasusseeds, bracelet, feather",
+					],
+				"sections": [
+				  {
+					"name": "Broken owl",
+					"access_rules": [
+						"$check_hint",
+					],
+					"item_count": 1
+				  },
+				],
+				"map_locations": [
+				  {
+					"map": "owls_present",
+					"x": 386,
+					"y": 97
+				  }
+				]
+			},
+			{
+				"name": "Mermaid's Cave (Present)",
+				"access_rules": [
+						//from Lynna, swimming
+						"d6keyold, $lynna, feather, mermaidsuit, currents",
+						"d6keyold, $lynna, ages, mermaidsuit",
+							
+						//from the upper cave
+						"d6keyold, $west_ridge_present, satchel, pegasusseeds, bracelet, feather",
+					],
+				"sections": [
+				  {
+					"name": "Rope cage owl",
+					"access_rules": [
+						// Can get every single chest in D6 Present
+						"$check_hint, $d6clear_present",
+						
+						"$check_hint, flippers, shooter",
+						"$check_hint, flippers, boomerang",
+						"$check_hint, $max_jump:2",
+						
+						"$check_hint, feather, shooter",
+						"$check_hint, feather, boomerang",
+						
+						"$check_hint, hook1, shooter",
+						"$check_hint, hook1, boomerang",
+					],
+					"item_count": 1
+				  },
+				  {
+					"name": "RNG room owl",
+					"access_rules": [
+						// Can get every single chest in D6 Present
+						"$check_hint, $d6clear_present",
+						
+						"$check_hint, d6sk_present:3, d6key, bombs, shooter, emberseeds, flippers, feather",
+						"$check_hint, d6sk_present:1, [d6sk_present:3], d6key, bombs, shooter, emberseeds, flippers, feather",
+						"$check_hint, d6sk_present:3, d6key, bombs, shooter, emberseeds, hook1, feather",
+						"$check_hint, d6sk_present:2, [d6sk_present:3], d6key, bombs, shooter, emberseeds, hook1, feather",
+					],
+					"item_count": 1
+				  },
+				],
+				"map_locations": [
+				  {
+					"map": "owls_present",
+					"x": 402,
+					"y": 114
+				  }
+				]
+			},
+			{
+				"name": "Mermaid's Cave (Past)",
+				"access_rules": [
+						//from Lynna, swimming
+						"d6key, $lynna, feather, mermaidsuit",
+						"d6key, $lynna, ages, mermaidsuit",
+								
+						//from the upper cave, requires emblem?
+						"d6key, $west_ridge_present, satchel, pegasusseeds, bracelet, feather, echoes, flippers",
+					],
+				"sections": [
+				  {
+					"name": "Torch wall owl",
+					"access_rules": [
+						// Can get every single chest in D6 Present
+						"$check_hint, $d6clear_present",
+						
+						"$check_hint, bombs, shooter, emberseeds",
+					],
+					"item_count": 1
+				  }
+				],
+				"map_locations": [
+				  {
+					"map": "owls_past",
+					"x": 402,
+					"y": 114
+				  }
+				]
+			},
+			{
+				"name": "Jabu Jabu's Belly",
+				"access_rules": [
+						"enterjabu",
+					],
+				"sections": [
+				  {
+					"name": "1F left owl",
+					"access_rules": [
+						"$check_hint",
+					],
+					"item_count": 1
+				  },
+				  {
+					"name": "Switch room owl",
+					"access_rules": [
+						"$check_hint, $d7clear",
+						
+						"$check_hint, $drainD7",
+					],
+					"item_count": 1
+				  },
+				  {
+					"name": "Plasmarine owl",
+					"access_rules": [
+						"shooter, mysteryseeds, hook2",
+					],
+					"item_count": 1
+				  },
+				],
+				"map_locations": [
+				  {
+					"map": "owls_present",
+					"x": 17,
+					"y": 322
+				  }
+				]
+			},
+			{
+				"name": "Ancient Tomb",
+				"access_rules": [
+						"$crescent_past, eyeball, [$kill_normal], $destroy_pot, bombs, [cane], mermaidsuit, feather",
+					],
+				"sections": [
+				  {
+					"name": "Dark room owl",
+					"access_rules": [
+						"$check_hint",
+					],
+					"item_count": 1
+				  },
+				  {
+					"name": "Flooded room owl",
+					"access_rules": [
+						// Can get every single chest in D8
+						"$check_hint, $d8clear",
+							
+						"$check_hint, d8sk:4, hook1, shooter, emberseeds, sword1, feather, flippers",
+						"$check_hint, d8sk:3, [d8sk:4], hook1, shooter, emberseeds, sword1, feather, flippers",
+					],
+					"item_count": 1
+				  }
+				],
+				"map_locations": [
+				  {
+					"map": "owls_past",
+					"x": 402,
+					"y": 178
+				  }
+				]
+			},
+			{
+				"name": "Black Tower",
+				"access_rules": [
+						"d1, d2, d3, d4, d5, d6, d7, d8",
+					],
+				"sections": [
+				  {
+					"name": "Why would you ever check this?\nYou're on your way to beat the game,\ngoing out of your way for a hint at this\npoint in time is a little pointless, but\nI guess now you know this owl exists",
+					"access_rules": [
+						"$check_hint",
+					],
+					"item_count": 1
+				  },
+				],
+				"map_locations": [
+				  {
+					"map": "owls_past",
+					"x": 210,
+					"y": 242
+				  }
+				]
+			},
+		]
+	}
+]

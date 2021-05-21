@@ -1,0 +1,27 @@
+﻿[
+  {
+    "name": "present",
+    "location_size": 32,
+    "location_border_thickness": 5,
+    "img": "images/map_present_scaled_m.png"
+  },
+  {
+    "name": "past",
+    "location_size": 32,
+    "location_border_thickness": 5,
+    "img": "images/map_past_scaled_new.png"
+  },
+  
+  /*{
+    "name": "owls_present",
+    "location_size": 32,
+    "location_border_thickness": 5,
+    "img": "images/map_present_scaled_m.png"
+  },
+  {
+    "name": "owls_past",
+    "location_size": 32,
+    "location_border_thickness": 5,
+    "img": "images/map_past_scaled_new.png"
+  },*/
+]

@@ -1,0 +1,4045 @@
+﻿[
+	{	
+		"name": "Yoll Graveyard",
+		"chest_unopened_img": "images/chest.png",
+		"chest_opened_img": "images/chestopen.png",
+		"color": "#0049bf",
+		"access_rules": [
+		],
+		"children": [
+			{
+				"name": "Check D1 Entrance",
+
+				"access_rules": [
+					"{$d1_access_normal}",
+					"{[$d1_access_normal], $d1_access_hard}",
+				],
+				"sections": [
+					{
+						"name": "D1: Spirit's Grave",
+						"hosted_item": "d1_from_d1",
+						"item_count": 0,
+						"visibility_rules": [
+							"d1_ent"
+						]
+					},
+					{
+						"name": "D2: Wing Dungeon",
+						"hosted_item": "d2_from_d1",
+						"item_count": 0,
+						"visibility_rules": [
+							"d2_ent"
+						]
+					},
+					{
+						"name": "D3: Moonlit Grotto",
+						"hosted_item": "d3_from_d1",
+						"item_count": 0,
+						"visibility_rules": [
+							"d3_ent"
+						]
+					},
+					{
+						"name": "D4: Skull Dungeon",
+						"hosted_item": "d4_from_d1",
+						"item_count": 0,
+						"visibility_rules": [
+							"d4_ent"
+						]
+					},
+					{
+						"name": "D5: Crown Dungeon",
+						"hosted_item": "d5_from_d1",
+						"item_count": 0,
+						"visibility_rules": [
+							"d5_ent"
+						]
+					},
+					{
+						"name": "D6: Past Mermaid's Cave",
+						"hosted_item": "d6_past_from_d1",
+						"item_count": 0,
+						"visibility_rules": [
+							"d6_past_ent"
+						]
+					},
+					{
+						"name": "D6: Present Mermaid's Cave",
+						"hosted_item": "d6_present_from_d1",
+						"item_count": 0,
+						"visibility_rules": [
+							"d6_present_ent"
+						]
+					},
+					{
+						"name": "D7: Jabu Jabu's Belly",
+						"hosted_item": "d7_from_d1",
+						"item_count": 0,
+						"visibility_rules": [
+							"d7_ent"
+						]
+					},
+					{
+						"name": "D8: Ancient Tomb",
+						"hosted_item": "d8_from_d1",
+						"item_count": 0,
+						"visibility_rules": [
+							"d8_ent"
+						]
+					},
+				],
+				"map_locations": [
+					{
+						// D1 entrance
+						"map": "present",
+						"x": 434,
+						"y": 274,
+						"restrict_visibility_rules": [
+							"$check_d1_entrance_normal"
+						]
+					}
+				]
+			},
+			
+			{
+				"name": "Spirit's Grave",
+				"access_rules": [
+					"$d1_shuffle",
+					"[$d1_shuffle], $d1_shuffle_hard",
+				],
+				"sections": [
+				{
+					"name": "Terrace\nchest",
+					"access_rules": [
+						// Can get every single chest in D1
+						//"$d1clear",
+						
+						"$kill_zol"
+					],
+					"item_count": 1
+				},
+				{
+					"name": "Ghini\ndrop",
+					"access_rules": [
+						"$kill_zol"
+					],
+					"item_count": 1
+				},
+				{
+					"name": "Crossroads\nchest",
+					"access_rules": [
+						// Can get every single chest in D1
+						//"$d1clear",
+						
+						"$kill_zol"
+					],
+					"item_count": 1
+				},
+				{
+					"name": "Secret room\nchest",
+					"access_rules": [
+						// Can get every single chest in D1
+						//"$d1clear",
+						
+						"$kill_zol, $use_seeds, emberseeds, $destroy_crystal"
+					],
+					"item_count": 1
+				},
+				{
+					"name": "Wide room\nchest",
+					"access_rules": [
+						// Can get every single chest in D1
+						//"$d1clear",
+						
+						"d1sk:2, $kill_zol",
+						"d1sk:1, [d1sk:2], $kill_zol"
+					],
+					"item_count": 1
+				},
+				{
+					"name": "Double button\nchest",
+					"access_rules": [
+						// Can get every single chest in D1
+						//"$d1clear",
+						
+						"d1sk:2, $kill_zol",
+						"d1sk:1, [d1sk:2], $kill_zol"
+					],
+					"item_count": 1
+				},
+				{
+					"name": "Moving platform\nchest",
+					"access_rules": [
+						// Can get every single chest in D1
+						//"$d1clear",
+						
+						"d1sk:2, $kill_zol",
+						"d1sk:1, [d1sk:2], $kill_zol"
+					],
+					"item_count": 1
+				},
+				{
+					"name": "Underground\nitem",
+					"access_rules": [
+						// Can get every single chest in D1
+						//"$d1clear",
+						
+						"d1sk:3, $kill_zol, $destroy_bush, $kill_giantghini, $use_seeds, emberseeds",
+						"d1sk:3, $kill_zol, $destroy_bush, $kill_giantghini_hard, [$kill_giantghini], $use_seeds, emberseeds",
+						"$destroy_pot, $use_seeds, emberseeds"
+					],
+					"item_count": 1
+				},
+				{
+					"name": "West side\nitem",
+					"access_rules": [
+						// Can get every single chest in D1
+						//"$d1clear",
+						
+						"$destroy_pot"
+					],
+					"item_count": 1
+				},
+				{
+					"name": "Pot\nitem",
+					"access_rules": [
+						// Can get every single chest in D1
+						//"$d1clear",
+						
+						"$destroy_pot"
+					],
+					"item_count": 1
+				},
+				{
+					"name": "Pumpkin Head\nreward",
+					"access_rules": [
+						// Can get every single chest in D1
+						//"$d1clear",
+						
+						"d1bk, d1sk:2, $kill_zol, $destroy_bush, $kill_pumpkinhead",
+						"d1bk, d1sk:1, [d1sk:2], $kill_zol, $destroy_bush, $kill_pumpkinhead",
+						"d1bk, d1sk:2, $kill_zol, $destroy_bush, d1bk, $kill_pumpkinhead_hard, [$kill_pumpkinhead]",
+						"d1bk, d1sk:1, [d1sk:2], $kill_zol, $destroy_bush, d1bk, $kill_pumpkinhead_hard, [$kill_pumpkinhead]",
+					],
+					"item_count": 1
+				},
+				{
+					"name": "Eternal\nSpirit",
+					"hosted_item": "d1",
+					"access_rules": [
+						// Can get every single chest in D1
+						//"$d1clear",
+						
+						"d1bk, d1sk:2, $kill_zol, $destroy_bush, $kill_pumpkinhead",
+						"d1bk, d1sk:1, [d1sk:2], $kill_zol, $destroy_bush, $kill_pumpkinhead",
+						"d1bk, d1sk:2, $kill_zol, $destroy_bush, d1bk, $kill_pumpkinhead_hard, [$kill_pumpkinhead]",
+						"d1bk, d1sk:1, [d1sk:2], $kill_zol, $destroy_bush, d1bk, $kill_pumpkinhead_hard, [$kill_pumpkinhead]",
+					],
+					"item_count": 0
+				},
+				
+				/*{
+					"name": "D1 small\nkeys",
+					"hosted_item": "d1sk",
+					"item_count": 0
+				},
+				{
+					"name": "D1 boss\nkey",
+					"hosted_item": "d1bk",
+					"item_count": 0
+				},*/
+							  		
+				],
+				"map_locations": [
+					{
+						// D1 entrance
+						"map": "present",
+						"x": 434,
+						"y": 274,
+						"restrict_visibility_rules": [
+							"d1_d1"
+						]
+					},
+					{
+						// D2 present entrance
+						"map": "present",
+						"x": 114,
+						"y": 274,
+						"restrict_visibility_rules": [
+							"d1_d2"
+						]
+					},
+					{
+						// D2 past entrance
+						"map": "past",
+						"x": 114,
+						"y": 274,
+						"restrict_visibility_rules": [
+							"d1_d2"
+						]
+					},
+					{
+						// D3 entrance
+						"map": "present",
+						"x": 338,
+						"y": 369,
+						"restrict_visibility_rules": [
+							"d1_d3"
+						]
+					},
+					{
+						// D4 entrance
+						"map": "present",
+						"x": 114,
+						"y": 17,
+						"restrict_visibility_rules": [
+							"d1_d4"
+						]
+					},
+					{
+						// D5 entrance
+						"map": "present",
+						"x": 338,
+						"y": 17,
+						"restrict_visibility_rules": [
+							"d1_d5"
+						]
+					},
+					{
+						// D6 present entrance
+						"map": "present",
+						"x": 402,
+						"y": 114,
+						"restrict_visibility_rules": [
+							"d1_d6_present"
+						]
+					},
+					{
+						// D6 past entrance
+						"map": "past",
+						"x": 402,
+						"y": 114,
+						"restrict_visibility_rules": [
+							"d1_d6_past"
+						]
+					},
+					{
+						// D7 entrance
+						"map": "present",
+						"x": 17,
+						"y": 322,
+						"restrict_visibility_rules": [
+							"d1_d7"
+						]
+					},
+					{
+						// D8 entrance
+						"map": "past",
+						"x": 402,
+						"y": 178,
+						"restrict_visibility_rules": [
+							"d1_d8"
+						]
+					}
+				]
+			},
+		]
+	},
+	{	
+		"name": "Deku Forest",
+		"chest_unopened_img": "images/chest_past.png",
+		"chest_opened_img": "images/chestpastopen.png",
+		"color": "#ff7700",
+		"access_rules": [
+		],
+		"children": [
+			{
+				"name": "Check D2 Entrance",
+
+				"access_rules": [
+					"{$d2_access_normal}",
+					"{[$d2_access_normal], $d2_access_hard}",
+				],
+				"sections": [
+					{
+						"name": "D1: Spirit's Grave",
+						"hosted_item": "d1_from_d2",
+						"item_count": 0,
+						"visibility_rules": [
+							"d1_ent"
+						]
+					},
+					{
+						"name": "D2: Wing Dungeon",
+						"hosted_item": "d2_from_d2",
+						"item_count": 0,
+						"visibility_rules": [
+							"d2_ent"
+						]
+					},
+					{
+						"name": "D3: Moonlit Grotto",
+						"hosted_item": "d3_from_d2",
+						"item_count": 0,
+						"visibility_rules": [
+							"d3_ent"
+						]
+					},
+					{
+						"name": "D4: Skull Dungeon",
+						"hosted_item": "d4_from_d2",
+						"item_count": 0,
+						"visibility_rules": [
+							"d4_ent"
+						]
+					},
+					{
+						"name": "D5: Crown Dungeon",
+						"hosted_item": "d5_from_d2",
+						"item_count": 0,
+						"visibility_rules": [
+							"d5_ent"
+						]
+					},
+					{
+						"name": "D6: Past Mermaid's Cave",
+						"hosted_item": "d6_past_from_d2",
+						"item_count": 0,
+						"visibility_rules": [
+							"d6_past_ent"
+						]
+					},
+					{
+						"name": "D6: Present Mermaid's Cave",
+						"hosted_item": "d6_present_from_d2",
+						"item_count": 0,
+						"visibility_rules": [
+							"d6_present_ent"
+						]
+					},
+					{
+						"name": "D7: Jabu Jabu's Belly",
+						"hosted_item": "d7_from_d2",
+						"item_count": 0,
+						"visibility_rules": [
+							"d7_ent"
+						]
+					},
+					{
+						"name": "D8: Ancient Tomb",
+						"hosted_item": "d8_from_d2",
+						"item_count": 0,
+						"visibility_rules": [
+							"d8_ent"
+						]
+					},
+				],
+				"map_locations": [
+					{
+						// D2 present entrance
+						"map": "present",
+						"x": 114,
+						"y": 274,
+						"restrict_visibility_rules": [
+							"$check_d2_entrance_normal"
+						]
+					},
+					{
+						// D2 past entrance
+						"map": "past",
+						"x": 114,
+						"y": 274,
+						"restrict_visibility_rules": [
+							"$check_d2_entrance_normal"
+						]
+					}
+				]
+			},
+			
+			{
+				"name": "Wing Dungeon",
+				"access_rules": [
+					"$d2_shuffle",
+					"[$d2_shuffle], $d2_shuffle_hard",
+				],
+				"sections": [
+					{
+						"name": "Bomb wall\nchest",
+						"access_rules": [
+							// Can get every single chest in D2
+							//"$d2clear",
+							
+							"$kill_beetle, bombs",
+							"$kill_beetle_hard, [$kill_beetle], bombs",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Moblin\ndrop",
+						"access_rules": [
+							// Can get every single chest in D2
+							//"$d2clear",
+							
+							"$kill_beetle, $kill_normal",
+							"$kill_beetle_hard, [$kill_beetle], $kill_normal",
+							"$kill_beetle, $kill_hard, [$kill_normal]",
+							"$kill_beetle_hard, [$kill_beetle], $kill_hard, [$kill_normal]",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Rope\nchest",
+						"access_rules": [
+							// Can get every single chest in D2
+							//"$d2clear",
+							
+							"d2sk:4, $kill_normal",
+							"d2sk:4, hook1",
+							"d2sk:1, [d2sk:4], $kill_normal",
+							"d2sk:1, [d2sk:4], hook1",
+							"d2sk:4, $kill_hard, [$kill_normal], [hook1]",
+							"d2sk:1, [d2sk:4], $kill_hard, [$kill_normal], [hook1]",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Rope bomb wall\nchest",
+						"access_rules": [
+							// Can get every single chest in D2
+							//"$d2clear",
+							
+							"d2sk:4, $kill_normal, bombs",
+							"d2sk:1, [d2sk:4], $kill_normal, bombs",
+							"d2sk:4, $kill_hard, [$kill_normal], bombs",
+							"d2sk:1, [d2sk:4], $kill_hard, [$kill_normal], bombs",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "After\nthwomp",
+						"access_rules": [
+							// Can get every single chest in D2
+							//"$d2clear",
+							
+							// keyless, with feather
+							"$kill_beetle, $kill_swoop, feather",
+							"$kill_beetle_hard, [$kill_beetle], $kill_swoop, feather",
+							"$kill_beetle, $kill_swoop_hard, [$kill_swoop], feather",
+							"$kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], feather",
+							
+							// vanilla route
+							"d2sk:2, $kill_beetle, $kill_swoop",
+							"d2sk:2, $kill_beetle_hard, [$kill_beetle], $kill_swoop",
+							"d2sk:2, $kill_beetle, $kill_swoop_hard, [$kill_swoop]",
+							"d2sk:2, $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop]",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Thwomp\nshelf",
+						"access_rules": [				
+							// Can get every single chest in D2
+							//"$d2clear",
+							
+							// keyless, with feather
+							"$kill_beetle, $kill_swoop, feather",
+							"$kill_beetle_hard, [$kill_beetle], $kill_swoop, feather",
+							"$kill_beetle, $kill_swoop_hard, [$kill_swoop], feather",
+							"$kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], feather",
+							
+							// without feather, hard mode stuff with 2 keys
+							"d2sk:2, $kill_beetle, $kill_swoop, cane, bombs, [feather]",
+							"d2sk:2, $kill_beetle, $kill_swoop, cane, satchel, pegasusseeds, [feather]",
+							"d2sk:2, $kill_beetle_hard, [$kill_beetle], $kill_swoop, cane, bombs, [feather]",
+							"d2sk:2, $kill_beetle_hard, [$kill_beetle], $kill_swoop, cane, satchel, pegasusseeds, [feather]",
+							"d2sk:2, $kill_beetle, $kill_swoop_hard, [$kill_swoop], cane, bombs, [feather]",
+							"d2sk:2, $kill_beetle, $kill_swoop_hard, [$kill_swoop], cane, satchel, pegasusseeds, [feather]",
+							"d2sk:2, $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], cane, bombs, [feather]",
+							"d2sk:2, $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], cane, satchel, pegasusseeds, [feather]",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Basement minecart\nchest",
+						"access_rules": [
+							// Can get every single chest in D2
+							//"$d2clear",
+							
+							// keyless, with feather
+							"$kill_beetle, $kill_swoop, feather, bombs, $hit_lever_minecart, [$kill_normal]",
+							"$kill_beetle_hard, [$kill_beetle], $kill_swoop, feather, bombs, $hit_lever_minecart, [$kill_normal]",
+							"$kill_beetle, $kill_swoop_hard, [$kill_swoop], feather, bombs, $hit_lever_minecart, [$kill_normal]",
+							"$kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], feather, bombs, $hit_lever_minecart, [$kill_normal]",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Color tiles\ndrop",
+						"access_rules": [
+							// Can get every single chest in D2
+							//"$d2clear",
+							
+							// keyless, with feather
+							"$kill_beetle, $kill_swoop, feather",
+							"$kill_beetle_hard, [$kill_beetle], $kill_swoop, feather",
+							"$kill_beetle, $kill_swoop_hard, [$kill_swoop], feather",
+							"$kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], feather",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Moblin\nchest",
+						"access_rules": [
+							// Can get every single chest in D2
+							//"$d2clear",
+							
+							"d2sk:3, $kill_beetle, $kill_swoop, feather",
+							"d2sk:1, [d2sk:3], $kill_beetle, $kill_swoop, feather",
+							"d2sk:3, $kill_beetle_hard, [$kill_beetle], $kill_swoop, feather",
+							"d2sk:1, [d2sk:3], $kill_beetle_hard, [$kill_beetle], $kill_swoop, feather",
+							"d2sk:3, $kill_beetle, $kill_swoop_hard, [$kill_swoop], feather",
+							"d2sk:1, [d2sk:3], $kill_beetle, $kill_swoop_hard, [$kill_swoop], feather",
+							"d2sk:3, $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], feather",
+							"d2sk:1, [d2sk:3], $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], feather",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Statue puzzle\ndrop",
+						"access_rules": [
+							// Can get every single chest in D2
+							//"$d2clear",
+							
+							// normal, 1 key min 3 key logic
+							"d2sk:3, $kill_beetle, $kill_swoop, cane, feather",
+							"d2sk:1, [d2sk:3], $kill_beetle, $kill_swoop, cane, feather",
+							"d2sk:3, $kill_beetle_hard, [$kill_beetle], $kill_swoop, cane, feather",
+							"d2sk:1, [d2sk:3], $kill_beetle_hard, [$kill_beetle], $kill_swoop, cane, feather",
+							"d2sk:3, $kill_beetle, $kill_swoop_hard, [$kill_swoop], cane, feather",
+							"d2sk:1, [d2sk:3], $kill_beetle, $kill_swoop_hard, [$kill_swoop], cane, feather",
+							"d2sk:3, $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], cane, feather",
+							"d2sk:1, [d2sk:3], $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], cane, feather",
+							
+							"d2sk:3, $kill_beetle, $kill_swoop, bracelet, feather",
+							"d2sk:1, [d2sk:3], $kill_beetle, $kill_swoop, bracelet, feather",
+							"d2sk:3, $kill_beetle_hard, [$kill_beetle], $kill_swoop, bracelet, feather",
+							"d2sk:1, [d2sk:3], $kill_beetle_hard, [$kill_beetle], $kill_swoop, bracelet, feather",
+							"d2sk:3, $kill_beetle, $kill_swoop_hard, [$kill_swoop], bracelet, feather",
+							"d2sk:1, [d2sk:3], $kill_beetle, $kill_swoop_hard, [$kill_swoop], bracelet, feather",
+							"d2sk:3, $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], bracelet, feather",
+							"d2sk:1, [d2sk:3], $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], bracelet, feather",
+							
+							// moblin push strat, hard mode
+							"d2sk:3, $kill_beetle, $kill_swoop, [bracelet], hook1, $push_enemy, feather",
+							"d2sk:1, [d2sk:3], $kill_beetle, $kill_swoop, [bracelet], hook1, $push_enemy, feather",
+							"d2sk:3, $kill_beetle_hard, [$kill_beetle], $kill_swoop, [bracelet], hook1, $push_enemy, feather",
+							"d2sk:1, [d2sk:3], $kill_beetle_hard, [$kill_beetle], $kill_swoop, [bracelet], hook1, $push_enemy, feather",
+							"d2sk:3, $kill_beetle, $kill_swoop_hard, [$kill_swoop], [bracelet], hook1, $push_enemy, feather",
+							"d2sk:1, [d2sk:3], $kill_beetle, $kill_swoop_hard, [$kill_swoop], [bracelet], hook1, $push_enemy, feather",
+							"d2sk:3, $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [$hit_lever_minecart], [bombs], [bracelet], hook1, $push_enemy, feather",
+							"d2sk:1, [d2sk:3], $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [$hit_lever_minecart], [bombs], [bracelet], hook1, $push_enemy, feather",
+							
+							"d2sk:3, $kill_beetle, $kill_swoop, [cane], hook1, $push_enemy, feather",
+							"d2sk:1, [d2sk:3], $kill_beetle, $kill_swoop, [cane], hook1, $push_enemy, feather",
+							"d2sk:3, $kill_beetle_hard, [$kill_beetle], $kill_swoop, [cane], hook1, $push_enemy, feather",
+							"d2sk:1, [d2sk:3], $kill_beetle_hard, [$kill_beetle], $kill_swoop, [cane], hook1, $push_enemy, feather",
+							"d2sk:3, $kill_beetle, $kill_swoop_hard, [$kill_swoop], [cane], hook1, $push_enemy, feather",
+							"d2sk:1, [d2sk:3], $kill_beetle, $kill_swoop_hard, [$kill_swoop], [cane], hook1, $push_enemy, feather",
+							"d2sk:3, $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [cane], hook1, $push_enemy, feather",
+							"d2sk:1, [d2sk:3], $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [cane], hook1, $push_enemy, feather",
+							
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Color\nroom",
+						"access_rules": [
+							// Can get every single chest in D2
+							//"$d2clear",
+							
+							// normal, 2 key min 5 key logic
+							"d2sk:5, $kill_beetle, $kill_swoop, cane, feather",
+							"d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop, cane, feather",
+							"d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop, cane, feather",
+							"d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop, cane, feather",
+							"d2sk:5, $kill_beetle, $kill_swoop_hard, [$kill_swoop], cane, feather",
+							"d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop_hard, [$kill_swoop], cane, feather",
+							"d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], cane, feather",
+							"d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], cane, feather",
+							
+							"d2sk:5, $kill_beetle, $kill_swoop, bracelet, feather",
+							"d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop, bracelet, feather",
+							"d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop, bracelet, feather",
+							"d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop, bracelet, feather",
+							"d2sk:5, $kill_beetle, $kill_swoop_hard, [$kill_swoop], bracelet, feather",
+							"d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop_hard, [$kill_swoop], bracelet, feather",
+							"d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], bracelet, feather",
+							"d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], bracelet, feather",
+							
+							// moblin push strat, hard mode
+							"d2sk:5, $kill_beetle, $kill_swoop, [bracelet], hook1, $push_enemy, feather",
+							"d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop, [bracelet], hook1, $push_enemy, feather",
+							"d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop, [bracelet], hook1, $push_enemy, feather",
+							"d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop, [bracelet], hook1, $push_enemy, feather",
+							"d2sk:5, $kill_beetle, $kill_swoop_hard, [$kill_swoop], [bracelet], hook1, $push_enemy, feather",
+							"d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop_hard, [$kill_swoop], [bracelet], hook1, $push_enemy, feather",
+							"d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [bracelet], hook1, $push_enemy, feather",
+							"d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [bracelet], hook1, $push_enemy, feather",
+							
+							"d2sk:5, $kill_beetle, $kill_swoop, [cane], hook1, $push_enemy, feather",
+							"d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop, [cane], hook1, $push_enemy, feather",
+							"d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop, [cane], hook1, $push_enemy, feather",
+							"d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop, [cane], hook1, $push_enemy, feather",
+							"d2sk:5, $kill_beetle, $kill_swoop_hard, [$kill_swoop], [cane], hook1, $push_enemy, feather",
+							"d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop_hard, [$kill_swoop], [cane], hook1, $push_enemy, feather",
+							"d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [cane], hook1, $push_enemy, feather",
+							"d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [cane], hook1, $push_enemy, feather",
+							
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Head Thwomp\nReward",
+						"access_rules": [
+							// Can get every single chest in D2
+							//"$d2clear",
+							
+							"d2bk, d2sk:5, $kill_beetle, $kill_swoop, cane, feather",
+							"d2bk, d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop, [bombs], cane, feather",
+							"d2bk, d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop, [bombs], cane, feather",
+							"d2bk, d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop, [bombs], cane, feather",
+							"d2bk, d2sk:5, $kill_beetle, $kill_swoop_hard, [$kill_swoop], [bombs], cane, feather",
+							"d2bk, d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop_hard, [$kill_swoop], [bombs], cane, feather",
+							"d2bk, d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [bombs], cane, feather",
+							"d2bk, d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [bombs], cane, feather",
+							
+							"d2bk, d2sk:5, $kill_beetle, $kill_swoop, [bombs], bracelet, feather",
+							"d2bk, d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop, [bombs], bracelet, feather",
+							"d2bk, d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop, [bombs], bracelet, feather",
+							"d2bk, d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop, [bombs], bracelet, feather",
+							"d2bk, d2sk:5, $kill_beetle, $kill_swoop_hard, [$kill_swoop], [bombs], bracelet, feather",
+							"d2bk, d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop_hard, [$kill_swoop], [bombs], bracelet, feather",
+							"d2bk, d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [bombs], bracelet, feather",
+							"d2bk, d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [bombs], bracelet, feather",
+							
+							"d2bk, d2sk:5, $kill_beetle, $kill_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
+							"d2bk, d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
+							"d2bk, d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
+							"d2bk, d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
+							"d2bk, d2sk:5, $kill_beetle, $kill_swoop_hard, [$kill_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
+							"d2bk, d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop_hard, [$kill_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
+							"d2bk, d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
+							"d2bk, d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
+							
+							"d2bk, d2sk:5, $kill_beetle, $kill_swoop, [bombs], [cane], hook1, $push_enemy, feather",
+							"d2bk, d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop, [bombs], [cane], hook1, $push_enemy, feather",
+							"d2bk, d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop, [bombs], [cane], hook1, $push_enemy, feather",
+							"d2bk, d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop, [bombs], [cane], hook1, $push_enemy, feather",
+							"d2bk, d2sk:5, $kill_beetle, $kill_swoop_hard, [$kill_swoop], [bombs], [cane], hook1, $push_enemy, feather",
+							"d2bk, d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop_hard, [$kill_swoop], [bombs], [cane], hook1, $push_enemy, feather",
+							"d2bk, d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [bombs], [cane], hook1, $push_enemy, feather",
+							"d2bk, d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [bombs], [cane], hook1, $push_enemy, feather",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Ancient\nWood",
+						"hosted_item": "d2",
+						"access_rules": [
+							// Can get every single chest in D2
+							//"$d2clear",
+							
+							"d2bk, d2sk:5, $kill_beetle, $kill_swoop, cane, feather",
+							"d2bk, d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop, [bombs], cane, feather",
+							"d2bk, d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop, [bombs], cane, feather",
+							"d2bk, d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop, [bombs], cane, feather",
+							"d2bk, d2sk:5, $kill_beetle, $kill_swoop_hard, [$kill_swoop], [bombs], cane, feather",
+							"d2bk, d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop_hard, [$kill_swoop], [bombs], cane, feather",
+							"d2bk, d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [bombs], cane, feather",
+							"d2bk, d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [bombs], cane, feather",
+							
+							"d2bk, d2sk:5, $kill_beetle, $kill_swoop, [bombs], bracelet, feather",
+							"d2bk, d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop, [bombs], bracelet, feather",
+							"d2bk, d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop, [bombs], bracelet, feather",
+							"d2bk, d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop, [bombs], bracelet, feather",
+							"d2bk, d2sk:5, $kill_beetle, $kill_swoop_hard, [$kill_swoop], [bombs], bracelet, feather",
+							"d2bk, d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop_hard, [$kill_swoop], [bombs], bracelet, feather",
+							"d2bk, d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [bombs], bracelet, feather",
+							"d2bk, d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [bombs], bracelet, feather",
+							
+							"d2bk, d2sk:5, $kill_beetle, $kill_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
+							"d2bk, d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
+							"d2bk, d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
+							"d2bk, d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
+							"d2bk, d2sk:5, $kill_beetle, $kill_swoop_hard, [$kill_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
+							"d2bk, d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop_hard, [$kill_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
+							"d2bk, d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
+							"d2bk, d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
+							
+							"d2bk, d2sk:5, $kill_beetle, $kill_swoop, [bombs], [cane], hook1, $push_enemy, feather",
+							"d2bk, d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop, [bombs], [cane], hook1, $push_enemy, feather",
+							"d2bk, d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop, [bombs], [cane], hook1, $push_enemy, feather",
+							"d2bk, d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop, [bombs], [cane], hook1, $push_enemy, feather",
+							"d2bk, d2sk:5, $kill_beetle, $kill_swoop_hard, [$kill_swoop], [bombs], [cane], hook1, $push_enemy, feather",
+							"d2bk, d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop_hard, [$kill_swoop], [bombs], [cane], hook1, $push_enemy, feather",
+							"d2bk, d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [bombs], [cane], hook1, $push_enemy, feather",
+							"d2bk, d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [bombs], [cane], hook1, $push_enemy, feather",
+						],
+						"item_count": 0
+					},	
+					
+					/*{
+						"name": "D2 small\nkeys",
+						"hosted_item": "d2sk",
+						"item_count": 0
+					},
+					{
+						"name": "D2 boss\nkey",
+						"hosted_item": "d2bk",
+						"item_count": 0
+					},*/					
+				],
+				"map_locations": [
+					{
+						// D1 entrance
+						"map": "present",
+						"x": 434,
+						"y": 274,
+						"restrict_visibility_rules": [
+							"d2_d1"
+						]
+					},
+					{
+						// D2 present entrance
+						"map": "present",
+						"x": 114,
+						"y": 274,
+						"restrict_visibility_rules": [
+							"d2_d2"
+						]
+					},
+					{
+						// D2 past entrance
+						"map": "past",
+						"x": 114,
+						"y": 274,
+						"restrict_visibility_rules": [
+							"d2_d2"
+						]
+					},
+					{
+						// D3 entrance
+						"map": "present",
+						"x": 338,
+						"y": 369,
+						"restrict_visibility_rules": [
+							"d2_d3"
+						]
+					},
+					{
+						// D4 entrance
+						"map": "present",
+						"x": 114,
+						"y": 17,
+						"restrict_visibility_rules": [
+							"d2_d4"
+						]
+					},
+					{
+						// D5 entrance
+						"map": "present",
+						"x": 338,
+						"y": 17,
+						"restrict_visibility_rules": [
+							"d2_d5"
+						]
+					},
+					{
+						// D6 present entrance
+						"map": "present",
+						"x": 402,
+						"y": 114,
+						"restrict_visibility_rules": [
+							"d2_d6_present"
+						]
+					},
+					{
+						// D6 past entrance
+						"map": "past",
+						"x": 402,
+						"y": 114,
+						"restrict_visibility_rules": [
+							"d2_d6_past"
+						]
+					},
+					{
+						// D7 entrance
+						"map": "present",
+						"x": 17,
+						"y": 322,
+						"restrict_visibility_rules": [
+							"d2_d7"
+						]
+					},
+					{
+						// D8 entrance
+						"map": "past",
+						"x": 402,
+						"y": 178,
+						"restrict_visibility_rules": [
+							"d2_d8"
+						]
+					}
+				]
+			},
+			{
+				"name": "Get bombs from Head Thwomp",
+				"access_rules": [
+					"$d2_shuffle",
+					"[$d2_shuffle], $d2_shuffle_hard",
+				],
+				"sections": [
+				  {
+					"name": "Use keys wisely",
+					"access_rules": [
+						"d2bk, d2sk:5, $kill_beetle, $kill_swoop, cane, feather",
+						"d2bk, d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop, [bombs], cane, feather",
+						"d2bk, d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop, [bombs], cane, feather",
+						"d2bk, d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop, [bombs], cane, feather",
+						"d2bk, d2sk:5, $kill_beetle, $kill_swoop_hard, [$kill_swoop], [bombs], cane, feather",
+						"d2bk, d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop_hard, [$kill_swoop], [bombs], cane, feather",
+						"d2bk, d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [bombs], cane, feather",
+						"d2bk, d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [bombs], cane, feather",
+							
+						"d2bk, d2sk:5, $kill_beetle, $kill_swoop, [bombs], bracelet, feather",
+						"d2bk, d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop, [bombs], bracelet, feather",
+						"d2bk, d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop, [bombs], bracelet, feather",
+						"d2bk, d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop, [bombs], bracelet, feather",
+						"d2bk, d2sk:5, $kill_beetle, $kill_swoop_hard, [$kill_swoop], [bombs], bracelet, feather",
+						"d2bk, d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop_hard, [$kill_swoop], [bombs], bracelet, feather",
+						"d2bk, d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [bombs], bracelet, feather",
+						"d2bk, d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [bombs], bracelet, feather",
+							
+						"d2bk, d2sk:5, $kill_beetle, $kill_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
+						"d2bk, d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
+						"d2bk, d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
+						"d2bk, d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
+						"d2bk, d2sk:5, $kill_beetle, $kill_swoop_hard, [$kill_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
+						"d2bk, d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop_hard, [$kill_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
+						"d2bk, d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
+						"d2bk, d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
+							
+						"d2bk, d2sk:5, $kill_beetle, $kill_swoop, [bombs], [cane], hook1, $push_enemy, feather",
+						"d2bk, d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop, [bombs], [cane], hook1, $push_enemy, feather",
+						"d2bk, d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop, [bombs], [cane], hook1, $push_enemy, feather",
+						"d2bk, d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop, [bombs], [cane], hook1, $push_enemy, feather",
+						"d2bk, d2sk:5, $kill_beetle, $kill_swoop_hard, [$kill_swoop], [bombs], [cane], hook1, $push_enemy, feather",
+						"d2bk, d2sk:2, [d2sk:5], $kill_beetle, $kill_swoop_hard, [$kill_swoop], [bombs], [cane], hook1, $push_enemy, feather",
+						"d2bk, d2sk:5, $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [bombs], [cane], hook1, $push_enemy, feather",
+						"d2bk, d2sk:2, [d2sk:5], $kill_beetle_hard, [$kill_beetle], $kill_swoop_hard, [$kill_swoop], [bombs], [cane], hook1, $push_enemy, feather",
+					],
+					"item_count": 0,
+					"hosted_item": "bombs"
+				  },
+				],
+				"map_locations": [
+					{
+						// D1 entrance
+						"map": "present",
+						"x": 450,
+						"y": 258,
+						"restrict_visibility_rules": [
+							"d2_d1"
+						]
+					},
+					{
+						// D2 present entrance
+						"map": "present",
+						"x": 130,
+						"y": 258,
+						"restrict_visibility_rules": [
+							"d2_d2"
+						]
+					},
+					{
+						// D2 past entrance
+						"map": "past",
+						"x": 130,
+						"y": 258,
+						"restrict_visibility_rules": [
+							"d2_d2"
+						]
+					},
+					{
+						// D3 entrance
+						"map": "present",
+						"x": 354,
+						"y": 353,
+						"restrict_visibility_rules": [
+							"d2_d3"
+						]
+					},
+					{
+						// D4 entrance
+						"map": "present",
+						"x": 130,
+						"y": 1,
+						"restrict_visibility_rules": [
+							"d2_d4"
+						]
+					},
+					{
+						// D5 entrance
+						"map": "present",
+						"x": 354,
+						"y": 1,
+						"restrict_visibility_rules": [
+							"d2_d5"
+						]
+					},
+					{
+						// D6 present entrance
+						"map": "present",
+						"x": 418,
+						"y": 98,
+						"restrict_visibility_rules": [
+							"d2_d6_present"
+						]
+					},
+					{
+						// D6 past entrance
+						"map": "past",
+						"x": 418,
+						"y": 98,
+						"restrict_visibility_rules": [
+							"d2_d6_past"
+						]
+					},
+					{
+						// D7 entrance
+						"map": "present",
+						"x": 31,
+						"y": 306,
+						"restrict_visibility_rules": [
+							"d2_d7"
+						]
+					},
+					{
+						// D8 entrance
+						"map": "past",
+						"x": 418,
+						"y": 162,
+						"restrict_visibility_rules": [
+							"d2_d8"
+						]
+					}
+				]
+			},
+		]
+	},
+	
+	{	
+		"name": "Crescent Island",
+		"chest_unopened_img": "images/chest_past.png",
+		"chest_opened_img": "images/chestpastopen.png",
+		"color": "#ff7700",
+		"children": [
+			{
+				"name": "Check D3 Entrance",
+
+				"access_rules": [
+					"{$d3_access_normal}",
+					"{[$d3_access_normal], $d3_access_hard}",
+				],
+				"sections": [
+					{
+						"name": "D1: Spirit's Grave",
+						"hosted_item": "d1_from_d3",
+						"item_count": 0,
+						"visibility_rules": [
+							"d1_ent"
+						]
+					},
+					{
+						"name": "D2: Wing Dungeon",
+						"hosted_item": "d2_from_d3",
+						"item_count": 0,
+						"visibility_rules": [
+							"d2_ent"
+						]
+					},
+					{
+						"name": "D3: Moonlit Grotto",
+						"hosted_item": "d3_from_d3",
+						"item_count": 0,
+						"visibility_rules": [
+							"d3_ent"
+						]
+					},
+					{
+						"name": "D4: Skull Dungeon",
+						"hosted_item": "d4_from_d3",
+						"item_count": 0,
+						"visibility_rules": [
+							"d4_ent"
+						]
+					},
+					{
+						"name": "D5: Crown Dungeon",
+						"hosted_item": "d5_from_d3",
+						"item_count": 0,
+						"visibility_rules": [
+							"d5_ent"
+						]
+					},
+					{
+						"name": "D6: Past Mermaid's Cave",
+						"hosted_item": "d6_past_from_d3",
+						"item_count": 0,
+						"visibility_rules": [
+							"d6_past_ent"
+						]
+					},
+					{
+						"name": "D6: Present Mermaid's Cave",
+						"hosted_item": "d6_present_from_d3",
+						"item_count": 0,
+						"visibility_rules": [
+							"d6_present_ent"
+						]
+					},
+					{
+						"name": "D7: Jabu Jabu's Belly",
+						"hosted_item": "d7_from_d3",
+						"item_count": 0,
+						"visibility_rules": [
+							"d7_ent"
+						]
+					},
+					{
+						"name": "D8: Ancient Tomb",
+						"hosted_item": "d8_from_d3",
+						"item_count": 0,
+						"visibility_rules": [
+							"d8_ent"
+						]
+					},
+				],
+				"map_locations": [
+					{
+						// D3 entrance
+						"map": "present",
+						"x": 338,
+						"y": 369,
+						"restrict_visibility_rules": [
+							"$check_d3_entrance_normal"
+						]
+					}
+				]
+			},
+			
+			{
+				"name": "Moonlit Grotto",
+				"chest_unopened_img": "images/chest.png",
+				"chest_opened_img": "images/chestopen.png",
+				"color": "#0049bf",
+				"access_rules": [
+					"$d3_shuffle",
+					"[$d3_shuffle], $d3_shuffle_hard",
+				],
+				"sections": [
+					{
+						"name": "Pols Voice\nchest",
+						"access_rules": [
+							// Can get every single chest in D3
+							//"$d3clear",
+							
+							"bombs",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "East statues\ndrop",
+						"access_rules": [
+							// Can get every single chest in D3
+							//"$d3clear",
+							
+							"bombs, [$kill_moldorm]",
+							"bombs, bracelet",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Armos\nchest",
+						"access_rules": [
+							// Can get every single chest in D3
+							//"$d3clear",
+							
+							"d3sk:1",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Six blocks\ndrop",
+						"access_rules": [
+							// Can get every single chest in D3
+							//"$d3clear",
+							
+							"d3sk:1",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Four Armos\ndrop",
+						"access_rules": [
+							// Can get every single chest in D3
+							//"$d3clear",
+							
+							"d3sk:1",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Bush room\nchest",
+						"access_rules": [
+							// Can get every single chest in D3
+							//"$d3clear",
+							
+							"d3sk:3, [$kill_normal]",
+							"d3sk:2, [d3sk:3], [$kill_normal]",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Mimic room\nchest",
+						"access_rules": [
+							// Can get every single chest in D3
+							//"$d3clear",
+							
+							"d3sk:4, [$kill_normal]",
+							"d3sk:3, [d3sk:4], [$kill_normal]",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Fallen spinner\nchest",
+						"access_rules": [
+							// Can get every single chest in D3
+							//"$d3clear",
+							
+							"d3sk:1, shooter",
+							"d3sk:1, boomerang",			
+							"d3sk:1, hook1, [shooter]",					
+							"d3sk:1, hook1, [boomerang]",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Torch\nchest",
+						"access_rules": [
+							// Can get every single chest in D3
+							//"$d3clear",
+							
+							"d3sk:1, shooter, emberseeds",
+							"d3sk:1, shooter, mysteryseeds, [emberseeds]",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Moldorm\ndrop",
+						"access_rules": [
+							// Can get every single chest in D3
+							//"$d3clear",
+							
+							// vanilla, through Subterror
+							"d3sk:1, shooter, $kill_subterror, [$kill_moldorm]",
+							"d3sk:1, boomerang, $kill_subterror, [$kill_moldorm]",
+							"d3sk:1, hook1, [shooter], $kill_subterror, [$kill_moldorm]",
+							"d3sk:1, hook1, [boomerang], $kill_subterror, [$kill_moldorm]",
+							
+							// through bridge, 2 keys min 4 by logic
+							"d3sk:4, shooter",
+							"d3sk:4, $max_jump:2",
+							"d3sk:2, [d3sk:4], shooter",
+							"d3sk:2, [d3sk:4], $max_jump:2",
+							
+							"d3sk:4, boomerang, feather, [shooter], [$max_jump:2]",
+							"d3sk:2, [d3sk:4], boomerang, feather, [shooter], [$max_jump:2]",
+							"d3sk:4, bracelet, ring_toss, feather, [shooter], [$max_jump:2]",
+							"d3sk:2, [d3sk:4], bracelet, ring_toss, feather, [shooter], [$max_jump:2]",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Bridge\nchest",
+						"access_rules": [
+							// Can get every single chest in D3
+							//"$d3clear",
+							
+							"d3sk:1, shooter",
+							"d3sk:1, $max_jump:2",
+							
+							"d3sk:1, boomerang, feather, [shooter]",
+							"d3sk:1, bracelet, ring_toss, feather, [shooter]",
+							
+							"d3sk:1, boomerang, satchel, pegasusseeds, [shooter]",
+							"d3sk:1, bracelet, ring_toss, satchel, pegasusseeds, [shooter]",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Right side\nchest",
+						"access_rules": [
+							// Can get every single chest in D3
+							//"$d3clear",
+							
+							"d3sk:1, $kill_subterror, shooter",
+							"d3sk:1, $kill_subterror, sword1, [shooter]",
+							
+							// ???
+							//"d3sk:1, shovel, [$kill_subterror], shooter",
+							//"d3sk:1, shovel, [$kill_subterror], sword1, [shooter]",
+						],
+						"item_count": 1
+					},
+					
+					{
+						"name": "Shadow Hag\nReward",
+						"access_rules": [
+							// Can get every single chest in D3
+							//"$d3clear",
+							
+							// jumping from Subterror
+							// with Shooter
+							"d3bk, d3sk:1, shooter, emberseeds, $kill_subterror, $max_jump:2",
+							"d3bk, d3sk:1, shooter, emberseeds, $kill_subterror, feather, [$max_jump:2]",
+							"d3bk, d3sk:1, shooter, scentseeds, $kill_subterror, $max_jump:2",
+							"d3bk, d3sk:1, shooter, scentseeds, $kill_subterror, feather, [$max_jump:2]",
+
+							// satchel + boomerang
+							"d3bk, d3sk:1, satchel, emberseeds, $max_jump:2, boomerang, $kill_subterror",
+							"d3bk, d3sk:1, satchel, scentseeds, [emberseeds], $max_jump:2, boomerang, $kill_subterror",
+							"d3bk, d3sk:1, satchel, emberseeds, feather, [$max_jump:2], boomerang, $kill_subterror",
+							"d3bk, d3sk:1, satchel, scentseeds, [emberseeds], feather, [$max_jump:2], boomerang, $kill_subterror",
+							
+							// satchel + sword (hard mode)
+							"d3bk, d3sk:1, satchel, emberseeds, feather, sword1, hook1, [boomerang], $kill_subterror",
+							"d3bk, d3sk:1, satchel, scentseeds, [emberseeds], feather, sword1, hook1, [boomerang], $kill_subterror",
+							"d3bk, d3sk:4, satchel, emberseeds, feather, sword1, bracelet, [boomerang], $kill_subterror",
+							"d3bk, d3sk:4, satchel, scentseeds, [emberseeds], feather, sword1, bracelet, [boomerang], $kill_subterror",
+							"d3bk, d3sk:2, [d3sk:4], satchel, emberseeds, feather, sword1, bracelet, [boomerang], $kill_subterror",
+							"d3bk, d3sk:2, [d3sk:4], satchel, scentseeds, [emberseeds], feather, sword1, bracelet, [boomerang], $kill_subterror",
+
+							// satchel + bomb jump to hit the switch (hard mode)
+							"d3bk, d3sk:1, satchel, emberseeds, $max_jump:2, [boomerang], $kill_subterror",
+							"d3bk, d3sk:1, satchel, scentseeds, [emberseeds], $max_jump:2, [boomerang], $kill_subterror",
+							"d3bk, d3sk:1, satchel, emberseeds, feather, bombs, hook1, [boomerang], $kill_subterror",
+							"d3bk, d3sk:1, satchel, scentseeds, [emberseeds], feather, bombs, hook1, [boomerang], $kill_subterror",
+							"d3bk, d3sk:4, satchel, emberseeds, feather, bombs, bracelet, [boomerang], $kill_subterror",
+							"d3bk, d3sk:4, satchel, scentseeds, [emberseeds], feather, bombs, bracelet, [boomerang], $kill_subterror",
+							"d3bk, d3sk:2, [d3sk:4], satchel, emberseeds, feather, bombs, bracelet, [boomerang], $kill_subterror",
+							"d3bk, d3sk:2, [d3sk:4], satchel, scentseeds, [emberseeds], feather, bombs, bracelet, [boomerang], $kill_subterror",
+							
+							// from the bridge area (much simpler)
+							"d3bk, d3sk:4, shooter",
+							"d3bk, d3sk:2, [d3sk:4], shooter",
+							"d3bk, d3sk:4, boomerang, feather, [shooter]",
+							"d3bk, d3sk:2, [d3sk:4], boomerang, feather, [shooter]",
+							"d3bk, d3sk:4, boomerang, satchel, pegasusseeds, [shooter]",
+							"d3bk, d3sk:2, [d3sk:4], boomerang, satchel, pegasusseeds, [shooter]",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Echoing\nHowl",
+						"hosted_item": "d3",
+						"access_rules": [
+							// Can get every single chest in D3
+							//"$d3clear",
+							
+							// jumping from Subterror
+							// with Shooter
+							"d3bk, d3sk:1, shooter, emberseeds, $kill_subterror, $max_jump:2",
+							"d3bk, d3sk:1, shooter, emberseeds, $kill_subterror, feather, [$max_jump:2]",
+							"d3bk, d3sk:1, shooter, scentseeds, $kill_subterror, $max_jump:2",
+							"d3bk, d3sk:1, shooter, scentseeds, $kill_subterror, feather, [$max_jump:2]",
+
+							// satchel + boomerang
+							"d3bk, d3sk:1, satchel, emberseeds, $max_jump:2, boomerang, $kill_subterror",
+							"d3bk, d3sk:1, satchel, scentseeds, [emberseeds], $max_jump:2, boomerang, $kill_subterror",
+							"d3bk, d3sk:1, satchel, emberseeds, feather, [$max_jump:2], boomerang, $kill_subterror",
+							"d3bk, d3sk:1, satchel, scentseeds, [emberseeds], feather, [$max_jump:2], boomerang, $kill_subterror",
+							
+							// satchel + sword (hard mode)
+							"d3bk, d3sk:1, satchel, emberseeds, feather, sword1, hook1, [boomerang], $kill_subterror",
+							"d3bk, d3sk:4, satchel, emberseeds, feather, sword1, bracelet, [boomerang], $kill_subterror",
+							"d3bk, d3sk:2, [d3sk:4], satchel, emberseeds, feather, sword1, bracelet, [boomerang], $kill_subterror",
+
+							// satchel + bomb jump to hit the switch (hard mode)
+							"d3bk, d3sk:1, satchel, emberseeds, $max_jump:2, [boomerang], $kill_subterror",
+							"d3bk, d3sk:1, satchel, scentseeds, [emberseeds], $max_jump:2, [boomerang], $kill_subterror",
+							"d3bk, d3sk:1, satchel, emberseeds, feather, bombs, hook1, [boomerang], $kill_subterror",
+							"d3bk, d3sk:1, satchel, scentseeds, [emberseeds], feather, bombs, hook1, [boomerang], $kill_subterror",
+							"d3bk, d3sk:4, satchel, emberseeds, feather, bombs, bracelet, [boomerang], $kill_subterror",
+							"d3bk, d3sk:4, satchel, scentseeds, [emberseeds], feather, bombs, bracelet, [boomerang], $kill_subterror",
+							"d3bk, d3sk:2, [d3sk:4], satchel, emberseeds, feather, bombs, bracelet, [boomerang], $kill_subterror",
+							"d3bk, d3sk:2, [d3sk:4], satchel, scentseeds, [emberseeds], feather, bombs, bracelet, [boomerang], $kill_subterror",
+							
+							// from the bridge area (much simpler)
+							"d3bk, d3sk:4, shooter",
+							"d3bk, d3sk:2, [d3sk:4], shooter",
+							"d3bk, d3sk:4, boomerang, feather, [shooter]",
+							"d3bk, d3sk:2, [d3sk:4], boomerang, feather, [shooter]",
+							"d3bk, d3sk:4, boomerang, satchel, pegasusseeds, [shooter]",
+							"d3bk, d3sk:2, [d3sk:4], boomerang, satchel, pegasusseeds, [shooter]",
+						],
+						"item_count": 0
+					},
+					
+					/*{
+						"name": "D3 small\nkeys",
+						"hosted_item": "d3sk",
+						"item_count": 0
+					},
+					{
+						"name": "D3 boss\nkey",
+						"hosted_item": "d3bk",
+						"item_count": 0
+					},*/		  		
+				],
+				"map_locations": [
+					{
+						// D1 entrance
+						"map": "present",
+						"x": 434,
+						"y": 274,
+						"restrict_visibility_rules": [
+							"d3_d1"
+						]
+					},
+					{
+						// D2 present entrance
+						"map": "present",
+						"x": 114,
+						"y": 274,
+						"restrict_visibility_rules": [
+							"d3_d2"
+						]
+					},
+					{
+						// D2 past entrance
+						"map": "past",
+						"x": 114,
+						"y": 274,
+						"restrict_visibility_rules": [
+							"d3_d2"
+						]
+					},
+					{
+						// D3 entrance
+						"map": "present",
+						"x": 338,
+						"y": 369,
+						"restrict_visibility_rules": [
+							"d3_d3"
+						]
+					},
+					{
+						// D4 entrance
+						"map": "present",
+						"x": 114,
+						"y": 17,
+						"restrict_visibility_rules": [
+							"d3_d4"
+						]
+					},
+					{
+						// D5 entrance
+						"map": "present",
+						"x": 338,
+						"y": 17,
+						"restrict_visibility_rules": [
+							"d3_d5"
+						]
+					},
+					{
+						// D6 present entrance
+						"map": "present",
+						"x": 402,
+						"y": 114,
+						"restrict_visibility_rules": [
+							"d3_d6_present"
+						]
+					},
+					{
+						// D6 past entrance
+						"map": "past",
+						"x": 402,
+						"y": 114,
+						"restrict_visibility_rules": [
+							"d3_d6_past"
+						]
+					},
+					{
+						// D7 entrance
+						"map": "present",
+						"x": 17,
+						"y": 322,
+						"restrict_visibility_rules": [
+							"d3_d7"
+						]
+					},
+					{
+						// D8 entrance
+						"map": "past",
+						"x": 402,
+						"y": 178,
+						"restrict_visibility_rules": [
+							"d3_d8"
+						]
+					}
+				]
+			},
+			{
+				"name": "Get scent seeds in D3's bridge rooms",
+				"access_rules": [
+					"$d3_shuffle",
+					"[$d3_shuffle], $d3_shuffle_hard",
+				],
+				"sections": [
+				  {
+					"name": "Respawnable bushes",
+					"access_rules": [
+						"d3sk:1, sword1, [scentseeds]",
+						"d3sk:1, bombs, [scentseeds]",
+					],
+					"item_count": 0,
+					"hosted_item": "scentseeds"
+				  },
+				],
+				"map_locations": [
+					{
+						// D1 entrance
+						"map": "present",
+						"x": 450,
+						"y": 258,
+						"restrict_visibility_rules": [
+							"d3_d1"
+						]
+					},
+					{
+						// D2 present entrance
+						"map": "present",
+						"x": 130,
+						"y": 258,
+						"restrict_visibility_rules": [
+							"d3_d2"
+						]
+					},
+					{
+						// D2 past entrance
+						"map": "past",
+						"x": 130,
+						"y": 258,
+						"restrict_visibility_rules": [
+							"d3_d2"
+						]
+					},
+					{
+						// D3 entrance
+						"map": "present",
+						"x": 354,
+						"y": 353,
+						"restrict_visibility_rules": [
+							"d3_d3"
+						]
+					},
+					{
+						// D4 entrance
+						"map": "present",
+						"x": 130,
+						"y": 1,
+						"restrict_visibility_rules": [
+							"d3_d4"
+						]
+					},
+					{
+						// D5 entrance
+						"map": "present",
+						"x": 354,
+						"y": 1,
+						"restrict_visibility_rules": [
+							"d3_d5"
+						]
+					},
+					{
+						// D6 present entrance
+						"map": "present",
+						"x": 418,
+						"y": 98,
+						"restrict_visibility_rules": [
+							"d3_d6_present"
+						]
+					},
+					{
+						// D6 past entrance
+						"map": "past",
+						"x": 418,
+						"y": 98,
+						"restrict_visibility_rules": [
+							"d3_d6_past"
+						]
+					},
+					{
+						// D7 entrance
+						"map": "present",
+						"x": 31,
+						"y": 306,
+						"restrict_visibility_rules": [
+							"d3_d7"
+						]
+					},
+					{
+						// D8 entrance
+						"map": "past",
+						"x": 418,
+						"y": 162,
+						"restrict_visibility_rules": [
+							"d3_d8"
+						]
+					}
+				]
+			},
+		]
+	},
+
+	{	
+		"name": "Symmetry City",
+		"chest_unopened_img": "images/chest_past.png",
+		"chest_opened_img": "images/chestpastopen.png",
+		"color": "#ff7700",
+		"access_rules": [
+		],
+		"children": [
+			{
+				"name": "Check D4 Entrance",
+
+				"access_rules": [
+					"{$d4_access_normal}",
+					"{[$d4_access_normal], $d4_access_hard}",
+				],
+				"sections": [
+					{
+						"name": "D1: Spirit's Grave",
+						"hosted_item": "d1_from_d4",
+						"item_count": 0,
+						"visibility_rules": [
+							"d1_ent"
+						]
+					},
+					{
+						"name": "D2: Wing Dungeon",
+						"hosted_item": "d2_from_d4",
+						"item_count": 0,
+						"visibility_rules": [
+							"d2_ent"
+						]
+					},
+					{
+						"name": "D3: Moonlit Grotto",
+						"hosted_item": "d3_from_d4",
+						"item_count": 0,
+						"visibility_rules": [
+							"d3_ent"
+						]
+					},
+					{
+						"name": "D4: Skull Dungeon",
+						"hosted_item": "d4_from_d4",
+						"item_count": 0,
+						"visibility_rules": [
+							"d4_ent"
+						]
+					},
+					{
+						"name": "D5: Crown Dungeon",
+						"hosted_item": "d5_from_d4",
+						"item_count": 0,
+						"visibility_rules": [
+							"d5_ent"
+						]
+					},
+					{
+						"name": "D6: Past Mermaid's Cave",
+						"hosted_item": "d6_past_from_d4",
+						"item_count": 0,
+						"visibility_rules": [
+							"d6_past_ent"
+						]
+					},
+					{
+						"name": "D6: Present Mermaid's Cave",
+						"hosted_item": "d6_present_from_d4",
+						"item_count": 0,
+						"visibility_rules": [
+							"d6_present_ent"
+						]
+					},
+					{
+						"name": "D7: Jabu Jabu's Belly",
+						"hosted_item": "d7_from_d4",
+						"item_count": 0,
+						"visibility_rules": [
+							"d7_ent"
+						]
+					},
+					{
+						"name": "D8: Ancient Tomb",
+						"hosted_item": "d8_from_d4",
+						"item_count": 0,
+						"visibility_rules": [
+							"d8_ent"
+						]
+					},
+				],
+				"map_locations": [
+					{
+						// D4 entrance
+						"map": "present",
+						"x": 114,
+						"y": 17,
+						"restrict_visibility_rules": [
+							"$check_d4_entrance_normal"
+						]
+					}
+				]
+			},
+			
+			
+			{
+				"name": "Skull Dungeon",
+				"chest_unopened_img": "images/chest.png",
+				"chest_opened_img": "images/chestopen.png",
+				"color": "#0049bf",
+				"access_rules": [
+					"$d4_shuffle",
+					"[$d4_shuffle], $d4_shuffle_hard",
+				],
+				"sections": [
+					{
+						"name": "Zol\nchest",
+						"access_rules": [
+							// Can get every single chest in D4
+							//"$d4clear",
+							
+							"$kill_normal, feather",
+							"$kill_normal, hook1",
+							"$kill_hard, [$kill_normal], feather",
+							"$kill_hard, [$kill_normal], hook1",
+							"$push_enemy, feather",
+							"$push_enemy, hook1",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Cube\nchest",
+						"access_rules": [
+							// Can get every single chest in D4
+							//"$d4clear",
+							
+							"$kill_normal, feather",
+							"$push_enemy, feather",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Minecart\nchest",
+						"access_rules": [
+							// Can get every single chest in D4
+							//"$d4clear",
+							
+							"d4sk:1, feather, $hit_lever",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Moldorm switch\nchest",
+						"access_rules": [
+							// Can get every single chest in D4
+							//"$d4clear",
+							
+							"d4sk:1, feather, shooter",
+							"d4sk:1, feather, boomerang, [shooter]",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Keese switch\nchest",
+						"access_rules": [
+							// Can get every single chest in D4
+							//"$d4clear",
+							
+							"d4sk:2, feather, $hit_lever, bracelet, $kill_normal, shooter",
+							"d4sk:2, feather, $hit_lever, bracelet, $kill_hard, [$kill_normal], shooter",
+							"d4sk:2, feather, $hit_lever, bracelet, $kill_normal, boomerang, [shooter]",
+							"d4sk:2, feather, $hit_lever, bracelet, $kill_hard, [$kill_normal], boomerang, [shooter]",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Color tiles\ndrop",
+						"access_rules": [
+							// Can get every single chest in D4
+							//"$d4clear",
+							
+							"d4sk:3, feather, $hit_lever, bracelet, [$kill_normal], sword1",
+							"d4sk:3, feather, $hit_lever, bracelet, [$kill_normal], $use_seeds, emberseeds",
+							"d4sk:3, feather, $hit_lever, bracelet, [$kill_normal], shooter, scentseeds",
+							"d4sk:3, feather, $hit_lever, bracelet, [$kill_normal], shooter, galeseeds",
+							"d4sk:3, feather, $hit_lever, bracelet, $kill_normal, satchel, scentseeds, [shooter]",
+						],
+						"item_count": 1
+					},			
+					{
+						"name": "Small floor\npuzzle reward",
+						"access_rules": [
+							// Can get every single chest in D4
+							//"$d4clear",
+							
+							"d4sk:4, feather, $hit_lever, bracelet, [$kill_normal], sword1, bombs",
+							"d4sk:4, feather, $hit_lever, bracelet, [$kill_normal], $use_seeds, emberseeds, hook1, bombs",
+							"d4sk:4, feather, $hit_lever, bracelet, [$kill_normal], $use_seeds, emberseeds, $punch, [ring_expert], bombs",
+							"d4sk:4, feather, $hit_lever, bracelet, [$kill_normal], shooter, scentseeds, bombs",
+							"d4sk:4, feather, $hit_lever, bracelet, [$kill_normal], shooter, galeseeds, hook1, bombs",
+							"d4sk:4, feather, $hit_lever, bracelet, [$kill_normal], shooter, galeseeds, $punch, [ring_expert], bombs",
+							"d4sk:4, feather, $hit_lever, bracelet, $kill_normal, satchel, scentseeds, [shooter], hook1, bombs",
+							"d4sk:4, feather, $hit_lever, bracelet, $kill_normal, satchel, scentseeds, [shooter], $punch, [ring_expert], bombs",
+
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Big floor\npuzzle reward",
+						"access_rules": [
+							// Can get every single chest in D4
+							//"$d4clear",
+							
+							"d4sk:4, feather, $hit_lever, bracelet, [$kill_normal], sword1, hook1",
+							"d4sk:4, feather, $hit_lever, bracelet, [$kill_normal], $use_seeds, emberseeds, hook1",
+							"d4sk:4, feather, $hit_lever, bracelet, [$kill_normal], shooter, scentseeds, hook1",
+							"d4sk:4, feather, $hit_lever, bracelet, [$kill_normal], shooter, galeseeds, hook1",
+							"d4sk:4, feather, $hit_lever, bracelet, $kill_normal, satchel, scentseeds, [shooter], hook1",
+							
+							// Hookless sequence breaks
+							"d4sk:4, $max_jump:2, $hit_lever, bracelet, [$kill_normal], sword1, [hook1], bombs, cane, sword2",
+							"d4sk:4, $max_jump:2, $hit_lever, bracelet, [$kill_normal], $use_seeds, emberseeds, $punch, [ring_expert], [hook1], bombs, cane, sword2",
+							"d4sk:4, $max_jump:2, $hit_lever, bracelet, [$kill_normal], shooter, scentseeds, [hook1], bombs, cane, sword2",
+							"d4sk:4, $max_jump:2, $hit_lever, bracelet, [$kill_normal], shooter, galeseeds, $punch, [ring_expert], [hook1], bombs, cane, sword2",
+							"d4sk:4, $max_jump:2, $hit_lever, bracelet, $kill_normal, satchel, scentseeds, [shooter], $punch, [ring_expert], [hook1], bombs, cane, sword2",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Extremely out of\nthe way chest",
+						"access_rules": [
+							// Can get every single chest in D4
+							//"$d4clear",
+							
+							"d4sk:5, feather, $hit_lever, bracelet, [$kill_normal], sword1, hook1",
+							"d4sk:5, feather, $hit_lever, bracelet, [$kill_normal], $use_seeds, emberseeds, hook1",
+							"d4sk:5, feather, $hit_lever, bracelet, [$kill_normal], shooter, scentseeds, hook1",
+							"d4sk:5, feather, $hit_lever, bracelet, [$kill_normal], shooter, galeseeds, hook1",
+							"d4sk:5, feather, $hit_lever, bracelet, $kill_normal, satchel, scentseeds, [shooter], hook1",
+							
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Eyesoar\nReward",
+						"access_rules": [
+							// Can get every single chest in D4
+							//"$d4clear",
+							
+							"d4bk, d4sk:4, feather, $hit_lever, bracelet, [$kill_normal], sword1, hook1",
+							"d4bk, d4sk:4, feather, $hit_lever, bracelet, [$kill_normal], $use_seeds, emberseeds, hook1, boomerang",
+							"d4bk, d4sk:4, feather, $hit_lever, bracelet, [$kill_normal], $use_seeds, emberseeds, hook1, $punch, [ring_expert]",
+							"d4bk, d4sk:4, feather, $hit_lever, bracelet, [$kill_normal], shooter, scentseeds, hook1, boomerang",
+							"d4bk, d4sk:4, feather, $hit_lever, bracelet, [$kill_normal], shooter, scentseeds, hook1, $punch, [ring_expert]",
+							"d4bk, d4sk:4, feather, $hit_lever, bracelet, [$kill_normal], shooter, galeseeds, hook1, boomerang",
+							"d4bk, d4sk:4, feather, $hit_lever, bracelet, [$kill_normal], shooter, galeseeds, hook1, $punch, [ring_expert]",
+							"d4bk, d4sk:4, feather, $hit_lever, bracelet, $kill_normal, satchel, scentseeds, [shooter], hook1, boomerang",
+							"d4bk, d4sk:4, feather, $hit_lever, bracelet, $kill_normal, satchel, scentseeds, [shooter], hook1, $punch, [ring_expert]",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Burning\nFlame",
+						"hosted_item": "d4",
+						"access_rules": [
+							// Can get every single chest in D4
+							//"$d4clear",
+							
+							"d4bk, d4sk:4, feather, $hit_lever, bracelet, [$kill_normal], sword1, hook1",
+							"d4bk, d4sk:4, feather, $hit_lever, bracelet, [$kill_normal], $use_seeds, emberseeds, hook1, boomerang",
+							"d4bk, d4sk:4, feather, $hit_lever, bracelet, [$kill_normal], $use_seeds, emberseeds, hook1, $punch, [ring_expert]",
+							"d4bk, d4sk:4, feather, $hit_lever, bracelet, [$kill_normal], shooter, scentseeds, hook1, boomerang",
+							"d4bk, d4sk:4, feather, $hit_lever, bracelet, [$kill_normal], shooter, scentseeds, hook1, $punch, [ring_expert]",
+							"d4bk, d4sk:4, feather, $hit_lever, bracelet, [$kill_normal], shooter, galeseeds, hook1, boomerang",
+							"d4bk, d4sk:4, feather, $hit_lever, bracelet, [$kill_normal], shooter, galeseeds, hook1, $punch, [ring_expert]",
+							"d4bk, d4sk:4, feather, $hit_lever, bracelet, $kill_normal, satchel, scentseeds, [shooter], hook1, boomerang",
+							"d4bk, d4sk:4, feather, $hit_lever, bracelet, $kill_normal, satchel, scentseeds, [shooter], hook1, $punch, [ring_expert]",
+						],
+						"item_count": 0
+					},
+					
+					/*{
+						"name": "D4 small\nkeys",
+						"hosted_item": "d4sk",
+						"item_count": 0
+					},
+					{
+						"name": "D4 boss\nkey",
+						"hosted_item": "d4bk",
+						"item_count": 0
+					},*/					
+				],
+				"map_locations": [
+					{
+						// D1 entrance
+						"map": "present",
+						"x": 434,
+						"y": 274,
+						"restrict_visibility_rules": [
+							"d4_d1"
+						]
+					},
+					{
+						// D2 present entrance
+						"map": "present",
+						"x": 114,
+						"y": 274,
+						"restrict_visibility_rules": [
+							"d4_d2"
+						]
+					},
+					{
+						// D2 past entrance
+						"map": "past",
+						"x": 114,
+						"y": 274,
+						"restrict_visibility_rules": [
+							"d4_d2"
+						]
+					},
+					{
+						// D3 entrance
+						"map": "present",
+						"x": 338,
+						"y": 369,
+						"restrict_visibility_rules": [
+							"d4_d3"
+						]
+					},
+					{
+						// D4 entrance
+						"map": "present",
+						"x": 114,
+						"y": 17,
+						"restrict_visibility_rules": [
+							"d4_d4"
+						]
+					},
+					{
+						// D5 entrance
+						"map": "present",
+						"x": 338,
+						"y": 17,
+						"restrict_visibility_rules": [
+							"d4_d5"
+						]
+					},
+					{
+						// D6 present entrance
+						"map": "present",
+						"x": 402,
+						"y": 114,
+						"restrict_visibility_rules": [
+							"d4_d6_present"
+						]
+					},
+					{
+						// D6 past entrance
+						"map": "past",
+						"x": 402,
+						"y": 114,
+						"restrict_visibility_rules": [
+							"d4_d6_past"
+						]
+					},
+					{
+						// D7 entrance
+						"map": "present",
+						"x": 17,
+						"y": 322,
+						"restrict_visibility_rules": [
+							"d4_d7"
+						]
+					},
+					{
+						// D8 entrance
+						"map": "past",
+						"x": 402,
+						"y": 178,
+						"restrict_visibility_rules": [
+							"d4_d8"
+						]
+					}
+				]
+			},
+		]
+	},
+	
+	{	
+		"name": "Rolling Ridge West",
+		"chest_unopened_img": "images/chest.png",
+		"chest_opened_img": "images/chestopen.png",
+		"color": "#0049bf",
+		"children": [
+			{
+				"name": "Check D5 Entrance",
+
+				"access_rules": [
+					"{$d5_access_normal}",
+					"{[$d5_access_normal], $d5_access_hard}",
+				],
+				"sections": [
+					{
+						"name": "D1: Spirit's Grave",
+						"hosted_item": "d1_from_d5",
+						"item_count": 0,
+						"visibility_rules": [
+							"d1_ent"
+						]
+					},
+					{
+						"name": "D2: Wing Dungeon",
+						"hosted_item": "d2_from_d5",
+						"item_count": 0,
+						"visibility_rules": [
+							"d2_ent"
+						]
+					},
+					{
+						"name": "D3: Moonlit Grotto",
+						"hosted_item": "d3_from_d5",
+						"item_count": 0,
+						"visibility_rules": [
+							"d3_ent"
+						]
+					},
+					{
+						"name": "D4: Skull Dungeon",
+						"hosted_item": "d4_from_d5",
+						"item_count": 0,
+						"visibility_rules": [
+							"d4_ent"
+						]
+					},
+					{
+						"name": "D5: Crown Dungeon",
+						"hosted_item": "d5_from_d5",
+						"item_count": 0,
+						"visibility_rules": [
+							"d5_ent"
+						]
+					},
+					{
+						"name": "D6: Past Mermaid's Cave",
+						"hosted_item": "d6_past_from_d5",
+						"item_count": 0,
+						"visibility_rules": [
+							"d6_past_ent"
+						]
+					},
+					{
+						"name": "D6: Present Mermaid's Cave",
+						"hosted_item": "d6_present_from_d5",
+						"item_count": 0,
+						"visibility_rules": [
+							"d6_present_ent"
+						]
+					},
+					{
+						"name": "D7: Jabu Jabu's Belly",
+						"hosted_item": "d7_from_d5",
+						"item_count": 0,
+						"visibility_rules": [
+							"d7_ent"
+						]
+					},
+					{
+						"name": "D8: Ancient Tomb",
+						"hosted_item": "d8_from_d5",
+						"item_count": 0,
+						"visibility_rules": [
+							"d8_ent"
+						]
+					},
+				],
+				"map_locations": [
+					{
+						// D5 entrance
+						"map": "present",
+						"x": 338,
+						"y": 17,
+						"restrict_visibility_rules": [
+							"$check_d5_entrance_normal"
+						]
+					}
+				]
+			},
+			
+			{
+				"name": "Crown Dungeon",
+				"access_rules": [				
+					"$d5_shuffle",
+					"[$d5_shuffle], $d5_shuffle_hard",
+				],
+				"sections": [
+					{
+						"name": "West basement\nblue pegs chest",
+						"access_rules": [
+							// Can get every single chest in D5
+							//"$d5clear",
+							
+							"$kill_normal, $hit_far_switch",
+							"$kill_normal, bracelet, [$hit_far_switch]",
+							"$kill_normal, feather, cane, emberseeds, [$hit_far_switch]",
+							"$kill_normal, feather, cane, scentseeds, [$hit_far_switch]",
+							"$kill_normal, feather, cane, mysteryseeds, [$hit_far_switch]",
+							
+							"$kill_hard, [$kill_normal], $hit_far_switch",
+							"$kill_hard, [$kill_normal], feather, cane, emberseeds, [$hit_far_switch]",
+							"$kill_hard, [$kill_normal], feather, cane, scentseeds, [$hit_far_switch]",
+							"$kill_hard, [$kill_normal], feather, cane, mysteryseeds, [$hit_far_switch]",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Eyes\nchest",
+						"access_rules": [
+							// Can get every single chest in D5
+							//"$d5clear",
+							
+							"$kill_normal, shooter",
+							"$kill_normal, $max_jump:2, mysteryseeds, $hit_far_switch, [shooter]",
+							"$kill_normal, $max_jump:2, mysteryseeds, ring_toss, bracelet, [shooter]",
+							"$kill_normal, $max_jump:2, mysteryseeds, cane, [shooter]",
+							
+							"$kill_hard, [$kill_normal], shooter",
+							"$kill_hard, [$kill_normal], $max_jump:2, mysteryseeds, $hit_far_switch, [shooter]",
+							"$kill_hard, [$kill_normal], $max_jump:2, mysteryseeds, ring_toss, bracelet, [shooter]",
+							"$kill_hard, [$kill_normal], $max_jump:2, mysteryseeds, cane, [shooter]",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Dark room\nchest",
+						"access_rules": [
+							// Can get every single chest in D5
+							//"$d5clear",
+							
+							"$kill_normal, $hit_switch, [cane]",
+							"$kill_normal, bracelet, [$hit_switch], [cane]",
+							"$kill_normal, $hit_switch, [hook1]",
+							"$kill_normal, bracelet, [$hit_switch], [hook1]",
+							
+							"$kill_hard, [$kill_normal], $hit_switch, [cane]",
+							"$kill_hard, [$kill_normal], bracelet, [$hit_switch], [cane]",
+							"$kill_hard, [$kill_normal], $hit_switch, [hook1]",
+							"$kill_hard, [$kill_normal], bracelet, [$hit_switch], [hook1]",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Twin statues\npuzzle chest",
+						"access_rules": [
+							// Can get every single chest in D5
+							//"$d5clear",
+							
+							// reach as normal
+							"$kill_normal, $hit_switch, $destroy_pot, cane, feather, shooter",
+							"$kill_normal, bracelet, [$hit_switch], $destroy_pot, cane, feather, shooter",
+							"$kill_normal, $hit_switch, $destroy_pot, cane, feather, boomerang",
+							"$kill_normal, bracelet, [$hit_switch], $destroy_pot, cane, feather, boomerang",
+							
+							// hit switch with a sword slash (hard mode)
+							"$kill_normal, $hit_switch, $destroy_pot, cane, feather, sword1, [shooter]",
+							"$kill_normal, bracelet, [$hit_switch], $destroy_pot, cane, feather, sword1, [shooter]",
+							"$kill_normal, $hit_switch, $destroy_pot, cane, feather, sword1, [boomerang]",
+							"$kill_normal, bracelet, [$hit_switch], $destroy_pot, cane, feather, sword1, [boomerang]",
+							
+							// hit switch with a long jump and drop a seed (hard mode)
+							"$kill_normal, $hit_switch, $destroy_pot, cane, $max_jump:2, satchel, emberseeds, [shooter]",
+							"$kill_normal, bracelet, [$hit_switch], $destroy_pot, cane, $max_jump:2, satchel, emberseeds, [shooter]",
+							"$kill_normal, $hit_switch, $destroy_pot, cane, $max_jump:2, satchel, scentseeds, [shooter]",
+							"$kill_normal, bracelet, [$hit_switch], $destroy_pot, cane, $max_jump:2, satchel, scentseeds, [shooter]",
+							"$kill_normal, $hit_switch, $destroy_pot, cane, $max_jump:2, satchel, mysteryseeds, [shooter]",
+							"$kill_normal, bracelet, [$hit_switch], $destroy_pot, cane, $max_jump:2, satchel, mysteryseeds, [shooter]",
+							
+							// hit switch with a bomb jump and drop a seed (hard mode)
+							"$kill_normal, $hit_switch, $destroy_pot, cane, feather, bombs, satchel, emberseeds, [shooter]",
+							"$kill_normal, bracelet, [$hit_switch], $destroy_pot, cane, feather, bombs, satchel, emberseeds, [shooter]",
+							"$kill_normal, $hit_switch, $destroy_pot, cane, feather, bombs, satchel, scentseeds, [shooter]",
+							"$kill_normal, bracelet, [$hit_switch], $destroy_pot, cane, feather, bombs, satchel, scentseeds, [shooter]",
+							"$kill_normal, $hit_switch, $destroy_pot, cane, feather, bombs, satchel, mysteryseeds, [shooter]",
+							"$kill_normal, bracelet, [$hit_switch], $destroy_pot, cane, feather, bombs, satchel, mysteryseeds, [shooter]",
+							
+							// requires cane, so kill_hard is never an option
+						],
+						"item_count": 1
+					},				
+					{
+						"name": "Chest before\n the boss",
+						"access_rules": [
+							// Can get every single chest in D5
+							//"$d5clear",
+							
+							"$kill_normal, $hit_switch",
+							"$kill_normal, bracelet, [$hit_switch]",
+							"$kill_hard, [$kill_normal], bracelet, [$hit_switch]",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Three statues\npuzzle chest",
+						"access_rules": [
+							// Can get every single chest in D5
+							//"$d5clear",
+							
+							"d5sk:5, $kill_normal, $hit_switch, cane",
+							"d5sk:1, [d5sk:5], $kill_normal, $hit_switch, cane",
+							"d5sk:5, $kill_normal, bracelet, [$hit_switch], cane",
+							"d5sk:1, [d5sk:5], $kill_normal, bracelet, [$hit_switch], cane",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Color Statues\npuzzle",
+						"access_rules": [
+							// Can get every single chest in D5
+							//"$d5clear",
+							
+							"d5sk:5, $kill_normal, $hit_switch, shooter, emberseeds, feather",
+							"d5sk:1, [d5sk:5], $kill_normal, $hit_switch, shooter, emberseeds, feather",
+							"d5sk:5, $kill_normal, bracelet, [$hit_switch], shooter, emberseeds, feather",
+							"d5sk:1, [d5sk:5], $kill_normal, bracelet, [$hit_switch], shooter, emberseeds, feather",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Diamonds\nchest",
+						"access_rules": [
+							// Can get every single chest in D5
+							//"$d5clear",
+							
+							"d5sk:2, $kill_normal, [$hit_switch], feather, bracelet, cane, hook1",
+							"d5sk:1, [d5sk:2], $kill_normal, [$hit_switch], feather, bracelet, cane, hook1",
+							"d5sk:2, $kill_normal, [$hit_switch], $max_jump:2, bracelet, [cane], hook1",
+							"d5sk:1, [d5sk:2], $kill_normal, [$hit_switch], $max_jump:2, bracelet, [cane], hook1",
+							"d5sk:2, $kill_normal, [$hit_switch], feather, bracelet, sword1, [cane], hook1",
+							"d5sk:1, [d5sk:2], $kill_normal, [$hit_switch], feather, bracelet, sword1, [cane], hook1",
+							
+							"d5sk:2, $kill_hard, [$kill_normal], [$hit_switch], $max_jump:2, bracelet, [cane], hook1",
+							"d5sk:1, [d5sk:2], $kill_hard, [$kill_normal], [$hit_switch], $max_jump:2, bracelet, [cane], hook1",
+						],
+						"item_count": 1
+					},				
+					{
+						"name": "Red chest after\nspike room",
+						"access_rules": [
+							// Can get every single chest in D5
+							//"$d5clear",
+							
+							"d5sk:5, $kill_normal, feather, bracelet, cane, $hit_far_switch",
+							"d5sk:4, [d5sk:5], $kill_normal, feather, bracelet, cane, $hit_far_switch",
+							"d5sk:5, $kill_normal, feather, bracelet, sword1, hook1, [cane], $hit_far_switch",
+							"d5sk:4, [d5sk:5], $kill_normal, feather, bracelet, sword1, hook1, [cane], $hit_far_switch",
+							"d5sk:5, $kill_normal, $max_jump:2, bracelet, [cane], $hit_far_switch",
+							"d5sk:4, [d5sk:5], $kill_normal, $max_jump:2, bracelet, [cane], $hit_far_switch",
+							
+							// key skip with boomerang (not in logic, ever)
+							"d5sk:3, [d5sk:5], $kill_normal, feather, bracelet, cane, $hit_far_switch, boomerang",
+							"d5sk:3, [d5sk:5], $kill_normal, feather, bracelet, [cane], sword1, hook1, $hit_far_switch, boomerang",
+							"d5sk:3, [d5sk:5], $kill_normal, $max_jump:2, bracelet, [cane], $hit_far_switch, boomerang",
+							
+							"d5sk:5, $kill_hard, [$kill_normal], $max_jump:2, bracelet, [cane], $hit_far_switch",
+							"d5sk:4, [d5sk:5], $kill_hard, [$kill_normal], $max_jump:2, bracelet, [cane], $hit_far_switch",
+							"d5sk:3, [d5sk:5], $kill_hard, [$kill_normal], $max_jump:2, bracelet, [cane], $hit_far_switch, boomerang",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Isolated owl\npuzzle chest",
+						"access_rules": [
+							// Can get every single chest in D5
+							//"$d5clear",
+							
+							"d5sk:5, $kill_normal, feather, bracelet, cane, $hit_far_switch",
+							"d5sk:4, [d5sk:5], $kill_normal, feather, bracelet, cane, $hit_far_switch",
+							"d5sk:5, $kill_normal, feather, bracelet, sword1, hook1, [cane], $hit_far_switch",
+							"d5sk:4, [d5sk:5], $kill_normal, feather, bracelet, sword1, hook1, [cane], $hit_far_switch",
+							"d5sk:5, $kill_normal, $max_jump:2, bracelet, [cane], $hit_far_switch",
+							"d5sk:4, [d5sk:5], $kill_normal, $max_jump:2, bracelet, [cane], $hit_far_switch",
+							
+							// key skip with boomerang (not in logic, ever)
+							"d5sk:3, [d5sk:5], $kill_normal, feather, bracelet, cane, $hit_far_switch, boomerang",
+							"d5sk:3, [d5sk:5], $kill_normal, feather, bracelet, [cane], sword1, hook1, $hit_far_switch, boomerang",
+							"d5sk:3, [d5sk:5], $kill_normal, $max_jump:2, bracelet, [cane], $hit_far_switch, boomerang",
+							
+							"d5sk:5, $kill_hard, [$kill_normal], $max_jump:2, bracelet, [cane], $hit_far_switch",
+							"d5sk:4, [d5sk:5], $kill_hard, [$kill_normal], $max_jump:2, bracelet, [cane], $hit_far_switch",
+							"d5sk:3, [d5sk:5], $kill_hard, [$kill_normal], $max_jump:2, bracelet, [cane], $hit_far_switch, boomerang",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Smog\nreward",
+						"access_rules": [
+							// Can get every single chest in D5
+							//"$d5clear",
+							
+							"d5bk, $hit_switch, sword1, cane",
+							"d5bk, bracelet, [$hit_switch], sword1, cane",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Sacred\nSoil",
+						"access_rules": [
+							// Can get every single chest in D5
+							//"$d5clear",
+							
+							"d5bk, $hit_switch, sword1, cane",
+							"d5bk, bracelet, [$hit_switch], sword1, cane",
+						],
+						"hosted_item": "d5",
+						"item_count": 0
+					},
+					
+					/*{
+						"name": "D5 small\nkeys",
+						"hosted_item": "d5sk",
+						"item_count": 0
+					},
+					{
+						"name": "D5 boss\nkey",
+						"hosted_item": "d5bk",
+						"item_count": 0
+					},*/					
+				],
+				"map_locations": [
+					{
+						// D1 entrance
+						"map": "present",
+						"x": 434,
+						"y": 274,
+						"restrict_visibility_rules": [
+							"d5_d1"
+						]
+					},
+					{
+						// D2 present entrance
+						"map": "present",
+						"x": 114,
+						"y": 274,
+						"restrict_visibility_rules": [
+							"d5_d2"
+						]
+					},
+					{
+						// D2 past entrance
+						"map": "past",
+						"x": 114,
+						"y": 274,
+						"restrict_visibility_rules": [
+							"d5_d2"
+						]
+					},
+					{
+						// D3 entrance
+						"map": "present",
+						"x": 338,
+						"y": 369,
+						"restrict_visibility_rules": [
+							"d5_d3"
+						]
+					},
+					{
+						// D4 entrance
+						"map": "present",
+						"x": 114,
+						"y": 17,
+						"restrict_visibility_rules": [
+							"d5_d4"
+						]
+					},
+					{
+						// D5 entrance
+						"map": "present",
+						"x": 338,
+						"y": 17,
+						"restrict_visibility_rules": [
+							"d5_d5"
+						]
+					},
+					{
+						// D6 present entrance
+						"map": "present",
+						"x": 402,
+						"y": 114,
+						"restrict_visibility_rules": [
+							"d5_d6_present"
+						]
+					},
+					{
+						// D6 past entrance
+						"map": "past",
+						"x": 402,
+						"y": 114,
+						"restrict_visibility_rules": [
+							"d5_d6_past"
+						]
+					},
+					{
+						// D7 entrance
+						"map": "present",
+						"x": 17,
+						"y": 322,
+						"restrict_visibility_rules": [
+							"d5_d7"
+						]
+					},
+					{
+						// D8 entrance
+						"map": "past",
+						"x": 402,
+						"y": 178,
+						"restrict_visibility_rules": [
+							"d5_d8"
+						]
+					}
+				]
+			},
+		]
+	},
+	
+	{	
+		"name": "Rolling Ridge East (Present)",
+		"chest_unopened_img": "images/chest.png",
+		"chest_opened_img": "images/chestopen.png",
+		"color": "#0049bf",
+		"children": [
+			{
+				"name": "Check D6 Present Entrance",
+
+				"access_rules": [
+					"{$d6_present_access_normal}",
+					"{[$d6_present_access_normal], $d6_present_access_hard}",
+				],
+				"sections": [
+					{
+						"name": "D1: Spirit's Grave",
+						"hosted_item": "d1_from_d6_present",
+						"item_count": 0,
+						"visibility_rules": [
+							"d1_ent"
+						]
+					},
+					{
+						"name": "D2: Wing Dungeon",
+						"hosted_item": "d2_from_d6_present",
+						"item_count": 0,
+						"visibility_rules": [
+							"d2_ent"
+						]
+					},
+					{
+						"name": "D3: Moonlit Grotto",
+						"hosted_item": "d3_from_d6_present",
+						"item_count": 0,
+						"visibility_rules": [
+							"d3_ent"
+						]
+					},
+					{
+						"name": "D4: Skull Dungeon",
+						"hosted_item": "d4_from_d6_present",
+						"item_count": 0,
+						"visibility_rules": [
+							"d4_ent"
+						]
+					},
+					{
+						"name": "D5: Crown Dungeon",
+						"hosted_item": "d5_from_d6_present",
+						"item_count": 0,
+						"visibility_rules": [
+							"d5_ent"
+						]
+					},
+					{
+						"name": "D6: Past Mermaid's Cave",
+						"hosted_item": "d6_past_from_d6_present",
+						"item_count": 0,
+						"visibility_rules": [
+							"d6_past_ent"
+						]
+					},
+					{
+						"name": "D6: Present Mermaid's Cave",
+						"hosted_item": "d6_present_from_d6_present",
+						"item_count": 0,
+						"visibility_rules": [
+							"d6_present_ent"
+						]
+					},
+					{
+						"name": "D7: Jabu Jabu's Belly",
+						"hosted_item": "d7_from_d6_present",
+						"item_count": 0,
+						"visibility_rules": [
+							"d7_ent"
+						]
+					},
+					{
+						"name": "D8: Ancient Tomb",
+						"hosted_item": "d8_from_d6_present",
+						"item_count": 0,
+						"visibility_rules": [
+							"d8_ent"
+						]
+					},
+				],
+				"map_locations": [
+					{
+						// D6 present entrance
+						"map": "present",
+						"x": 402,
+						"y": 114,
+						"restrict_visibility_rules": [
+							"$check_d6_present_entrance_normal"
+						]
+					}
+				]
+			},
+			
+			{
+				"name": "Mermaid's Cave (Present)",
+				"access_rules": [
+					"$d6_present_shuffle",
+					"[$d6_present_shuffle], $d6_present_shuffle_hard",
+				],
+				"sections": [
+					{
+						"name": "Diamonds\nchest",
+						"access_rules": [
+							// Can get every single chest in D6 Present
+							//"$d6clear_present_shuffle",
+							
+							"hook1"
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Rope cage\nchest",
+						"access_rules": [
+							// Can get every single chest in D6 Present
+							//"$d6clear_present_shuffle",
+							
+							"satchel, scentseeds, flippers, shooter",
+							"satchel, scentseeds, flippers, boomerang",
+							"satchel, scentseeds, $max_jump:2",
+							
+							"satchel, scentseeds, feather, shooter",
+							"satchel, scentseeds, feather, boomerang",
+							
+							"satchel, scentseeds, hook1, shooter",
+							"satchel, scentseeds, hook1, boomerang",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Cube puzzle\nchest",
+						"access_rules": [
+							// Can get every single chest in D6 Present
+							//"$d6clear_present_shuffle",
+							
+							"[feather], shooter, bombs, hook1",
+							"[feather], boomerang, bombs, hook1",
+							"$max_jump:2, bombs, hook1",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Spinner\nchest",
+						"access_rules": [
+							// Can get every single chest in D6 Present
+							//"$d6clear_present_shuffle",
+							
+							"$d6_past_shuffle, bombs, cane, feather, shooter",
+							"[$d6_past_shuffle], $d6_past_shuffle_hard, bombs, cane, feather, shooter",
+							"$d6_past_shuffle, bombs, cane, feather, boomerang",
+							"[$d6_past_shuffle], $d6_past_shuffle_hard, bombs, cane, feather, boomerang",
+							"$d6_past_shuffle, bombs, cane, $max_jump:2, sword1",
+							"[$d6_past_shuffle], $d6_past_shuffle_hard, bombs, cane, $max_jump:2, sword1",
+							"$d6_past_shuffle, bombs, cane, $max_jump:2, bombs, [sword1]",
+							"[$d6_past_shuffle], $d6_past_shuffle_hard, bombs, cane, $max_jump:2, bombs, [sword1]",
+							"$d6_past_shuffle, bombs, cane, $max_jump:2, satchel, emberseeds",
+							"[$d6_past_shuffle], $d6_past_shuffle_hard, bombs, cane, $max_jump:2, satchel, emberseeds",
+							"$d6_past_shuffle, bombs, cane, $max_jump:2, satchel, scentseeds",
+							"[$d6_past_shuffle], $d6_past_shuffle_hard, bombs, cane, $max_jump:2, satchel, scentseeds",
+							"$d6_past_shuffle, bombs, cane, $max_jump:2, satchel, mysteryseeds",
+							"[$d6_past_shuffle], $d6_past_shuffle_hard, bombs, cane, $max_jump:2, satchel, mysteryseeds",
+							
+							"$d6_past_shuffle, bombs, cane, hook1, shooter",
+							"[$d6_past_shuffle], $d6_past_shuffle_hard, bombs, cane, hook1, shooter",
+							"$d6_past_shuffle, bombs, cane, hook1, boomerang",
+							"[$d6_past_shuffle], $d6_past_shuffle_hard, bombs, cane, hook1, boomerang",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Chest after\nVire",
+						"access_rules": [
+							// Can get every single chest in D6 Present
+							//"$d6clear_present_shuffle",
+							
+							"d6sk_present:3, $d6_past_shuffle, bombs, cane, flippers, [sword1], hook1",
+							"d6sk_present:3, [$d6_past_shuffle], $d6_past_shuffle_hard, bombs, cane, flippers, [sword1], hook1",
+							"d6sk_present:3, $d6_past_shuffle, bombs, cane, flippers, [ring_expert], hook1",
+							"d6sk_present:3, [$d6_past_shuffle], $d6_past_shuffle_hard, bombs, cane, flippers, [ring_expert], hook1",
+							"d6sk_present:1, [d6sk_present:3], $d6_past_shuffle, bombs, cane, flippers, [sword1], hook1",
+							"d6sk_present:1, [d6sk_present:3], [$d6_past_shuffle], $d6_past_shuffle_hard, bombs, cane, flippers, [sword1], hook1",
+							"d6sk_present:1, [d6sk_present:3], $d6_past_shuffle, bombs, cane, flippers, [ring_expert], hook1",
+							"d6sk_present:1, [d6sk_present:3], [$d6_past_shuffle], $d6_past_shuffle_hard, bombs, cane, flippers, [ring_expert], hook1",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Water channel\nchest",
+						"access_rules": [
+							// Can get every single chest in D6 Present
+							//"$d6clear_present_shuffle",
+							
+							"d6sk_present:3, $d6_past_shuffle, bombs, shooter, emberseeds, hook1",
+							"d6sk_present:3, [$d6_past_shuffle], $d6_past_shuffle_hard, bombs, shooter, emberseeds, hook1",
+							"d6sk_present:1, [d6sk_present:3], $d6_past_shuffle, bombs, shooter, emberseeds, hook1",
+							"d6sk_present:1, [d6sk_present:3], [$d6_past_shuffle], $d6_past_shuffle_hard, bombs, shooter, emberseeds, hook1",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Beamos\nchest",
+						"access_rules": [
+							// Can get every single chest in D6 Present
+							//"$d6clear_present_shuffle",
+							
+							"$d6_past_shuffle, bombs, shooter, emberseeds, flippers, feather",
+							"[$d6_past_shuffle], $d6_past_shuffle_hard, bombs, shooter, emberseeds, flippers, feather",
+							"d6sk_present:2, $d6_past_shuffle, bombs, shooter, emberseeds, hook1, feather",
+							"d6sk_present:2, [$d6_past_shuffle], $d6_past_shuffle_hard, bombs, shooter, emberseeds, hook1, feather",
+							"d6sk_present:1, [d6sk_present:2], $d6_past_shuffle, bombs, shooter, emberseeds, hook1, feather",
+							"d6sk_present:1, [d6sk_present:2], [$d6_past_shuffle], $d6_past_shuffle_hard, bombs, shooter, emberseeds, hook1, feather",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "RNG levers\nchest",
+						"access_rules": [
+							// Can get every single chest in D6 Present
+							//"$d6clear_present_shuffle",
+							
+							"d6sk_present:3, $d6_past_shuffle, bombs, shooter, emberseeds, flippers, feather, bracelet, sword1",
+							"d6sk_present:3, [$d6_past_shuffle], $d6_past_shuffle_hard, bombs, shooter, emberseeds, flippers, feather, bracelet, sword1",
+							"d6sk_present:1, [d6sk_present:3], $d6_past_shuffle, bombs, shooter, emberseeds, flippers, feather, bracelet, sword1",
+							"d6sk_present:1, [d6sk_present:3], [$d6_past_shuffle], $d6_past_shuffle_hard, bombs, shooter, emberseeds, flippers, feather, bracelet, sword1",
+							"d6sk_present:3, $d6_past_shuffle, bombs, shooter, emberseeds, flippers, feather, bracelet, cane",
+							"d6sk_present:3, [$d6_past_shuffle], $d6_past_shuffle_hard, bombs, shooter, emberseeds, flippers, feather, bracelet, cane",
+							"d6sk_present:1, [d6sk_present:3], $d6_past_shuffle, bombs, shooter, emberseeds, flippers, feather, bracelet, cane",
+							"d6sk_present:1, [d6sk_present:3], [$d6_past_shuffle], $d6_past_shuffle_hard, bombs, shooter, emberseeds, flippers, feather, bracelet, cane",
+							"d6sk_present:3, $d6_past_shuffle, bombs, shooter, emberseeds, flippers, feather, bracelet, $punch",
+							"d6sk_present:3, [$d6_past_shuffle], $d6_past_shuffle_hard, bombs, shooter, emberseeds, flippers, feather, bracelet, $punch",
+							"d6sk_present:1, [d6sk_present:3], $d6_past_shuffle, bombs, shooter, emberseeds, flippers, feather, bracelet, $punch",
+							"d6sk_present:1, [d6sk_present:3], [$d6_past_shuffle], $d6_past_shuffle_hard, bombs, shooter, emberseeds, flippers, feather, bracelet, $punch",
+							"d6sk_present:3, $d6_past_shuffle, bombs, shooter, emberseeds, hook1, feather, bracelet",
+							"d6sk_present:3, [$d6_past_shuffle], $d6_past_shuffle_hard, bombs, shooter, emberseeds, hook1, feather, bracelet",
+							"d6sk_present:2, [d6sk_present:3], $d6_past_shuffle, bombs, shooter, emberseeds, hook1, feather, bracelet",
+							"d6sk_present:2, [d6sk_present:3], [$d6_past_shuffle], $d6_past_shuffle_hard, bombs, shooter, emberseeds, hook1, feather, bracelet",
+						],
+						"item_count": 1
+					},
+					
+					/*{
+						"name": "D6 present\nsmall keys",
+						"hosted_item": "d6sk_present",
+						"item_count": 0
+					},
+					{
+						"name": "D6 boss\nkey",
+						"hosted_item": "d6bk",
+						"item_count": 0
+					},*/
+				],
+
+				"map_locations": [
+					{
+						// D1 entrance
+						"map": "present",
+						"x": 434,
+						"y": 274,
+						"restrict_visibility_rules": [
+							"d6_present_d1"
+						]
+					},
+					{
+						// D2 present entrance
+						"map": "present",
+						"x": 114,
+						"y": 274,
+						"restrict_visibility_rules": [
+							"d6_present_d2"
+						]
+					},
+					{
+						// D2 past entrance
+						"map": "past",
+						"x": 114,
+						"y": 274,
+						"restrict_visibility_rules": [
+							"d6_present_d2"
+						]
+					},
+					{
+						// D3 entrance
+						"map": "present",
+						"x": 338,
+						"y": 369,
+						"restrict_visibility_rules": [
+							"d6_present_d3"
+						]
+					},
+					{
+						// D4 entrance
+						"map": "present",
+						"x": 114,
+						"y": 17,
+						"restrict_visibility_rules": [
+							"d6_present_d4"
+						]
+					},
+					{
+						// D5 entrance
+						"map": "present",
+						"x": 338,
+						"y": 17,
+						"restrict_visibility_rules": [
+							"d6_present_d5"
+						]
+					},
+					{
+						// D6 present entrance
+						"map": "present",
+						"x": 402,
+						"y": 114,
+						"restrict_visibility_rules": [
+							"d6_present_d6_present"
+						]
+					},
+					{
+						// D6 past entrance
+						"map": "past",
+						"x": 402,
+						"y": 114,
+						"restrict_visibility_rules": [
+							"d6_present_d6_past"
+						]
+					},
+					{
+						// D7 entrance
+						"map": "present",
+						"x": 17,
+						"y": 322,
+						"restrict_visibility_rules": [
+							"d6_present_d7"
+						]
+					},
+					{
+						// D8 entrance
+						"map": "past",
+						"x": 402,
+						"y": 178,
+						"restrict_visibility_rules": [
+							"d6_present_d8"
+						]
+					}
+				]
+			},
+		]
+	},
+	
+	{	
+		"name": "Rolling Ridge East (Past)",
+		"chest_unopened_img": "images/chest_past.png",
+		"chest_opened_img": "images/chestpastopen.png",
+		"color": "#ff7700",
+		"children": [
+			{
+				"name": "Check D6 Past Entrance",
+
+				"access_rules": [
+					"{$d6_past_access_normal}",
+					"{[$d6_past_access_normal], $d6_past_access_hard}",
+				],
+				"sections": [
+					{
+						"name": "D1: Spirit's Grave",
+						"hosted_item": "d1_from_d6_past",
+						"item_count": 0,
+						"visibility_rules": [
+							"d1_ent"
+						]
+					},
+					{
+						"name": "D2: Wing Dungeon",
+						"hosted_item": "d2_from_d6_past",
+						"item_count": 0,
+						"visibility_rules": [
+							"d2_ent"
+						]
+					},
+					{
+						"name": "D3: Moonlit Grotto",
+						"hosted_item": "d3_from_d6_past",
+						"item_count": 0,
+						"visibility_rules": [
+							"d3_ent"
+						]
+					},
+					{
+						"name": "D4: Skull Dungeon",
+						"hosted_item": "d4_from_d6_past",
+						"item_count": 0,
+						"visibility_rules": [
+							"d4_ent"
+						]
+					},
+					{
+						"name": "D5: Crown Dungeon",
+						"hosted_item": "d5_from_d6_past",
+						"item_count": 0,
+						"visibility_rules": [
+							"d5_ent"
+						]
+					},
+					{
+						"name": "D6: Past Mermaid's Cave",
+						"hosted_item": "d6_past_from_d6_past",
+						"item_count": 0,
+						"visibility_rules": [
+							"d6_past_ent"
+						]
+					},
+					{
+						"name": "D6: Present Mermaid's Cave",
+						"hosted_item": "d6_present_from_d6_past",
+						"item_count": 0,
+						"visibility_rules": [
+							"d6_present_ent"
+						]
+					},
+					{
+						"name": "D7: Jabu Jabu's Belly",
+						"hosted_item": "d7_from_d6_past",
+						"item_count": 0,
+						"visibility_rules": [
+							"d7_ent"
+						]
+					},
+					{
+						"name": "D8: Ancient Tomb",
+						"hosted_item": "d8_from_d6_past",
+						"item_count": 0,
+						"visibility_rules": [
+							"d8_ent"
+						]
+					},
+				],
+				"map_locations": [
+					{
+						// D6 past entrance
+						"map": "past",
+						"x": 402,
+						"y": 114,
+						"restrict_visibility_rules": [
+							"$check_d6_past_entrance_normal"
+						]
+					}
+				]
+			},
+			
+			{
+				"name": "Mermaid's Cave (Past)",
+				"access_rules": [
+					"$d6_past_shuffle",
+					"[$d6_past_shuffle], $d6_past_shuffle_hard",
+				],
+				"sections": [
+					{
+						"name": "Color room\nchest",
+						"access_rules": [
+							// Can get every single chest in D6 (both eras)
+							//"$d6clear_shuffle",
+							
+							"feather, $kill_gel",
+							"feather, $kill_gel_hard, [$kill_gel]"
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Right side\nWizzrobe chest",
+						"access_rules": [
+							// Can get every single chest in D6 (both eras)
+							//"$d6clear_shuffle",
+							
+							"bombs, $kill_normal",
+							"bombs, $kill_hard, [$kill_normal]",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Flooded room\nchest",
+						"access_rules": [
+							// Can get every single chest in D6 (both eras)
+							//"$d6clear_shuffle",
+							
+							"bombs, $use_seeds, emberseeds, flippers"
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Underwater Rope\nchest",
+						"access_rules": [
+							// Can get every single chest in D6 (both eras)
+							//"$d6clear_shuffle",
+							
+							"bombs, shooter, emberseeds, mermaidsuit",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "North candles\nchest",
+						"access_rules": [
+							// Can get every single chest in D6 (both eras)
+							//"$d6clear_shuffle",
+							
+							"shooter, emberseeds",
+							"satchel, emberseeds, scentseeds",
+							"satchel, emberseeds, feather",
+							"satchel, emberseeds, cane, bracelet",
+							"satchel, emberseeds, bombs, [shooter]",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Underwater chest\nbefore boss",
+						"access_rules": [
+							// Can get every single chest in D6 (both eras)
+							//"$d6clear_shuffle",
+							
+							"d6sk_past:1, bombs, $openD6wall, mermaidsuit",
+							"d6sk_past:1, bombs, $openD6wall_hard, [$openD6wall], mermaidsuit",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Underwater diamonds\nchest",
+						"access_rules": [
+							// Can get every single chest in D6 (both eras)
+							//"$d6clear_shuffle",
+							
+							"d6sk_past:1, bombs, $openD6wall, mermaidsuit, hook1",
+							"d6sk_past:1, bombs, $openD6wall_hard, [$openD6wall], mermaidsuit, hook1",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Octogon\nreward",
+						"access_rules": [
+							// Can get every single chest in D6 (both eras)
+							//"$d6clear_shuffle",
+							
+							"d6bk, d6sk_past:3, bombs, $openD6wall, mermaidsuit, hook1, shooter",
+							"d6bk, d6sk_past:3, bombs, $openD6wall_hard, [$openD6wall], mermaidsuit, hook1, shooter"
+						],
+						"item_count": 1,
+					},
+					{
+						"name": "Lonely\nPeak",
+						"access_rules": [
+							// Can get every single chest in D6 (both eras)
+							//"$d6clear_shuffle",
+							
+							"d6bk, d6sk_past:3, bombs, $openD6wall, mermaidsuit, hook1, shooter",
+							"d6bk, d6sk_past:3, bombs, $openD6wall_hard, [$openD6wall], mermaidsuit, hook1, shooter"
+						],
+						"item_count": 0,
+						"hosted_item": "d6"
+					},
+					
+					/*{
+						"name": "D6 past\nsmall keys",
+						"hosted_item": "d6sk_past",
+						"item_count": 0
+					},
+					{
+						"name": "D6 boss\nkey",
+						"item_count": 0,
+						"hosted_item": "d6bk"
+					},*/
+				],
+
+				"map_locations": [
+					{
+						// D1 entrance
+						"map": "present",
+						"x": 434,
+						"y": 274,
+						"restrict_visibility_rules": [
+							"d6_past_d1"
+						]
+					},
+					{
+						// D2 present entrance
+						"map": "present",
+						"x": 114,
+						"y": 274,
+						"restrict_visibility_rules": [
+							"d6_past_d2"
+						]
+					},
+					{
+						// D2 past entrance
+						"map": "past",
+						"x": 114,
+						"y": 274,
+						"restrict_visibility_rules": [
+							"d6_past_d2"
+						]
+					},
+					{
+						// D3 entrance
+						"map": "present",
+						"x": 338,
+						"y": 369,
+						"restrict_visibility_rules": [
+							"d6_past_d3"
+						]
+					},
+					{
+						// D4 entrance
+						"map": "present",
+						"x": 114,
+						"y": 17,
+						"restrict_visibility_rules": [
+							"d6_past_d4"
+						]
+					},
+					{
+						// D5 entrance
+						"map": "present",
+						"x": 338,
+						"y": 17,
+						"restrict_visibility_rules": [
+							"d6_past_d5"
+						]
+					},
+					{
+						// D6 present entrance
+						"map": "present",
+						"x": 402,
+						"y": 114,
+						"restrict_visibility_rules": [
+							"d6_past_d6_present"
+						]
+					},
+					{
+						// D6 past entrance
+						"map": "past",
+						"x": 402,
+						"y": 114,
+						"restrict_visibility_rules": [
+							"d6_past_d6_past"
+						]
+					},
+					{
+						// D7 entrance
+						"map": "present",
+						"x": 17,
+						"y": 322,
+						"restrict_visibility_rules": [
+							"d6_past_d7"
+						]
+					},
+					{
+						// D8 entrance
+						"map": "past",
+						"x": 402,
+						"y": 178,
+						"restrict_visibility_rules": [
+							"d6_past_d8"
+						]
+					}
+				]
+			},
+		]
+	},
+	
+	{	
+		"name": "Zora Seas",
+		"chest_unopened_img": "images/chest.png",
+		"chest_opened_img": "images/chestopen.png",
+		"color": "#0049bf",
+		"access_rules": [
+		],
+		"children": [
+			{
+				"name": "Check D7 Entrance",
+
+				"access_rules": [
+					"{$d7_access_normal}",
+					"{[$d7_access_normal], $d7_access_hard}",
+				],
+				"sections": [
+					{
+						"name": "D1: Spirit's Grave",
+						"hosted_item": "d1_from_d7",
+						"item_count": 0,
+						"visibility_rules": [
+							"d1_ent"
+						]
+					},
+					{
+						"name": "D2: Wing Dungeon",
+						"hosted_item": "d2_from_d7",
+						"item_count": 0,
+						"visibility_rules": [
+							"d2_ent"
+						]
+					},
+					{
+						"name": "D3: Moonlit Grotto",
+						"hosted_item": "d3_from_d7",
+						"item_count": 0,
+						"visibility_rules": [
+							"d3_ent"
+						]
+					},
+					{
+						"name": "D4: Skull Dungeon",
+						"hosted_item": "d4_from_d7",
+						"item_count": 0,
+						"visibility_rules": [
+							"d4_ent"
+						]
+					},
+					{
+						"name": "D5: Crown Dungeon",
+						"hosted_item": "d5_from_d7",
+						"item_count": 0,
+						"visibility_rules": [
+							"d5_ent"
+						]
+					},
+					{
+						"name": "D6: Past Mermaid's Cave",
+						"hosted_item": "d6_past_from_d7",
+						"item_count": 0,
+						"visibility_rules": [
+							"d6_past_ent"
+						]
+					},
+					{
+						"name": "D6: Present Mermaid's Cave",
+						"hosted_item": "d6_present_from_d7",
+						"item_count": 0,
+						"visibility_rules": [
+							"d6_present_ent"
+						]
+					},
+					{
+						"name": "D7: Jabu Jabu's Belly",
+						"hosted_item": "d7_from_d7",
+						"item_count": 0,
+						"visibility_rules": [
+							"d7_ent"
+						]
+					},
+					{
+						"name": "D8: Ancient Tomb",
+						"hosted_item": "d8_from_d7",
+						"item_count": 0,
+						"visibility_rules": [
+							"d8_ent"
+						]
+					},
+				],
+				"map_locations": [
+					{
+						// D7 entrance
+						"map": "present",
+						"x": 17,
+						"y": 322,
+						"restrict_visibility_rules": [
+							"$check_d7_entrance_normal"
+						]
+					}
+				]
+			},
+			
+			{
+				"name": "Jabu Jabu's Belly",
+				"access_rules": [
+					"$d7_shuffle",
+					"[$d7_shuffle], $d7_shuffle_hard",
+				],
+				"sections": [
+					{
+						"name": "Crab\nchest",
+						"access_rules": [
+							// Can get every single chest in D7
+							//"$d7clear",
+							
+							"$kill_underwater",
+							"$kill_underwater_hard, [$kill_underwater]",
+							"$drainD7, $kill_normal",
+							"$drainD7, $kill_hard, [$kill_normal]"
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Diamonds\ndrop",
+						"access_rules": [
+							// Can get every single chest in D7
+							//"$d7clear",
+							
+							"hook1"
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Spikes\nchest",
+						"access_rules": [
+							"mermaidsuit",
+							"$floodD7"
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Pots\nchest",
+						"access_rules": [
+							// Can get every single chest in D7
+							//"$d7clear",
+							
+							"[d7sk:7], $drainD7, hook1"
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Boxed\nchest",
+						"access_rules": [
+							// Can get every single chest in D7
+							//"$d7clear",
+							
+							"$drainD7"
+						],
+						"item_count": 1
+					},
+					{
+						"name": "East wing\nMoldorm chest",
+						"access_rules": [
+							// Can get every single chest in D7
+							//"$d7clear",
+							
+							"hook2, mermaidsuit",
+							"hook2, $floodD7",
+							"$kill_moldorm, $drainD7, cane, feather",
+							"$kill_moldorm, $drainD7, cane, flippers",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Chest before\nmidboss",
+						"access_rules": [
+							// Can get every single chest in D7
+							//"$d7clear",
+							
+							"hook2",
+							"$drainD7, cane, feather",
+							"$drainD7, cane, flippers",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Chest after\nmidboss",
+						"access_rules": [
+							// Can get every single chest in D7
+							//"$d7clear",
+							
+							"flippers, d7sk:7, hook2, feather, sword1",
+							"flippers, d7sk:1, [d7sk:7], hook2, feather, sword1",
+							"flippers, d7sk:7, hook2, feather, boomerang",
+							"flippers, d7sk:1, [d7sk:7], hook2, feather, boomerang",
+							"flippers, d7sk:7, hook2, feather, shooter, scentseeds",
+							"flippers, d7sk:1, [d7sk:7], hook2, feather, shooter, scentseeds",
+							
+							"flippers, d7sk:7, $drainD7, cane, feather, sword1",
+							"flippers, d7sk:1, [d7sk:7], $drainD7, cane, feather, sword1",
+							"flippers, d7sk:7, $drainD7, cane, feather, boomerang",
+							"flippers, d7sk:1, [d7sk:7], $drainD7, cane, feather, boomerang",
+							"flippers, d7sk:7, $drainD7, cane, feather, shooter, scentseeds",
+							"flippers, d7sk:1, [d7sk:7], $drainD7, cane, feather, shooter, scentseeds",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Flower\nroom",
+						"access_rules": [
+							// Can get every single chest in D7
+							//"$d7clear",
+							
+							"flippers, hook2, feather",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Cane + hook\npuzzle chest",
+						"access_rules": [
+							// Can get every single chest in D7
+							//"$d7clear",
+							
+							"$drainD7, cane, hook2"
+						],
+						"item_count": 1
+					},
+					{
+						"name": "West wing\nchest",
+						"access_rules": [
+							// Can get every single chest in D7
+							//"$d7clear",
+							
+							"$floodD7, hook2"
+						],
+						"item_count": 1
+					},
+					{
+						"name": "3F SE terrace\nchest",
+						"access_rules": [
+							// Can get every single chest in D7
+							//"$d7clear",
+							
+							"$floodD7"
+						],
+						"item_count": 1
+					},
+					{
+						"name": "3F past one\nkey door",
+						"access_rules": [
+							// Can get every single chest in D7
+							//"$d7clear",
+							
+							"d7sk:5, $drainD7, hook2",
+							"d7sk:3, [d7sk:5], $drainD7, hook2"
+						],
+						"item_count": 1
+					},
+					{
+						"name": "3F past all\nkey doors",
+						"access_rules": [
+							// Can get every single chest in D7
+							//"$d7clear",
+							
+							"d7sk:7, $floodD7",
+							"d7sk:5, [d7sk:7], $floodD7",
+						],
+						"item_count": 1
+					},
+					
+					{
+						"name": "Plasmarine\nreward",
+						"access_rules": [
+							// Can get every single chest in D7
+							//"$d7clear",
+							
+							"d7bk, $floodD7"
+						],
+						"item_count": 1,
+					},
+					{
+						"name": "Rolling\nSea",
+						"access_rules": [
+							// Can get every single chest in D7
+							//"$d7clear",
+							
+							"d7bk, $floodD7"
+						],
+						"item_count": 0,
+						"hosted_item": "d7"
+					},
+					
+					/*{
+						"name": "D7\nsmall keys",
+						"hosted_item": "d7sk",
+						"item_count": 0
+					},
+					{
+						"name": "D7 boss\nkey",
+						"item_count": 0,
+						"hosted_item": "d7bk"
+					},*/
+				],
+
+				"map_locations": [
+					{
+						// D1 entrance
+						"map": "present",
+						"x": 434,
+						"y": 274,
+						"restrict_visibility_rules": [
+							"d7_d1"
+						]
+					},
+					{
+						// D2 present entrance
+						"map": "present",
+						"x": 114,
+						"y": 274,
+						"restrict_visibility_rules": [
+							"d7_d2"
+						]
+					},
+					{
+						// D2 past entrance
+						"map": "past",
+						"x": 114,
+						"y": 274,
+						"restrict_visibility_rules": [
+							"d7_d2"
+						]
+					},
+					{
+						// D3 entrance
+						"map": "present",
+						"x": 338,
+						"y": 369,
+						"restrict_visibility_rules": [
+							"d7_d3"
+						]
+					},
+					{
+						// D4 entrance
+						"map": "present",
+						"x": 114,
+						"y": 17,
+						"restrict_visibility_rules": [
+							"d7_d4"
+						]
+					},
+					{
+						// D5 entrance
+						"map": "present",
+						"x": 338,
+						"y": 17,
+						"restrict_visibility_rules": [
+							"d7_d5"
+						]
+					},
+					{
+						// D6 present entrance
+						"map": "present",
+						"x": 402,
+						"y": 114,
+						"restrict_visibility_rules": [
+							"d7_d6_present"
+						]
+					},
+					{
+						// D6 past entrance
+						"map": "past",
+						"x": 402,
+						"y": 114,
+						"restrict_visibility_rules": [
+							"d7_d6_past"
+						]
+					},
+					{
+						// D7 entrance
+						"map": "present",
+						"x": 17,
+						"y": 322,
+						"restrict_visibility_rules": [
+							"d7_d7"
+						]
+					},
+					{
+						// D8 entrance
+						"map": "past",
+						"x": 402,
+						"y": 178,
+						"restrict_visibility_rules": [
+							"d7_d8"
+						]
+					}
+				]
+			},
+		]
+	},
+	
+	{	
+		"name": "Sea of Storms/No Return",
+		"chest_unopened_img": "images/chest_past.png",
+		"chest_opened_img": "images/chestpastopen.png",
+		"color": "#ff7700",
+		"children": [
+			{
+				"name": "Check D8 Entrance",
+
+				"access_rules": [
+					"{$d8_access_normal}",
+					"{[$d8_access_normal], $d8_access_hard}",
+				],
+				"sections": [
+					{
+						"name": "D1: Spirit's Grave",
+						"hosted_item": "d1_from_d8",
+						"item_count": 0,
+						"visibility_rules": [
+							"d1_ent"
+						]
+					},
+					{
+						"name": "D2: Wing Dungeon",
+						"hosted_item": "d2_from_d8",
+						"item_count": 0,
+						"visibility_rules": [
+							"d2_ent"
+						]
+					},
+					{
+						"name": "D3: Moonlit Grotto",
+						"hosted_item": "d3_from_d8",
+						"item_count": 0,
+						"visibility_rules": [
+							"d3_ent"
+						]
+					},
+					{
+						"name": "D4: Skull Dungeon",
+						"hosted_item": "d4_from_d8",
+						"item_count": 0,
+						"visibility_rules": [
+							"d4_ent"
+						]
+					},
+					{
+						"name": "D5: Crown Dungeon",
+						"hosted_item": "d5_from_d8",
+						"item_count": 0,
+						"visibility_rules": [
+							"d5_ent"
+						]
+					},
+					{
+						"name": "D6: Past Mermaid's Cave",
+						"hosted_item": "d6_past_from_d8",
+						"item_count": 0,
+						"visibility_rules": [
+							"d6_past_ent"
+						]
+					},
+					{
+						"name": "D6: Present Mermaid's Cave",
+						"hosted_item": "d6_present_from_d8",
+						"item_count": 0,
+						"visibility_rules": [
+							"d6_present_ent"
+						]
+					},
+					{
+						"name": "D7: Jabu Jabu's Belly",
+						"hosted_item": "d7_from_d8",
+						"item_count": 0,
+						"visibility_rules": [
+							"d7_ent"
+						]
+					},
+					{
+						"name": "D8: Ancient Tomb",
+						"hosted_item": "d8_from_d8",
+						"item_count": 0,
+						"visibility_rules": [
+							"d8_ent"
+						]
+					},
+				],
+				"map_locations": [
+					{
+						// D8 entrance
+						"map": "past",
+						"x": 402,
+						"y": 178,
+						"restrict_visibility_rules": [
+							"$check_d8_entrance_normal"
+						]
+					}
+				]
+			},
+			
+			{
+				"name": "Ancient Tomb",
+				"access_rules": [
+					"$d8_shuffle",
+					"[$d8_shuffle], $d8_shuffle_hard",
+				],
+				"sections": [
+					{
+						"name": "Cracked blocks\nchest",
+						"access_rules": [
+							"bombs"
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Ghini stairs\nchest",
+						"access_rules": [
+							// Can get every single chest in D8
+							//"$d8clear",
+							
+							"d8sk:1, hook1, shooter, emberseeds, cane",
+							"d8sk:1, hook1, shooter, [emberseeds], mysteryseeds, cane",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "B1F NW\nchest",
+						"access_rules": [
+							// Can get every single chest in D8
+							//"$d8clear",
+							
+							"d8sk:1, hook1, shooter, emberseeds, cane",
+							"d8sk:1, hook1, shooter, [emberseeds], mysteryseeds, cane",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Blue pegs\nchest",
+						"access_rules": [
+							// Can get every single chest in D8
+							//"$d8clear",
+							
+							"d8sk:2, hook1, shooter, emberseeds, cane",
+							"d8sk:2, hook1, shooter, [emberseeds], mysteryseeds, cane",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Blade trap\nchest",
+						"access_rules": [
+							// Can get every single chest in D8
+							//"$d8clear",
+							
+							"d8sk:2, hook1, shooter, emberseeds, cane",
+							"d8sk:2, hook1, shooter, [emberseeds], mysteryseeds, cane",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Stalfos\nitem",
+						"access_rules": [
+							// Can get every single chest in D8
+							//"$d8clear",
+							
+							"d8sk:2, hook1, shooter, emberseeds, cane",
+							"d8sk:2, hook1, shooter, [emberseeds], mysteryseeds, cane",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Floor puzzle\nreward",
+						"access_rules": [
+							// Can get every single chest in D8
+							//"$d8clear",
+							
+							"d8sk:5, hook1, shooter, emberseeds, cane",
+							"d8sk:5, hook1, shooter, [emberseeds], mysteryseeds, cane",
+							"d8sk:3, [d8sk:5], hook1, shooter, emberseeds, cane",
+							"d8sk:3, [d8sk:5], hook1, shooter, [emberseeds], mysteryseeds, cane",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Sarcophagus\nchest",
+						"access_rules": [
+							// Can get every single chest in D8
+							//"$d8clear",
+							
+							"d8sk:2, hook1, shooter, emberseeds, powerglove, cane",
+							"d8sk:2, hook1, shooter, [emberseeds], mysteryseeds, powerglove, cane",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "B2F Maze\nchest",
+						"access_rules": [
+							// Can get every single chest in D8
+							//"$d8clear",
+							
+							"d8sk:4, hook1, shooter, emberseeds, sword1, cane",
+							"d8sk:4, hook1, shooter, [emberseeds], mysteryseeds, sword1, cane",
+							"d8sk:3, [d8sk:4], hook1, shooter, emberseeds, sword1, cane",
+							"d8sk:3, [d8sk:4], hook1, shooter, [emberseeds], mysteryseeds, sword1, cane",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Lowest floor\ndiamonds chest",
+						"access_rules": [
+							// Can get every single chest in D8
+							//"$d8clear",
+							
+							"d8sk:4, hook1, shooter, emberseeds, sword1, powerglove, cane",
+							"d8sk:4, hook1, shooter, [emberseeds], mysteryseeds, sword1, powerglove, cane",
+							"d8sk:3, [d8sk:4], hook1, shooter, emberseeds, sword1, powerglove, cane",
+							"d8sk:3, [d8sk:4], hook1, shooter, [emberseeds], mysteryseeds, sword1, powerglove, cane",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Tile room\nchest",
+						"access_rules": [
+							// Can get every single chest in D8
+							//"$d8clear",
+							
+							"d8sk:4, hook1, shooter, emberseeds, sword1, feather, powerglove, cane",
+							"d8sk:4, hook1, shooter, [emberseeds], mysteryseeds, sword1, feather, powerglove, cane",
+							"d8sk:3, [d8sk:4], hook1, shooter, emberseeds, sword1, feather, powerglove, cane",
+							"d8sk:3, [d8sk:4], hook1, shooter, [emberseeds], mysteryseeds, sword1, feather, powerglove, cane",
+						],
+						"item_count": 1
+					},
+					
+					{
+						"name": "NW slate\nchest",
+						"access_rules": [
+							// Can get every single chest in D8
+							//"$d8clear",
+							
+							"d8sk:4, hook1, shooter, emberseeds, sword1, cane",
+							"d8sk:4, hook1, shooter, [emberseeds], mysteryseeds, sword1, cane",
+							"d8sk:3, [d8sk:4], hook1, shooter, emberseeds, sword1, cane",
+							"d8sk:3, [d8sk:4], hook1, shooter, [emberseeds], mysteryseeds, sword1, cane",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "SW slate\nchest",
+						"access_rules": [
+							// Can get every single chest in D8
+							//"$d8clear",
+							
+							"d8sk:5, hook1, shooter, emberseeds, sword1, bracelet, cane",
+							"d8sk:5, hook1, shooter, [emberseeds], mysteryseeds, sword1, bracelet, cane",
+							"d8sk:4, [d8sk:5], hook1, shooter, emberseeds, sword1, bracelet, cane",
+							"d8sk:4, [d8sk:5], hook1, shooter, [emberseeds], mysteryseeds, sword1, bracelet, cane",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "SE slate\nchest",
+						"access_rules": [
+							// Can get every single chest in D8
+							//"$d8clear",
+							
+							"d8sk:4, hook1, shooter, emberseeds, sword1, feather, powerglove, cane",
+							"d8sk:4, hook1, shooter, [emberseeds], mysteryseeds, sword1, feather, powerglove, cane",
+							"d8sk:3, [d8sk:4], hook1, shooter, emberseeds, sword1, feather, powerglove, cane",
+							"d8sk:3, [d8sk:4], hook1, shooter, [emberseeds], mysteryseeds, sword1, feather, powerglove, cane",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "NE slate\nchest",
+						"access_rules": [
+							// Can get every single chest in D8
+							//"$d8clear",
+							
+							"d8sk:4, hook1, shooter, emberseeds, sword1, feather, flippers, cane",
+							"d8sk:3, [d8sk:4], hook1, shooter, emberseeds, sword1, feather, flippers, cane",
+						],
+						"item_count": 1
+					},
+					
+					{
+						"name": "Ramrock\nreward",
+						"access_rules": [
+							// Can get every single chest in D8
+							//"$d8clear",
+							
+							"d8bk, d8sk:4, slates:4, hook1, shooter, emberseeds, scentseeds, bombs, powerglove, sword1, feather, cane",
+							"d8bk, d8sk:4, slates:4, hook1, shooter, [emberseeds], mysteryseeds, scentseeds, bombs, powerglove, sword1, feather, cane",
+							"d8bk, d8sk:3, [d8sk:4], slates:4, hook1, shooter, emberseeds, scentseeds, bombs, powerglove, sword1, feather, cane",
+							"d8bk, d8sk:3, [d8sk:4], slates:4, hook1, shooter, [emberseeds], mysteryseeds, scentseeds, bombs, powerglove, sword1, feather, cane",
+						],
+						"item_count": 1,
+					},
+					{
+						"name": "Falling\nStar",
+						"access_rules": [
+							// Can get every single chest in D8
+							//"$d8clear",
+							
+							"d8bk, d8sk:4, slates:4, hook1, shooter, emberseeds, scentseeds, bombs, powerglove, sword1, feather, cane",
+							"d8bk, d8sk:4, slates:4, hook1, shooter, [emberseeds], mysteryseeds, scentseeds, bombs, powerglove, sword1, feather, cane",
+							"d8bk, d8sk:3, [d8sk:4], slates:4, hook1, shooter, emberseeds, scentseeds, bombs, powerglove, sword1, feather, cane",
+							"d8bk, d8sk:3, [d8sk:4], slates:4, hook1, shooter, [emberseeds], mysteryseeds, scentseeds, bombs, powerglove, sword1, feather, cane",
+						],
+						"item_count": 0,
+						"hosted_item": "d8"
+					},
+					
+					/*{
+						"name": "D8\nsmall keys",
+						"hosted_item": "d8sk",
+						"item_count": 0
+					},
+					{
+						"name": "D8\nslates",
+						"hosted_item": "slates",
+						"item_count": 0
+					},
+					{
+						"name": "D8 boss\nkey",
+						"item_count": 0,
+						"hosted_item": "d8bk"
+					},*/
+				],
+
+				"map_locations": [
+					{
+						// D1 entrance
+						"map": "present",
+						"x": 434,
+						"y": 274,
+						"restrict_visibility_rules": [
+							"d8_d1"
+						]
+					},
+					{
+						// D2 present entrance
+						"map": "present",
+						"x": 114,
+						"y": 274,
+						"restrict_visibility_rules": [
+							"d8_d2"
+						]
+					},
+					{
+						// D2 past entrance
+						"map": "past",
+						"x": 114,
+						"y": 274,
+						"restrict_visibility_rules": [
+							"d8_d2"
+						]
+					},
+					{
+						// D3 entrance
+						"map": "present",
+						"x": 338,
+						"y": 369,
+						"restrict_visibility_rules": [
+							"d8_d3"
+						]
+					},
+					{
+						// D4 entrance
+						"map": "present",
+						"x": 114,
+						"y": 17,
+						"restrict_visibility_rules": [
+							"d8_d4"
+						]
+					},
+					{
+						// D5 entrance
+						"map": "present",
+						"x": 338,
+						"y": 17,
+						"restrict_visibility_rules": [
+							"d8_d5"
+						]
+					},
+					{
+						// D6 present entrance
+						"map": "present",
+						"x": 402,
+						"y": 114,
+						"restrict_visibility_rules": [
+							"d8_d6_present"
+						]
+					},
+					{
+						// D6 past entrance
+						"map": "past",
+						"x": 402,
+						"y": 114,
+						"restrict_visibility_rules": [
+							"d8_d6_past"
+						]
+					},
+					{
+						// D7 entrance
+						"map": "present",
+						"x": 17,
+						"y": 322,
+						"restrict_visibility_rules": [
+							"d8_d7"
+						]
+					},
+					{
+						// D8 entrance
+						"map": "past",
+						"x": 402,
+						"y": 178,
+						"restrict_visibility_rules": [
+							"d8_d8"
+						]
+					}
+				]
+			},
+			
+			{
+				"name": "Get scent seeds in Ramrock's room",
+				"access_rules": [
+					"$d8_shuffle",
+					"[$d8_shuffle], $d8_shuffle_hard",
+				],
+				"sections": [
+				  {
+					"name": "Respawnable bushes",
+					"access_rules": [
+						"d8bk, d8sk:4, slates:4, hook1, shooter, emberseeds, [scentseeds], bombs, powerglove, sword1, feather, cane",
+						"d8bk, d8sk:4, slates:4, hook1, shooter, [emberseeds], mysteryseeds, [scentseeds], bombs, powerglove, sword1, feather, cane",
+						"d8bk, d8sk:3, [d8sk:4], slates:4, hook1, shooter, emberseeds, [scentseeds], bombs, powerglove, sword1, feather, cane",
+						"d8bk, d8sk:3, [d8sk:4], slates:4, hook1, shooter, [emberseeds], mysteryseeds, [scentseeds], bombs, powerglove, sword1, feather, cane",
+					],
+					"item_count": 0,
+					"hosted_item": "scentseeds"
+				  },
+				],
+				"map_locations": [
+					{
+						// D1 entrance
+						"map": "present",
+						"x": 418,
+						"y": 258,
+						"restrict_visibility_rules": [
+							"d8_d1"
+						]
+					},
+					{
+						// D2 present entrance
+						"map": "present",
+						"x": 98,
+						"y": 258,
+						"restrict_visibility_rules": [
+							"d8_d2"
+						]
+					},
+					{
+						// D2 past entrance
+						"map": "past",
+						"x": 98,
+						"y": 258,
+						"restrict_visibility_rules": [
+							"d8_d2"
+						]
+					},
+					{
+						// D3 entrance
+						"map": "present",
+						"x": 322,
+						"y": 353,
+						"restrict_visibility_rules": [
+							"d8_d3"
+						]
+					},
+					{
+						// D4 entrance
+						"map": "present",
+						"x": 130,
+						"y": 32,
+						"restrict_visibility_rules": [
+							"d8_d4"
+						]
+					},
+					{
+						// D5 entrance
+						"map": "present",
+						"x": 354,
+						"y": 32,
+						"restrict_visibility_rules": [
+							"d8_d5"
+						]
+					},
+					{
+						// D6 present entrance
+						"map": "present",
+						"x": 384,
+						"y": 130,
+						"restrict_visibility_rules": [
+							"d8_d6_present"
+						]
+					},
+					{
+						// D6 past entrance
+						"map": "past",
+						"x": 384,
+						"y": 130,
+						"restrict_visibility_rules": [
+							"d8_d6_past"
+						]
+					},
+					{
+						// D7 entrance
+						"map": "present",
+						"x": 33,
+						"y": 306,
+						"restrict_visibility_rules": [
+							"d8_d7"
+						]
+					},
+					{
+						// D8 entrance
+						"map": "past",
+						"x": 384,
+						"y": 162,
+						"restrict_visibility_rules": [
+							"d8_d8"
+						]
+					}
+				]
+			},
+		]
+	},
+]

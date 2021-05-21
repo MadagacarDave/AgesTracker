@@ -1,0 +1,2045 @@
+﻿[
+	/// USABLE ITEMS ///
+
+  // Swords
+  // Master Sword is not randomized yet
+  {
+  "name": "Sword",
+  "type": "progressive",
+  "stages": [
+	  {
+		"img": "images/sword1.png",
+		"codes": "sword1, herosword"
+	  },
+	  {
+		"img": "images/sword2.png",
+		"codes": "sword2, noblesword"
+	  },
+	  {
+		"img": "images/sword3.png",
+		"codes": "sword3, mastersword"
+	  }
+	]
+  },
+  
+  // Shields
+  // Mirror Shield is not randomized yet
+  {
+  "name": "Shield",
+  "type": "progressive",
+  "stages": [
+	  {
+		"img": "images/shield1.png",
+		"codes": "shield1, shield"
+	  },
+	  {
+		"img": "images/shield2.png",
+		"codes": "shield2, ironshield"
+	  },
+	  {
+		"img": "images/shield3.png",
+		"codes": "shield3, mirrorshield"
+	  }
+	]
+  },
+  
+  // Power Bracelet
+  {
+  "name": "Strength upgrades",
+  "type": "progressive",
+  "stages": [
+	  {
+		"img": "images/strength1.png",
+		"codes": "bracelet, strength1"
+	  },
+	  {
+		"img": "images/strength2.png",
+		"codes": "powerglove, strength2"
+	  },
+	]
+  },
+  
+  // Feather
+  {
+    "name": "Roc's feather",
+    "type": "toggle",
+    "img": "images/feather1.png",
+    "codes": "feather, rocfeather"
+  },
+  
+  // Seed Shooter
+  {
+    "name": "Seed Shooter",
+    "type": "toggle",
+    "img": "images/shooter.png",
+    "codes": "shooter, seedshooter"
+  },
+  
+  // Switch Hook
+  {
+	  "name": "Switch Hook",
+	  "type": "progressive",
+	  "stages": [
+	  {
+		"img": "images/hook1.png",
+		"codes": "hook1, switchhook"
+	  },
+	  {
+		"img": "images/hook2.png",
+		"codes": "hook2, longhook"
+	  },
+	]
+  },
+  
+  // Cane of Somaria
+  {
+	"name": "Cane of Somaria",
+	"type": "toggle",
+	"img": "images/cane.png",
+	"codes": "cane, somaria"
+  },
+  
+  // Boomerang
+  {
+	"name": "Boomerang",
+	"type": "toggle",
+	"img": "images/rang1.png",
+	"codes": "boomerang"
+  },
+  
+  // Shovel
+  {
+    "name": "Shovel",
+    "type": "toggle",
+    "img": "images/shovel.png",
+    "codes": "shovel"
+  },
+  
+  // Flute
+  {
+  "name": "Flute",
+  "type": "progressive",
+  "stages": [
+	  {
+		"img": "images/flute1.png",
+		"codes": "flute",
+		"inherit_codes": false
+	  },
+	  {
+		"img": "images/flute3.png",
+		"codes": "flute, ricky, rickyflute",
+		"inherit_codes": false
+	  },
+	  {
+		"img": "images/flute4.png",
+		"codes": "flute, dimitri, dimitriflute",
+		"inherit_codes": false
+	  },
+	  {
+		"img": "images/flute2.png",
+		"codes": "flute, moosh, mooshflute",
+		"inherit_codes": false
+	  }
+	]
+  },
+  
+  // Harp + songs
+  {
+  "name": "Harp",
+  "type": "progressive",
+  "allow_disabled": false,
+  "stages": [
+	  {
+		"img": "images/harp.png",
+		"codes": "harp",
+		"img_mods": "@disabled",
+	  },
+	  {
+		"img": "images/song_echos.png",
+		"codes": "echoes, song1",
+	  },
+	  {
+		"img": "images/song_currents.png",
+		"codes": "currents, song2",
+	  },
+	  {
+		"img": "images/song_ages.png",
+		"codes": "ages, song3",
+	  },
+	]
+  },
+  
+  // Generic flute
+  {
+    "name": "Normal flute",
+    "type": "toggle",
+    "img": "images/flute1.png",
+    "codes": "flute_generic"
+  },
+  
+  // Seed Satchel
+  {
+    "name": "Seed Satchel",
+    "type": "toggle",
+    "img": "images/satchel.png",
+    "codes": "satchel, seedsatchel"
+  },
+  
+  // Bombs
+  {
+    "name": "Bombs",
+    "type": "toggle",
+    "img": "images/bomb.png",
+    "codes": "bombs"
+  },
+  
+  
+  /// PROGRESS ITEMS (chronological) ///
+  
+  // Graveyard Key
+  {
+    "name": "Graveyard Key",
+    "type": "toggle",
+    "img": "images/keygraveyard.png",
+    "codes": "d1key, gravekey"
+  },
+  
+  // Flippers
+  {
+    "name": "Flippers",
+    "type": "progressive",
+	"stages": [
+		{
+			"img": "images/flippers.png",
+			"codes": "flippers"
+		},
+		{
+			"img": "images/mermaidsuit.png",
+			"codes": "mermaidsuit"
+		},
+	]
+  },
+  
+  // Cheval Rope
+  {
+    "name": "Cheval Rope",
+    "type": "toggle",
+    "img": "images/rope.png",
+    "codes": "rope"
+  },
+  
+  // Ricky's Gloves
+  {
+    "name": "Ricky's Glove",
+    "type": "toggle",
+    "img": "images/rickygloves.png",
+    "codes": "rickygloves"
+  },
+  
+  // Island Chart
+  {
+    "name": "Island Chart",
+    "type": "toggle",
+    "img": "images/chart.png",
+    "codes": "chart"
+  },
+  
+  
+  // Scent Seedling
+  {
+    "name": "Scent Seedling",
+    "type": "toggle",
+    "img": "images/seedling.png",
+    "codes": "seedling"
+  },
+  // Planting the seedling
+  // For a location story progress check
+  {
+    "name": "Crescent Island tree",
+    "type": "toggle",
+    "img": "images/scenttree.png",
+    "codes": "crescenttree"
+  },
+  
+  // WORKERS
+  // Only for map position purposes
+  {
+    "name": "Carpenter 1",
+    "type": "toggle",
+    "img": "images/carpenter.png",
+    "codes": "carpenter1"
+  },
+  {
+    "name": "Carpenter 2",
+    "type": "toggle",
+    "img": "images/carpenter.png",
+    "codes": "carpenter2"
+  },
+  {
+    "name": "Carpenter 3",
+    "type": "toggle",
+    "img": "images/carpenter.png",
+    "codes": "carpenter3"
+  },
+  
+  // Tuni Nut
+  {
+  "name": "Tuni Nut",
+  "type": "progressive",
+  "stages": [
+	  {
+		"img": "images/tuninut.png",
+		"codes": "tuninut",
+	  },
+	  {
+		"img": "images/tuninut_repaired.png",
+		"codes": "repairednut",
+	  },
+	]
+  },
+  
+  // Bomb Flower
+  {
+    "name": "Bomb Flower",
+    "type": "toggle",
+    "img": "images/bombflower.png",
+    "codes": "bombflower"
+  },
+  
+  // Crown Key
+  {
+    "name": "Crown Key",
+    "type": "toggle",
+    "img": "images/keycrown.png",
+    "codes": "d5key, crownkey"
+  },
+  
+  // Goron Emblem
+  {
+    "name": "Goron Emblem",
+    "type": "toggle",
+    "img": "images/emblem.png",
+    "codes": "emblem"
+  },
+  
+  // Rock Brisket
+  {
+    "name": "Rock Brisket",
+    "type": "toggle",
+    "img": "images/sirloin.png",
+    "codes": "brisket"
+  },
+  
+  // Lava Juice
+  {
+    "name": "Lava Juice",
+    "type": "toggle",
+    "img": "images/lavajuice.png",
+    "codes": "lavajuice"
+  },
+  
+  // Goron Vase
+  {
+    "name": "Goron Vase",
+    "type": "toggle",
+    "img": "images/vase.png",
+    "codes": "vase"
+  },
+  
+  // Goronade
+  {
+    "name": "Goronade",
+    "type": "toggle",
+    "img": "images/goronade.png",
+    "codes": "goronade"
+  },
+  
+  // D6 Key (present)
+  {
+    "name": "Old Mermaid Key",
+    "type": "toggle",
+    "img": "images/keymermaid_old.png",
+    "codes": "d6keyold"
+  },
+  
+  // Letter of Introduction
+  {
+    "name": "Letter of Introduction",
+    "type": "toggle",
+    "img": "images/letter.png",
+    "codes": "letter"
+  },
+  
+  // D6 Key (past)
+  {
+    "name": "Mermaid Key",
+    "type": "toggle",
+    "img": "images/keymermaid.png",
+    "codes": "d6key"
+  },
+  
+  // Library Key 
+  {
+    "name": "Library Key",
+    "type": "toggle",
+    "img": "images/keylibrary.png",
+    "codes": "librarykey"
+  },
+  
+  // Book of Seals 
+  {
+    "name": "Book of Seals",
+    "type": "toggle",
+    "img": "images/book.png",
+    "codes": "book"
+  },
+  
+  // Fairy Powder
+  {
+    "name": "Fairy Powder",
+    "type": "toggle",
+    "img": "images/powder.png",
+    "codes": "powder"
+  },
+  // Using the powder
+  // For a location story progress check
+  {
+    "name": "Fairy Queen",
+    "type": "toggle",
+    "img": "images/greatfairy.png",
+    "codes": "cleanseas"
+  },
+  // King's permision
+  // For a location story progress check
+  {
+    "name": "King Zora's permision",
+    "type": "toggle",
+    "img": "images/kingzora.png",
+    "codes": "enterjabu"
+  },
+  
+  // Zora Scale
+  {
+    "name": "Zora Scale",
+    "type": "toggle",
+    "img": "images/zorascale.png",
+    "codes": "zorascale"
+  },
+  
+  // Tokay Eyeball
+  {
+    "name": "Tokay Eyeball",
+    "type": "toggle",
+    "img": "images/eyeball.png",
+    "codes": "eyeball"
+  },
+  
+  /// EXPENDABLES ///
+  {
+    "name": "Magic Potion",
+    "type": "toggle",
+    "img": "images/potion.png",
+    "codes": "potion, magicpotion"
+  },
+
+  /// RUPEES ///
+  {
+    "name": "Rupees",
+    "type": "consumable",
+    "img": "images/key.png",
+    "codes": "rupees",
+    "max_quantity": 999
+  },
+
+  /// SEEDS ///
+  
+  // Ember
+  {
+    "name": "Ember Seeds",
+    "type": "toggle",
+    "img": "images/seedember.png",
+    "codes": "emberseeds"
+  },
+  
+  // Mystery
+  {
+    "name": "Mystery Seeds",
+    "type": "toggle",
+    "img": "images/seedmystery.png",
+    "codes": "mysteryseeds"
+  },
+  
+  // Scent
+  {
+    "name": "Scent Seeds",
+    "type": "toggle",
+    "img": "images/seedscent.png",
+    "codes": "scentseeds"
+  },
+  
+  // Pegasus
+  {
+    "name": "Pegasus Seeds",
+    "type": "toggle",
+    "img": "images/seedpegasus.png",
+    "codes": "pegasusseeds"
+  },
+  
+  // Gale
+  {
+    "name": "Gale Seeds",
+    "type": "toggle",
+    "img": "images/seedgale.png",
+    "codes": "galeseeds"
+  },
+  
+  /// DUNGEONS ///
+  
+  // D1
+  {
+    "name": "D1",
+    "type": "toggle",
+    "img": "images/D1.png",
+    "codes": "d1, gnarledroot"
+  },
+  {
+    "name": "D1 Boss Key",
+    "type": "toggle",
+    "img": "images/keyboss.png",
+    "codes": "d1bk"
+  },
+  {
+    "name": "D1 Small Keys",
+    "type": "consumable",
+    "img": "images/key.png",
+    "codes": "d1sk",
+    "max_quantity": 3
+  },
+  {
+    "name": "D1 items",
+    "type": "progressive",
+	"allow_disabled": false,
+	"stages": [
+		{
+			"img": "images/chests5d.png",
+			"codes": "d1chests",
+		},
+		{
+			"img": "images/chests4d.png",
+		},
+		{
+			"img": "images/chests3d.png",
+		},
+		{
+			"img": "images/chests2d.png",
+		},
+		{
+			"img": "images/chests1d.png",
+		},
+		{
+			"img": "images/chests0d.png",
+		},
+	]
+  },
+  
+  // D2
+  {
+    "name": "D2",
+    "type": "toggle",
+    "img": "images/D2.png",
+    "codes": "d2, snakeremains"
+  },
+  {
+    "name": "D2 Boss Key",
+    "type": "toggle",
+    "img": "images/keyboss.png",
+    "codes": "d2bk"
+  },
+  {
+    "name": "D2 Small Keys",
+    "type": "consumable",
+    "img": "images/key.png",
+    "codes": "d2sk",
+    "max_quantity": 5
+  },
+  {
+    "name": "D2 items", 
+    "type": "progressive",
+	"allow_disabled": false,
+	"stages": [
+		{
+			"img": "images/chests4d.png",
+			"codes": "d2chests",
+		},
+		{
+			"img": "images/chests3d.png",
+		},
+		{
+			"img": "images/chests2d.png",
+		},
+		{
+			"img": "images/chests1d.png",
+		},
+		{
+			"img": "images/chests0d.png",
+		},
+	]
+  },
+  
+  // D3
+  {
+    "name": "D3",
+    "type": "toggle",
+    "img": "images/D3.png",
+    "codes": "d3, poisonmoth"
+  },
+  {
+    "name": "D3 Boss Key",
+    "type": "toggle",
+    "img": "images/keyboss.png",
+    "codes": "d3bk"
+  },
+  {
+    "name": "D3 Small Keys",
+    "type": "consumable",
+    "img": "images/key.png",
+    "codes": "d3sk",
+    "max_quantity": 4
+  },
+  {
+    "name": "D3 items", // TODO
+    "type": "progressive",
+	"allow_disabled": false,
+	"stages": [
+		{
+			"img": "images/chests6r.png",
+			"codes": "d3chests",
+		},
+		{
+			"img": "images/chests5r.png",
+		},
+		{
+			"img": "images/chests4r.png",
+		},
+		{
+			"img": "images/chests3r.png",
+		},
+		{
+			"img": "images/chests2r.png",
+		},
+		{
+			"img": "images/chests1r.png",
+		},
+		{
+			"img": "images/chests0r.png",
+		},
+	]
+  },
+  
+  // D4
+  {
+    "name": "D4",
+    "type": "toggle",
+    "img": "images/D4.png",
+    "codes": "d4, dancingdragon"
+  },
+  {
+    "name": "D4 Boss Key",
+    "type": "toggle",
+    "img": "images/keyboss.png",
+    "codes": "d4bk"
+  },
+  {
+    "name": "D4 Small Keys",
+    "type": "consumable",
+    "img": "images/key.png",
+    "codes": "d4sk",
+    "max_quantity": 5
+  },
+  {
+    "name": "D4 items",
+    "type": "progressive",
+	"allow_disabled": false,
+	"stages": [
+		{
+			"img": "images/chests2r.png",
+			"codes": "d4chests",
+		},
+		{
+			"img": "images/chests1r.png",
+		},
+		{
+			"img": "images/chests0r.png",
+		},
+	]
+  },
+  
+  // D5
+  {
+    "name": "D5",
+    "type": "toggle",
+    "img": "images/D5.png",
+    "codes": "d5, unicorncave"
+  },
+  {
+    "name": "D5 Boss Key",
+    "type": "toggle",
+    "img": "images/keyboss.png",
+    "codes": "d5bk"
+  },
+  {
+    "name": "D5 Small Keys",
+    "type": "consumable",
+    "img": "images/key.png",
+    "codes": "d5sk",
+    "max_quantity": 5
+  },
+  {
+    "name": "D5 items",
+    "type": "progressive",
+	"allow_disabled": false,
+	"stages": [
+		{
+			"img": "images/chests3u.png",
+			"codes": "d5chests",
+		},
+		{
+			"img": "images/chests2u.png",
+		},
+		{
+			"img": "images/chests1u.png",
+		},
+		{
+			"img": "images/chests0u.png",
+		},
+	]
+  },
+  
+  // D6
+  {
+    "name": "D6",
+    "type": "toggle",
+    "img": "images/D6.png",
+    "codes": "d6, ancientruins"
+  },
+  {
+    "name": "D6 Boss Key",
+    "type": "toggle",
+    "img": "images/keyboss.png",
+    "codes": "d6bk"
+  },
+  {
+    "name": "D6 Past Small Keys",
+    "type": "consumable",
+    "img": "images/key.png",
+    "codes": "d6sk_past",
+    "max_quantity": 3
+  },
+  {
+    "name": "D6 Present Small Keys",
+    "type": "consumable",
+    "img": "images/key.png",
+    "codes": "d6sk_present",
+    "max_quantity": 3
+  },
+  {
+    "name": "D6 items",
+    "type": "progressive",
+	"allow_disabled": false,
+	"stages": [
+		{
+			"img": "images/chests5u.png",
+			"codes": "d6chests",
+		},
+		{
+			"img": "images/chests4u.png",
+		},
+		{
+			"img": "images/chests3u.png",
+		},
+		{
+			"img": "images/chests2u.png",
+		},
+		{
+			"img": "images/chests1u.png",
+		},
+		{
+			"img": "images/chests0u.png",
+		},
+	]
+  },
+  
+  // D7
+  {
+    "name": "D7",
+    "type": "toggle",
+    "img": "images/D7.png",
+    "codes": "d7, explorercrypt"
+  },
+  {
+    "name": "D7 Boss Key",
+    "type": "toggle",
+    "img": "images/keyboss.png",
+    "codes": "d7bk"
+  },
+  {
+    "name": "D7 Small Keys",
+    "type": "consumable",
+    "img": "images/key.png",
+    "codes": "d7sk",
+    "max_quantity": 7
+  },
+  {
+    "name": "D7 items",
+    "type": "progressive",
+	"allow_disabled": false,
+	"stages": [
+		{
+			"img": "images/chests5.png",
+			"codes": "d7chests",
+		},
+		{
+			"img": "images/chests4.png",
+		},
+		{
+			"img": "images/chests3.png",
+		},
+		{
+			"img": "images/chests2.png",
+		},
+		{
+			"img": "images/chests1.png",
+		},
+		{
+			"img": "images/chests0.png",
+		},
+	]
+  },
+  
+  // D8
+  {
+    "name": "D8",
+    "type": "toggle",
+    "img": "images/D8.png",
+    "codes": "d8, swordandshield"
+  },
+  {
+    "name": "D8 Boss Key",
+    "type": "toggle",
+    "img": "images/keyboss.png",
+    "codes": "d8bk"
+  },
+  {
+    "name": "D8 Slates",
+    "type": "consumable",
+    "img": "images/slate.png",
+    "codes": "slates",
+    "max_quantity": 4
+  },
+  {
+    "name": "D8 Small Keys",
+    "type": "consumable",
+    "img": "images/key.png",
+    "codes": "d8sk",
+    "max_quantity": 5
+  },
+  {
+    "name": "D8 items",
+    "type": "progressive",
+	"allow_disabled": false,
+	"stages": [
+		{
+			"img": "images/chests4.png",
+			"codes": "d8chests",
+		},
+		{
+			"img": "images/chests3.png",
+		},
+		{
+			"img": "images/chests2.png",
+		},
+		{
+			"img": "images/chests1.png",
+		},
+		{
+			"img": "images/chests0.png",
+		},
+	]
+  },
+    
+  /// SETTINGS / SEQUENCE BREAKING ///
+  
+  {
+    "name": "Nuun animal",
+    "type": "progressive",
+	"loop": true,
+    "stages": [
+	  {
+		"img": "images/ricky.png",
+		"codes": "nuun_animal, nuun_ricky",
+		"inherit_codes": false
+	  },
+	  {
+		"img": "images/dimitri.png",
+		"codes": "nuun_animal, nuun_dimitri",
+		"inherit_codes": false
+	  },
+	  {
+		"img": "images/moosh.png",
+		"codes": "nuun_animal, nuun_moosh",
+		"inherit_codes": false
+	  }
+	]
+  },
+  
+  {
+  "name": "Tree Warp selector",
+  "type": "progressive",
+  "allow_disabled": false,
+  "loop": true,
+  "stages": [
+	  {
+		"img": "images/treewarp_false.png",
+		"codes": "notreewarp",
+		"inherit_codes": false
+	  },
+	  {
+		"img": "images/treewarp_true.png",
+		"codes": "treewarp",
+		"inherit_codes": false
+	  },
+	]
+  },
+  
+  
+  /// RINGS ///
+  {
+    "name": "Fist Ring",
+    "type": "toggle",
+    "img": "images/ring_fist.png",
+    "codes": "ring_fist"
+  },
+  
+  {
+    "name": "Expert's Ring",
+    "type": "toggle",
+    "img": "images/ring_expert.png",
+    "codes": "ring_expert"
+  },
+  
+  {
+    "name": "Energy Ring",
+    "type": "toggle",
+    "img": "images/ring_energy.png",
+    "codes": "ring_energy"
+  },
+  
+  {
+    "name": "Toss Ring",
+    "type": "toggle",
+    "img": "images/ring_toss.png",
+    "codes": "ring_toss"
+  },
+  
+  {
+    "name": "Peace Ring",
+    "type": "toggle",
+    "img": "images/ring_peace.png",
+    "codes": "ring_peace"
+  },
+  
+  /// SEED TREES ///
+  
+  {
+    "name": "Lynna tree",
+    "type": "toggle",
+    "img": "images/tree_ember.png",
+    "codes": "tree_lynna"
+  },
+  {
+    "name": "Deku Forest tree",
+    "type": "toggle",
+    "img": "images/tree_mystery.png",
+    "codes": "tree_deku"
+  },
+  {
+    "name": "Crescent Island tree",
+    "type": "toggle",
+    "img": "images/tree_scent.png",
+    "codes": "tree_island"
+  },
+  {
+    "name": "Symmetry City tree",
+    "type": "toggle",
+    "img": "images/tree_gale.png",
+    "codes": "tree_symmetry"
+  },
+  {
+    "name": "West Rolling Ridge tree",
+    "type": "toggle",
+    "img": "images/tree_pegasus.png",
+    "codes": "tree_moblin"
+  },
+  {
+    "name": "East Rolling Ridge tree",
+    "type": "toggle",
+    "img": "images/tree_mystery.png",
+    "codes": "tree_ridge"
+  },
+  {
+    "name": "Ambi's Palace tree",
+    "type": "toggle",
+    "img": "images/tree_scent.png",
+    "codes": "tree_ambi"
+  },
+  {
+    "name": "Zora Village tree",
+    "type": "toggle",
+    "img": "images/tree_gale.png",
+    "codes": "tree_zora"
+  },
+  
+  /// DUNGEON SHUFFLE ///
+  
+  {
+    "name": "Spirit's Grave Entrance",
+    "type": "progressive",
+	"allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/DX_unknown.png",
+        "codes": "d1_ent",
+		"inherit_codes": false,
+      },
+      {
+        "img": "images/D1_entrance.png",
+        "codes": "d1_d1",
+		"inherit_codes": false,
+      },
+      {
+        "img": "images/D2_entrance.png",
+        "codes": "d1_d2",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D3_entrance.png",
+        "codes": "d1_d3",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D4_entrance.png",
+        "codes": "d1_d4",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D5_entrance.png",
+        "codes": "d1_d5",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D6_past_entrance.png",
+        "codes": "d1_d6_past",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D6_present_entrance.png",
+        "codes": "d1_d6_present",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D7_entrance.png",
+        "codes": "d1_d7",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D8_entrance.png",
+        "codes": "d1_d8",
+		"inherit_codes": false,
+      },
+    ]
+  },
+  
+  {
+    "name": "Wing Dungeon Entrance",
+    "type": "progressive",
+	"allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/DX_unknown.png",
+        "codes": "d2_ent",
+		"inherit_codes": false,
+      },
+      {
+        "img": "images/D1_entrance.png",
+        "codes": "d2_d1",
+		"inherit_codes": false,
+      },
+      {
+        "img": "images/D2_entrance.png",
+        "codes": "d2_d2",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D3_entrance.png",
+        "codes": "d2_d3",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D4_entrance.png",
+        "codes": "d2_d4",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D5_entrance.png",
+        "codes": "d2_d5",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D6_past_entrance.png",
+        "codes": "d2_d6_past",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D6_present_entrance.png",
+        "codes": "d2_d6_present",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D7_entrance.png",
+        "codes": "d2_d7",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D8_entrance.png",
+        "codes": "d2_d8",
+		"inherit_codes": false,
+      },
+    ]
+  },
+  
+  {
+    "name": "Moonlit Grotto Entrance",
+    "type": "progressive",
+	"allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/DX_unknown.png",
+        "codes": "d3_ent",
+		"inherit_codes": false,
+      },
+      {
+        "img": "images/D1_entrance.png",
+        "codes": "d3_d1",
+		"inherit_codes": false,
+      },
+      {
+        "img": "images/D2_entrance.png",
+        "codes": "d3_d2",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D3_entrance.png",
+        "codes": "d3_d3",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D4_entrance.png",
+        "codes": "d3_d4",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D5_entrance.png",
+        "codes": "d3_d5",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D6_past_entrance.png",
+        "codes": "d3_d6_past",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D6_present_entrance.png",
+        "codes": "d3_d6_present",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D7_entrance.png",
+        "codes": "d3_d7",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D8_entrance.png",
+        "codes": "d3_d8",
+		"inherit_codes": false,
+      },
+    ]
+  },
+  
+  {
+    "name": "Skull Dungeon Entrance",
+    "type": "progressive",
+	"allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/DX_unknown.png",
+        "codes": "d4_ent",
+		"inherit_codes": false,
+      },
+      {
+        "img": "images/D1_entrance.png",
+        "codes": "d4_d1",
+		"inherit_codes": false,
+      },
+      {
+        "img": "images/D2_entrance.png",
+        "codes": "d4_d2",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D3_entrance.png",
+        "codes": "d4_d3",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D4_entrance.png",
+        "codes": "d4_d4",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D5_entrance.png",
+        "codes": "d4_d5",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D6_past_entrance.png",
+        "codes": "d4_d6_past",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D6_present_entrance.png",
+        "codes": "d4_d6_present",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D7_entrance.png",
+        "codes": "d4_d7",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D8_entrance.png",
+        "codes": "d4_d8",
+		"inherit_codes": false,
+      },
+    ]
+  },
+  
+  {
+    "name": "Crown Dungeon Entrance",
+    "type": "progressive",
+	"allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/DX_unknown.png",
+        "codes": "d5_ent",
+		"inherit_codes": false,
+      },
+      {
+        "img": "images/D1_entrance.png",
+        "codes": "d5_d1",
+		"inherit_codes": false,
+      },
+      {
+        "img": "images/D2_entrance.png",
+        "codes": "d5_d2",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D3_entrance.png",
+        "codes": "d5_d3",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D4_entrance.png",
+        "codes": "d5_d4",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D5_entrance.png",
+        "codes": "d5_d5",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D6_past_entrance.png",
+        "codes": "d5_d6_past",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D6_present_entrance.png",
+        "codes": "d5_d6_present",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D7_entrance.png",
+        "codes": "d5_d7",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D8_entrance.png",
+        "codes": "d5_d8",
+		"inherit_codes": false,
+      },
+    ]
+  },
+  
+  {
+    "name": "Mermaid's Cave (Past) Entrance",
+    "type": "progressive",
+	"allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/DX_unknown.png",
+        "codes": "d6_past_ent",
+		"inherit_codes": false,
+      },
+      {
+        "img": "images/D1_entrance.png",
+        "codes": "d6_past_d1",
+		"inherit_codes": false,
+      },
+      {
+        "img": "images/D2_entrance.png",
+        "codes": "d6_past_d2",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D3_entrance.png",
+        "codes": "d6_past_d3",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D4_entrance.png",
+        "codes": "d6_past_d4",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D5_entrance.png",
+        "codes": "d6_past_d5",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D6_past_entrance.png",
+        "codes": "d6_past_d6_past",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D6_present_entrance.png",
+        "codes": "d6_past_d6_present",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D7_entrance.png",
+        "codes": "d6_past_d7",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D8_entrance.png",
+        "codes": "d6_past_d8",
+		"inherit_codes": false,
+      },
+    ]
+  },
+  
+  {
+    "name": "Mermaid's Cave (Present) Entrance",
+    "type": "progressive",
+	"allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/DX_unknown.png",
+        "codes": "d6_present_ent",
+		"inherit_codes": false,
+      },
+      {
+        "img": "images/D1_entrance.png",
+        "codes": "d6_present_d1",
+		"inherit_codes": false,
+      },
+      {
+        "img": "images/D2_entrance.png",
+        "codes": "d6_present_d2",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D3_entrance.png",
+        "codes": "d6_present_d3",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D4_entrance.png",
+        "codes": "d6_present_d4",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D5_entrance.png",
+        "codes": "d6_present_d5",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D6_past_entrance.png",
+        "codes": "d6_present_d6_past",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D6_present_entrance.png",
+        "codes": "d6_present_d6_present",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D7_entrance.png",
+        "codes": "d6_present_d7",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D8_entrance.png",
+        "codes": "d6_present_d8",
+		"inherit_codes": false,
+      },
+    ]
+  },
+  
+  {
+    "name": "Jabu Jabu's Belly Entrance",
+    "type": "progressive",
+	"allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/DX_unknown.png",
+        "codes": "d7_ent",
+		"inherit_codes": false,
+      },
+      {
+        "img": "images/D1_entrance.png",
+        "codes": "d7_d1",
+		"inherit_codes": false,
+      },
+      {
+        "img": "images/D2_entrance.png",
+        "codes": "d7_d2",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D3_entrance.png",
+        "codes": "d7_d3",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D4_entrance.png",
+        "codes": "d7_d4",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D5_entrance.png",
+        "codes": "d7_d5",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D6_past_entrance.png",
+        "codes": "d7_d6_past",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D6_present_entrance.png",
+        "codes": "d7_d6_present",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D7_entrance.png",
+        "codes": "d7_d7",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D8_entrance.png",
+        "codes": "d7_d8",
+		"inherit_codes": false,
+      },
+    ]
+  },
+  
+  {
+    "name": "Ancient Tomb Entrance",
+    "type": "progressive",
+	"allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/DX_unknown.png",
+        "codes": "d8_ent",
+		"inherit_codes": false,
+      },
+      {
+        "img": "images/D1_entrance.png",
+        "codes": "d8_d1",
+		"inherit_codes": false,
+      },
+      {
+        "img": "images/D2_entrance.png",
+        "codes": "d8_d2",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D3_entrance.png",
+        "codes": "d8_d3",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D4_entrance.png",
+        "codes": "d8_d4",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D5_entrance.png",
+        "codes": "d8_d5",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D6_past_entrance.png",
+        "codes": "d8_d6_past",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D6_present_entrance.png",
+        "codes": "d8_d6_present",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D7_entrance.png",
+        "codes": "d8_d7",
+		"inherit_codes": false,
+      },
+	  {
+        "img": "images/D8_entrance.png",
+        "codes": "d8_d8",
+		"inherit_codes": false,
+      },
+    ]
+  },
+  
+  /// DUNGEON ENTRANCES DUMMY ITEMS ///
+ 
+  {
+      "name": "D1 from D1 Entrance",
+      "type": "toggle",
+      "img": "images/D1.png",
+      "codes": "d1_from_d1"
+  },
+  {
+      "name": "D1 from D2 Entrance",
+      "type": "toggle",
+      "img": "images/D1.png",
+      "codes": "d1_from_d2"
+  },
+  {
+      "name": "D1 from D3 Entrance",
+      "type": "toggle",
+      "img": "images/D1.png",
+      "codes": "d1_from_d3"
+  },
+  {
+      "name": "D1 from D4 Entrance",
+      "type": "toggle",
+      "img": "images/D1.png",
+      "codes": "d1_from_d4"
+  },
+  {
+      "name": "D1 from D5 Entrance",
+      "type": "toggle",
+      "img": "images/D1.png",
+      "codes": "d1_from_d5"
+  },
+  {
+      "name": "D1 from D6_past Entrance",
+      "type": "toggle",
+      "img": "images/D1.png",
+      "codes": "d1_from_d6_past"
+  },
+  {
+      "name": "D1 from D6_present Entrance",
+      "type": "toggle",
+      "img": "images/D1.png",
+      "codes": "d1_from_d6_present"
+  },
+  {
+      "name": "D1 from D7 Entrance",
+      "type": "toggle",
+      "img": "images/D1.png",
+      "codes": "d1_from_d7"
+  },
+  {
+      "name": "D1 from D8 Entrance",
+      "type": "toggle",
+      "img": "images/D1.png",
+      "codes": "d1_from_d8"
+  },
+  {
+      "name": "D2 from D1 Entrance",
+      "type": "toggle",
+      "img": "images/D2.png",
+      "codes": "d2_from_d1"
+  },
+  {
+      "name": "D2 from D2 Entrance",
+      "type": "toggle",
+      "img": "images/D2.png",
+      "codes": "d2_from_d2"
+  },
+  {
+      "name": "D2 from D3 Entrance",
+      "type": "toggle",
+      "img": "images/D2.png",
+      "codes": "d2_from_d3"
+  },
+  {
+      "name": "D2 from D4 Entrance",
+      "type": "toggle",
+      "img": "images/D2.png",
+      "codes": "d2_from_d4"
+  },
+  {
+      "name": "D2 from D5 Entrance",
+      "type": "toggle",
+      "img": "images/D2.png",
+      "codes": "d2_from_d5"
+  },
+  {
+      "name": "D2 from D6_past Entrance",
+      "type": "toggle",
+      "img": "images/D2.png",
+      "codes": "d2_from_d6_past"
+  },
+  {
+      "name": "D2 from D6_present Entrance",
+      "type": "toggle",
+      "img": "images/D2.png",
+      "codes": "d2_from_d6_present"
+  },
+  {
+      "name": "D2 from D7 Entrance",
+      "type": "toggle",
+      "img": "images/D2.png",
+      "codes": "d2_from_d7"
+  },
+  {
+      "name": "D2 from D8 Entrance",
+      "type": "toggle",
+      "img": "images/D2.png",
+      "codes": "d2_from_d8"
+  },
+  {
+      "name": "D3 from D1 Entrance",
+      "type": "toggle",
+      "img": "images/D3.png",
+      "codes": "d3_from_d1"
+  },
+  {
+      "name": "D3 from D2 Entrance",
+      "type": "toggle",
+      "img": "images/D3.png",
+      "codes": "d3_from_d2"
+  },
+  {
+      "name": "D3 from D3 Entrance",
+      "type": "toggle",
+      "img": "images/D3.png",
+      "codes": "d3_from_d3"
+  },
+  {
+      "name": "D3 from D4 Entrance",
+      "type": "toggle",
+      "img": "images/D3.png",
+      "codes": "d3_from_d4"
+  },
+  {
+      "name": "D3 from D5 Entrance",
+      "type": "toggle",
+      "img": "images/D3.png",
+      "codes": "d3_from_d5"
+  },
+  {
+      "name": "D3 from D6_past Entrance",
+      "type": "toggle",
+      "img": "images/D3.png",
+      "codes": "d3_from_d6_past"
+  },
+  {
+      "name": "D3 from D6_present Entrance",
+      "type": "toggle",
+      "img": "images/D3.png",
+      "codes": "d3_from_d6_present"
+  },
+  {
+      "name": "D3 from D7 Entrance",
+      "type": "toggle",
+      "img": "images/D3.png",
+      "codes": "d3_from_d7"
+  },
+  {
+      "name": "D3 from D8 Entrance",
+      "type": "toggle",
+      "img": "images/D3.png",
+      "codes": "d3_from_d8"
+  },
+  {
+      "name": "D4 from D1 Entrance",
+      "type": "toggle",
+      "img": "images/D4.png",
+      "codes": "d4_from_d1"
+  },
+  {
+      "name": "D4 from D2 Entrance",
+      "type": "toggle",
+      "img": "images/D4.png",
+      "codes": "d4_from_d2"
+  },
+  {
+      "name": "D4 from D3 Entrance",
+      "type": "toggle",
+      "img": "images/D4.png",
+      "codes": "d4_from_d3"
+  },
+  {
+      "name": "D4 from D4 Entrance",
+      "type": "toggle",
+      "img": "images/D4.png",
+      "codes": "d4_from_d4"
+  },
+  {
+      "name": "D4 from D5 Entrance",
+      "type": "toggle",
+      "img": "images/D4.png",
+      "codes": "d4_from_d5"
+  },
+  {
+      "name": "D4 from D6_past Entrance",
+      "type": "toggle",
+      "img": "images/D4.png",
+      "codes": "d4_from_d6_past"
+  },
+  {
+      "name": "D4 from D6_present Entrance",
+      "type": "toggle",
+      "img": "images/D4.png",
+      "codes": "d4_from_d6_present"
+  },
+  {
+      "name": "D4 from D7 Entrance",
+      "type": "toggle",
+      "img": "images/D4.png",
+      "codes": "d4_from_d7"
+  },
+  {
+      "name": "D4 from D8 Entrance",
+      "type": "toggle",
+      "img": "images/D4.png",
+      "codes": "d4_from_d8"
+  },
+  {
+      "name": "D5 from D1 Entrance",
+      "type": "toggle",
+      "img": "images/D5.png",
+      "codes": "d5_from_d1"
+  },
+  {
+      "name": "D5 from D2 Entrance",
+      "type": "toggle",
+      "img": "images/D5.png",
+      "codes": "d5_from_d2"
+  },
+  {
+      "name": "D5 from D3 Entrance",
+      "type": "toggle",
+      "img": "images/D5.png",
+      "codes": "d5_from_d3"
+  },
+  {
+      "name": "D5 from D4 Entrance",
+      "type": "toggle",
+      "img": "images/D5.png",
+      "codes": "d5_from_d4"
+  },
+  {
+      "name": "D5 from D5 Entrance",
+      "type": "toggle",
+      "img": "images/D5.png",
+      "codes": "d5_from_d5"
+  },
+  {
+      "name": "D5 from D6_past Entrance",
+      "type": "toggle",
+      "img": "images/D5.png",
+      "codes": "d5_from_d6_past"
+  },
+  {
+      "name": "D5 from D6_present Entrance",
+      "type": "toggle",
+      "img": "images/D5.png",
+      "codes": "d5_from_d6_present"
+  },
+  {
+      "name": "D5 from D7 Entrance",
+      "type": "toggle",
+      "img": "images/D5.png",
+      "codes": "d5_from_d7"
+  },
+  {
+      "name": "D5 from D8 Entrance",
+      "type": "toggle",
+      "img": "images/D5.png",
+      "codes": "d5_from_d8"
+  },
+  {
+      "name": "D6_past from D1 Entrance",
+      "type": "toggle",
+      "img": "images/D6.png",
+      "codes": "d6_past_from_d1"
+  },
+  {
+      "name": "D6_past from D2 Entrance",
+      "type": "toggle",
+      "img": "images/D6.png",
+      "codes": "d6_past_from_d2"
+  },
+  {
+      "name": "D6_past from D3 Entrance",
+      "type": "toggle",
+      "img": "images/D6.png",
+      "codes": "d6_past_from_d3"
+  },
+  {
+      "name": "D6_past from D4 Entrance",
+      "type": "toggle",
+      "img": "images/D6.png",
+      "codes": "d6_past_from_d4"
+  },
+  {
+      "name": "D6_past from D5 Entrance",
+      "type": "toggle",
+      "img": "images/D6.png",
+      "codes": "d6_past_from_d5"
+  },
+  {
+      "name": "D6_past from D6_past Entrance",
+      "type": "toggle",
+      "img": "images/D6.png",
+      "codes": "d6_past_from_d6_past"
+  },
+  {
+      "name": "D6_past from D6_present Entrance",
+      "type": "toggle",
+      "img": "images/D6.png",
+      "codes": "d6_past_from_d6_present"
+  },
+  {
+      "name": "D6_past from D7 Entrance",
+      "type": "toggle",
+      "img": "images/D6.png",
+      "codes": "d6_past_from_d7"
+  },
+  {
+      "name": "D6_past from D8 Entrance",
+      "type": "toggle",
+      "img": "images/D6.png",
+      "codes": "d6_past_from_d8"
+  },
+  {
+      "name": "D6_present from D1 Entrance",
+      "type": "toggle",
+      "img": "images/D6.png",
+      "codes": "d6_present_from_d1"
+  },
+  {
+      "name": "D6_present from D2 Entrance",
+      "type": "toggle",
+      "img": "images/D6.png",
+      "codes": "d6_present_from_d2"
+  },
+  {
+      "name": "D6_present from D3 Entrance",
+      "type": "toggle",
+      "img": "images/D6.png",
+      "codes": "d6_present_from_d3"
+  },
+  {
+      "name": "D6_present from D4 Entrance",
+      "type": "toggle",
+      "img": "images/D6.png",
+      "codes": "d6_present_from_d4"
+  },
+  {
+      "name": "D6_present from D5 Entrance",
+      "type": "toggle",
+      "img": "images/D6.png",
+      "codes": "d6_present_from_d5"
+  },
+  {
+      "name": "D6_present from D6_past Entrance",
+      "type": "toggle",
+      "img": "images/D6.png",
+      "codes": "d6_present_from_d6_past"
+  },
+  {
+      "name": "D6_present from D6_present Entrance",
+      "type": "toggle",
+      "img": "images/D6.png",
+      "codes": "d6_present_from_d6_present"
+  },
+  {
+      "name": "D6_present from D7 Entrance",
+      "type": "toggle",
+      "img": "images/D6.png",
+      "codes": "d6_present_from_d7"
+  },
+  {
+      "name": "D6_present from D8 Entrance",
+      "type": "toggle",
+      "img": "images/D6.png",
+      "codes": "d6_present_from_d8"
+  },
+  {
+      "name": "D7 from D1 Entrance",
+      "type": "toggle",
+      "img": "images/D7.png",
+      "codes": "d7_from_d1"
+  },
+  {
+      "name": "D7 from D2 Entrance",
+      "type": "toggle",
+      "img": "images/D7.png",
+      "codes": "d7_from_d2"
+  },
+  {
+      "name": "D7 from D3 Entrance",
+      "type": "toggle",
+      "img": "images/D7.png",
+      "codes": "d7_from_d3"
+  },
+  {
+      "name": "D7 from D4 Entrance",
+      "type": "toggle",
+      "img": "images/D7.png",
+      "codes": "d7_from_d4"
+  },
+  {
+      "name": "D7 from D5 Entrance",
+      "type": "toggle",
+      "img": "images/D7.png",
+      "codes": "d7_from_d5"
+  },
+  {
+      "name": "D7 from D6_past Entrance",
+      "type": "toggle",
+      "img": "images/D7.png",
+      "codes": "d7_from_d6_past"
+  },
+  {
+      "name": "D7 from D6_present Entrance",
+      "type": "toggle",
+      "img": "images/D7.png",
+      "codes": "d7_from_d6_present"
+  },
+  {
+      "name": "D7 from D7 Entrance",
+      "type": "toggle",
+      "img": "images/D7.png",
+      "codes": "d7_from_d7"
+  },
+  {
+      "name": "D7 from D8 Entrance",
+      "type": "toggle",
+      "img": "images/D7.png",
+      "codes": "d7_from_d8"
+  },
+  {
+      "name": "D8 from D1 Entrance",
+      "type": "toggle",
+      "img": "images/D8.png",
+      "codes": "d8_from_d1"
+  },
+  {
+      "name": "D8 from D2 Entrance",
+      "type": "toggle",
+      "img": "images/D8.png",
+      "codes": "d8_from_d2"
+  },
+  {
+      "name": "D8 from D3 Entrance",
+      "type": "toggle",
+      "img": "images/D8.png",
+      "codes": "d8_from_d3"
+  },
+  {
+      "name": "D8 from D4 Entrance",
+      "type": "toggle",
+      "img": "images/D8.png",
+      "codes": "d8_from_d4"
+  },
+  {
+      "name": "D8 from D5 Entrance",
+      "type": "toggle",
+      "img": "images/D8.png",
+      "codes": "d8_from_d5"
+  },
+  {
+      "name": "D8 from D6_past Entrance",
+      "type": "toggle",
+      "img": "images/D8.png",
+      "codes": "d8_from_d6_past"
+  },
+  {
+      "name": "D8 from D6_present Entrance",
+      "type": "toggle",
+      "img": "images/D8.png",
+      "codes": "d8_from_d6_present"
+  },
+  {
+      "name": "D8 from D7 Entrance",
+      "type": "toggle",
+      "img": "images/D8.png",
+      "codes": "d8_from_d7"
+  },
+  {
+      "name": "D8 from D8 Entrance",
+      "type": "toggle",
+      "img": "images/D8.png",
+      "codes": "d8_from_d8"
+  },
+  
+  
+  
+  {
+    "name": "Key Tracking Mode",
+    "type": "progressive",
+	"allow_disabled": false,
+    "loop": true,
+	"codes": "keyMode",
+    "stages": [
+      {
+        "img": "images/keyModeInc.png",
+        "codes": "keyMode, keyModeInc",
+		"inherit_codes": false,
+      },
+      {
+        "img": "images/keyModeLive.png",
+        "codes": "keyMode, keyModeLive",
+		"inherit_codes": false,
+      },
+    ]
+  },
+]

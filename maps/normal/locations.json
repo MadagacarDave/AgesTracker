@@ -1,0 +1,2017 @@
+﻿[
+	{
+		"name": "Lynna City",
+		"chest_unopened_img": "images/chest.png",
+		"chest_opened_img": "images/chestopen.png",
+		"color": "#0049bf",
+		"children": [
+			{
+				"name": "Concert Screen",
+				"sections": [
+					{
+						"name": "Impa's chest",
+						"item_count": 1
+					}
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 306,
+						"y": 114
+					}
+				]
+			},
+			{
+				"name": "Nayru's House",
+				"sections": [
+					{
+						"name": "Basement item",
+						"item_count": 1
+					}
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 338,
+						"y": 114
+					}
+				]
+			},
+			{
+				"name": "Forest of Time",
+				"access_rules": [
+							"$use_seeds, emberseeds",
+							"currents"
+						],
+				"sections": [
+					{
+						"name": "Tree chest",
+						"item_count": 1
+					}
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 306,
+						"y": 146
+					}
+				]
+			},
+			{
+				"name": "Shop",
+				"access_rules": [
+							"$lynna",
+						],
+				"sections": [
+					{
+						"name": "150 rupee item",
+						"capture_item": true,
+						"item_count": 1,
+						"access_rules": [
+							"{}",
+							"rupees:150"
+						],
+					}
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 274,
+						"y": 210
+					}
+				]
+			},
+			{
+				"name": "Mayor's house",
+				"access_rules": [
+							"hook2"
+						],
+				"sections": [
+					{
+						"name": "Pots chest",
+						"item_count": 1
+					}
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 242,
+						"y": 178
+					}
+				]
+			},
+			{
+				"name": "Maku Tree",
+				"access_rules": [
+							"$destroy_bush_flute, shovel, $kill_normal",
+							"$destroy_bush_flute, shovel, [$kill_normal], $kill_hard",
+							"echoes, shovel, $kill_normal",
+							"echoes, shovel, [$kill_normal], $kill_hard",
+							"$ambi_palace, $rescue_nayru",
+							"satchel, pegasusseeds, scentseeds, [$ambi_palace], $rescue_nayru",
+						],
+				"sections": [
+					{
+						"name": "Save the waifu",
+						"item_count": 1
+					}
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 274,
+						"y": 114
+					},
+					{
+						"map": "past",
+						"x": 274,
+						"y": 114
+					}
+				]
+			},
+
+			{
+				"name": "South Shore",
+				"access_rules": [
+							"flute",
+							"$shore, shovel"
+						],
+				"sections": [
+					{
+						"name": "Dig up the dirt",
+						"item_count": 1
+					}
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 274,
+						"y": 306
+					}
+				]
+			},
+			{
+				"name": "Balloon Guy",
+				"access_rules": [
+							"$pop_balloon, feather, $lynna, currents",
+							"$pop_balloon, feather, $shore, shooter",
+							"$pop_balloon, feather, $shore, [shooter], satchel, pegasusseeds, boomerang",
+							"$pop_balloon, feather, $shore, [shooter], bombs, boomerang",
+							"$pop_balloon, feather, rickygloves",
+							"$pop_balloon, feather, $ricky",
+						],
+				"sections": [
+					{
+						"name": "Gift",
+						"item_count": 1
+					},
+					{
+						"name": "3 seeds upgrade",
+						"access_rules": [
+							"$use_seeds, $seed_number:3"
+						],
+						"item_count": 1
+					},
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 306,
+						"y": 242
+					}
+				]
+			},
+
+		]
+	},
+
+	{
+		"name": "Lynna Village + Palace",
+		"chest_unopened_img": "images/chest_past.png",
+		"chest_opened_img": "images/chestpastopen.png",
+		"color": "#ff7700",
+		"access_rules": [
+			"$lynna"
+		],
+		"children": [
+			{
+				"name": "Black Tower",
+				"sections": [
+					{
+						"name": "Worker gift",
+						"item_count": 1
+					}
+				],
+				"map_locations": [
+					{
+						"map": "past",
+						"x": 210,
+						"y": 242
+					}
+				]
+			},
+			{
+				"name": "Maku Path",
+				"access_rules": [
+							"$destroy_bush_flute, shovel",
+							"echoes, shovel",
+							"$ambi_palace, $rescue_nayru",
+							"satchel, pegasusseeds, scentseeds, [$ambi_palace], $rescue_nayru",
+						],
+				"sections": [
+					{
+						"name": "Blocks room\nsecret stairs",
+						"item_count": 1
+					}
+				],
+				"map_locations": [
+					{
+						"map": "past",
+						"x": 274,
+						"y": 146
+					}
+				]
+			},
+
+			{
+				"name": "Ambi's Palace tree",
+				"chest_unopened_img": "images/tree_scent.png",
+				"chest_opened_img": "images/tree_scent.png",
+				"sections": [
+				  {
+					"name": "Seeds",
+					"access_rules": [
+						"$harvest_seeds",
+						"{}"
+					],
+					"capture_item": "true",
+					"item_count": 1,
+					//"hosted_item": "tree_ambi"
+				  },
+				],
+				"map_locations": [
+				  {
+					"map": "past",
+					"x": 178,
+					"y": 80
+				  }
+				]
+			},
+			{
+				"name": "Ambi's Palace",
+				"access_rules": [
+					"$ambi_palace",
+					"satchel, pegasusseeds, scentseeds, [$ambi_palace]"
+				],
+				"sections": [
+					{
+						"name": "Right side chest",
+						"item_count": 1
+					},
+					{
+						"name": "Rescue Nayru",
+						"access_rules": [
+							"$rescue_nayru"
+						],
+						"item_count": 1
+					},
+				],
+				"map_locations": [
+					{
+						"map": "past",
+						"x": 210,
+						"y": 17
+					}
+				]
+			},
+		]
+	},
+
+	{
+		"name": "Yoll Graveyard",
+		"chest_unopened_img": "images/chest.png",
+		"chest_opened_img": "images/chestopen.png",
+		"color": "#0049bf",
+		"access_rules": [
+			"$use_seeds, emberseeds"
+		],
+		"children": [
+			{
+				"name": "Cheval's Grave",
+				"sections": [
+					{
+						"name": "Test of speed",
+						"capture_item": true,
+						"access_rules": [
+							"{flippers}",
+							"{feather}",
+							"bracelet, feather",
+							"bracelet, flippers"
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Cheval's invention",
+						"capture_item": true,
+						"access_rules": [
+							"{}",
+							"flippers"
+						],
+						"item_count": 1
+					},
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 370,
+						"y": 178
+					}
+				]
+			},
+			{
+				"name": "Grave Under Tree",
+				"sections": [
+					{
+						"name": "Light the torches",
+						"item_count": 1
+					},
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 418,
+						"y": 290
+					}
+				]
+			},
+
+			{
+				"name": "Poe's grave",
+				"access_rules": [
+					"d1key, bracelet"
+				],
+				"sections": [
+					{
+						"name": "Clock gift",
+						"item_count": 1
+					},
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 402,
+						"y": 242
+					}
+				]
+			},
+		]
+	},
+
+	{
+		"name": "Fairies' Woods",
+		"chest_unopened_img": "images/chest.png",
+		"chest_opened_img": "images/chestopen.png",
+		"color": "#0049bf",
+		"access_rules": [
+			"$lynna, ages",
+			"$lynna, bracelet",
+			"$lynna, hook1, [bracelet]",
+			"$lynna, flippers",
+			"$lynna, $dimitri",
+
+			// From Nuun
+			"$lynna, currents, nuun_ricky, $destroy_bush_flute, $hit_lever",
+			"$lynna, currents, nuun_ricky, $ricky",
+			"$lynna, currents, $moosh",
+			"$lynna, currents, nuun_moosh, feather, $hit_lever",
+			"$lynna, currents, nuun_dimitri, $hit_lever"
+		],
+		"children": [
+			{
+				"name": "Fairies' Woods East",
+				"access_rules": [
+					"bracelet, currents",
+					"ages",
+					"feather",
+					"$ricky",
+					"$moosh",
+					"hook1"
+				],
+				"sections": [
+					{
+						"name": "Pit chest",
+						"item_count": 1
+					}
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 146,
+						"y": 274
+					}
+				]
+			},
+		]
+	},
+
+	{
+		"name": "Deku Forest",
+		"chest_unopened_img": "images/chest_past.png",
+		"chest_opened_img": "images/chestpastopen.png",
+		"color": "#ff7700",
+		"access_rules": [
+			"bracelet",
+			"ages"
+		],
+		"children": [
+			{
+				"name": "Deku Forest North",
+				"sections": [
+					{
+						"name": "Side cave chest",
+						"item_count": 1
+					},
+					{
+						"name": "Mystery Seeds reward",
+						"access_rules": [
+							"mysteryseeds",
+						],
+						"item_count": 1
+					},
+				],
+				"map_locations": [
+					{
+						"map": "past",
+						"x": 82,
+						"y": 242
+					}
+				]
+			},
+			{
+				"name": "Path to the tree",
+				"access_rules": [
+					"bracelet, feather",
+					"bracelet, hook1",
+					"bracelet, emberseeds",
+					"bracelet, ages",
+					"bracelet, satchel, galeseeds"
+				],
+				"sections": [
+					{
+						"name": "Chest",
+						"item_count": 1
+					},
+				],
+				"map_locations": [
+					{
+						"map": "past",
+						"x": 50,
+						"y": 242
+					}
+				]
+			},
+
+			{
+				"name": "Deku Forest tree",
+				"chest_unopened_img": "images/tree_mystery.png",
+				"chest_opened_img": "images/tree_mystery.png",
+				"access_rules": [
+					"[bracelet], feather, sword1",
+					"[bracelet], feather, bombs",
+					"bracelet, hook1",
+					"bracelet, emberseeds",
+					"ages",
+					"satchel, galeseeds"
+				],
+				"sections": [
+				  {
+					"name": "Seeds",
+					"access_rules": [
+						"$harvest_seeds",
+						"{}"
+					],
+					"capture_item": "true",
+					"item_count": 1,
+					//"hosted_item": "tree_deku"
+				  },
+				],
+				"map_locations": [
+				  {
+					"map": "past",
+					"x": 17,
+					"y": 274
+				  }
+				]
+			},
+		]
+	},
+
+	{
+		"name": "Crescent Island",
+		"chest_unopened_img": "images/chest_past.png",
+		"chest_opened_img": "images/chestpastopen.png",
+		"color": "#ff7700",
+		"access_rules": [
+			"$crescent_past"
+		],
+		"children": [
+			{
+				"name": "Crystal cave",
+				"access_rules": [
+					"$crescent_past, $destroy_bush_flute, feather, shovel",
+					"$crescent_past, $destroy_bush_flute, feather, $destroy_crystal",
+				],
+				"sections": [
+					{
+						"name": "Chest",
+						"item_count": 1
+					}
+				],
+				"map_locations": [
+					{
+						"map": "past",
+						"x": 370,
+						"y": 369
+					}
+				]
+			},
+			{
+				"name": "Bomb cave",
+				"access_rules": [
+					"$crescent_past, bracelet, bombs",
+				],
+				"sections": [
+					{
+						"name": "Chest",
+						"item_count": 1
+					}
+				],
+				"map_locations": [
+					{
+						"map": "past",
+						"x": 434,
+						"y": 402
+					}
+				]
+			},
+			{
+				"name": "Wild Tokay",
+				"access_rules": [
+					"$isNotAutoTracking, $crescent_past, bracelet, bombs",
+
+					//AUTO_TODO
+					"{$isAutoTracking, $crescent_past, bracelet, bombs}",
+					"$isAutoTracking, $crescent_past, bracelet, bombs, rupees:10"
+				],
+				"sections": [
+					{
+						"name": "Minigame reward",
+						"item_count": 1
+					}
+				],
+				"map_locations": [
+					{
+						"map": "past",
+						"x": 434,
+						"y": 369
+					}
+				]
+			},
+			{
+				"name": "Hidden Tokay",
+				"access_rules": [
+					"$lynna, mermaidsuit",
+				],
+				"sections": [
+					{
+						"name": "Old planks",
+						"item_count": 1
+					}
+				],
+				"map_locations": [
+					{
+						"map": "past",
+						"x": 306,
+						"y": 434
+					}
+				]
+			},
+			{
+				"name": "Pot cave",
+				"access_rules": [
+					"$crescent_past, hook2",
+				],
+				"sections": [
+					{
+						"name": "Chest",
+						"item_count": 1
+					}
+				],
+				"map_locations": [
+					{
+						"map": "past",
+						"x": 434,
+						"y": 434
+					}
+				]
+			},
+
+			{
+				"name": "Under Crescent Island",
+				"chest_unopened_img": "images/chest.png",
+				"chest_opened_img": "images/chestopen.png",
+				"color": "#0049bf",
+				"access_rules": [
+					"$lynna, mermaidsuit",
+				],
+				"sections": [
+					{
+						"name": "Labyrinth chest",
+						"item_count": 1
+					}
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 402,
+						"y": 322
+					}
+				]
+			},
+			{
+				"name": "Crescent Island Tree Quest",
+				"access_rules": [
+					"$crescent_past, bracelet, seedling",
+					"$crescent_past, ages, seedling",
+				],
+				"sections": [
+					{
+						"name": "Plant the seedling",
+						"hosted_item": "crescenttree",
+						"item_count": 0
+					}
+				],
+				"map_locations": [
+					{
+						"map": "past",
+						"x": 402,
+						"y": 337
+					}
+				]
+			},
+			{
+				"name": "Crescent Island tree",
+				"chest_unopened_img": "images/tree_scent.png",
+				"chest_opened_img": "images/tree_scent.png",
+				"access_rules": [
+					"$crescent_past, bracelet, echoes, seedling, crescenttree",
+					"$crescent_past, satchel, galeseeds, mermaidsuit, [bracelet], [echoes], seedling, crescenttree",
+					"$crescent_past, ages, seedling, crescenttree",
+					"$crescent_past, satchel, galeseeds, mermaidsuit, [ages], seedling, crescenttree",
+				],
+				"sections": [
+					{
+						"name": "Seeds",
+						"access_rules": [
+							"$harvest_seeds",
+							"{}"
+						],
+						"capture_item": "true",
+						"item_count": 1,
+						//"hosted_item": "tree_island",
+					}
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 402,
+						"y": 337
+					}
+				]
+			},
+		]
+	},
+
+	{
+		"name": "Nuun Highlands",
+		"chest_unopened_img": "images/chest.png",
+		"chest_opened_img": "images/chestopen.png",
+		"color": "#0049bf",
+		"access_rules": [
+			"$nuun"
+		],
+		"children": [
+			// Moosh workers
+			{
+				"name": "Rescue the carpenters (Moosh)",
+				"access_rules": [
+					"$moosh",
+					"nuun_moosh, currents",
+				],
+				"sections": [
+					{
+						"name": "(4, 7)",
+						"hosted_item": "carpenter1",
+						"item_count": 0
+					}
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 210,
+						"y": 50
+					},
+					{
+						"map": "past",
+						"x": 210,
+						"y": 50
+					},
+				]
+			},
+			{
+				"name": "Rescue the carpenters (Moosh)",
+				"access_rules": [
+					"$moosh",
+					"nuun_moosh, currents",
+				],
+				"sections": [
+					{
+						"name": "(8, 7)",
+						"hosted_item": "carpenter3",
+						"item_count": 0
+					}
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 242,
+						"y": 50
+					},
+					{
+						"map": "past",
+						"x": 242,
+						"y": 50
+					},
+				]
+			},
+			{
+				"name": "Rescue the carpenters (Moosh)",
+				"access_rules": [
+					"$moosh",
+					"nuun_moosh, currents",
+				],
+				"sections": [
+					{
+						"name": "(5, 7)",
+						"hosted_item": "carpenter2",
+						"item_count": 0
+					}
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 242,
+						"y": 80
+					},
+					{
+						"map": "past",
+						"x": 242,
+						"y": 80
+					},
+				]
+			},
+
+			// Ricky workers
+			{
+				"name": "Rescue the carpenters (Ricky)",
+				"access_rules": [
+					"$ricky",
+					"nuun_ricky, currents",
+				],
+				"sections": [
+					{
+						"name": "(4, 3)",
+						"hosted_item": "carpenter1",
+						"item_count": 0
+					}
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 210,
+						"y": 50
+					},
+					{
+						"map": "past",
+						"x": 210,
+						"y": 50
+					},
+				]
+			},
+			{
+				"name": "Rescue the carpenters (Ricky)",
+				"access_rules": [
+					"$ricky",
+					"nuun_ricky, currents",
+				],
+				"sections": [
+					{
+						"name": "(4, 7)",
+						"hosted_item": "carpenter2",
+						"item_count": 0
+					}
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 242,
+						"y": 80
+					},
+					{
+						"map": "past",
+						"x": 242,
+						"y": 80
+					},
+				]
+			},
+			{
+				"name": "Rescue the carpenters (Ricky)",
+				"access_rules": [
+					"$ricky",
+					"nuun_ricky, currents",
+				],
+				"sections": [
+					{
+						"name": "(5, 3)",
+						"hosted_item": "carpenter3",
+						"item_count": 0
+					}
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 210,
+						"y": 80
+					},
+					{
+						"map": "past",
+						"x": 210,
+						"y": 80
+					},
+				]
+			},
+
+			{
+				"name": "Rescue the carpenters (Dimitri)",
+				"access_rules": [
+					"$dimitri",
+					"nuun_dimitri, currents",
+				],
+				"sections": [
+					{
+						"name": "(5, 3)",
+						"hosted_item": "carpenter3",
+						"item_count": 0
+					}
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 210,
+						"y": 80
+					},
+					{
+						"map": "past",
+						"x": 210,
+						"y": 80
+					},
+				]
+			},
+			{
+				"name": "Rescue the carpenters (Dimitri)",
+				"access_rules": [
+					"$dimitri",
+					"nuun_dimitri, currents",
+				],
+				"sections": [
+					{
+						"name": "(9, 6)",
+						"hosted_item": "carpenter2",
+						"item_count": 0
+					}
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 242,
+						"y": 114
+					},
+					{
+						"map": "past",
+						"x": 242,
+						"y": 114
+					},
+				]
+			},
+			{
+				"name": "Rescue the carpenters (Dimitri)",
+				"access_rules": [
+					"$dimitri",
+					"nuun_dimitri, currents",
+				],
+				"sections": [
+					{
+						"name": "(6, 5)",
+						"hosted_item": "carpenter1",
+						"item_count": 0
+					}
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 242,
+						"y": 50
+					},
+					{
+						"map": "past",
+						"x": 242,
+						"y": 50
+					},
+				]
+			},
+
+
+			{
+				"name": "Nuun Highlands (Ricky)",
+				"access_rules": [
+					"$ricky",
+					"nuun_ricky, currents"
+				],
+				"sections": [
+					{
+						"name": "Cave chest",
+						"item_count": 1
+					}
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 242,
+						"y": 97
+					}
+				]
+			},
+			{
+				"name": "Nuun Highlands (Dimitri)",
+				"access_rules": [
+					"$dimitri"
+				],
+				"sections": [
+					{
+						"name": "Cave chest",
+						"item_count": 1
+					}
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 242,
+						"y": 97
+					}
+				]
+			},
+			{
+				"name": "Nuun Highlands (Moosh)",
+				"access_rules": [
+					"$moosh",
+					"nuun_moosh, currents",
+					"nuun_moosh, $destroy_bush_flute, $max_jump:2"
+				],
+				"sections": [
+					{
+						"name": "Cave chest",
+						"item_count": 1
+					}
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 242,
+						"y": 97
+					}
+				]
+			},
+
+			{
+				"name": "Nuun Highlands",
+				"access_rules": [
+					"{$carpentersNotDone}"
+				],
+				"sections": [
+					{
+						"name": "Check Nuun Highlands",
+						"hosted_item": "nuun_animal",
+						"item_count": 0
+					}
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 226,
+						"y": 65
+					}
+				]
+			},
+		]
+	},
+
+	{
+		"name": "Symmetry City",
+		"chest_unopened_img": "images/chest_past.png",
+		"chest_opened_img": "images/chestpastopen.png",
+		"color": "#ff7700",
+		"access_rules": [
+			"$nuun, currents",
+			"$nuun, flute",
+		],
+		"children": [
+			{
+				"name": "Symmetry City tree",
+				"chest_unopened_img": "images/tree_gale.png",
+				"chest_opened_img": "images/tree_gale.png",
+				"color": "#0049bf",
+				"sections": [
+					{
+						"name": "Seeds",
+						"access_rules": [
+							"$harvest_seeds",
+							"repairednut, $dimitri, $use_seeds",
+							"{}"
+						],
+						"capture_item": "true",
+						"item_count": 1,
+						//"hosted_item": "tree_symmetry",
+					}
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 114,
+						"y": 50
+					}
+				]
+			},
+			{
+				"name": "Symmetry City (North)",
+				"access_rules": [
+					"$destroy_bush, echoes",
+					"ages",
+				],
+				"sections": [
+					{
+						"name": "Talk to the brothers",
+						"item_count": 1
+					},
+				],
+				"map_locations": [
+					{
+						"map": "past",
+						"x": 114,
+						"y": 30
+					}
+				]
+			},
+
+			{
+				"name": "Tokkey's Composition",
+				"access_rules": [
+					"$destroy_bush, echoes, flippers",
+					"ages, flippers",
+				],
+				"sections": [
+					{
+						"name": "Sick tunes",
+						"item_count": 1
+					},
+				],
+				"map_locations": [
+					{
+						"map": "past",
+						"x": 50,
+						"y": 17
+					}
+				]
+			},
+
+			{
+				"name": "Talus Peaks",
+				"chest_unopened_img": "images/chest.png",
+				"chest_opened_img": "images/chestopen.png",
+				"color": "#0049bf",
+				"access_rules": [
+					"ages",
+					"$destroy_bush, currents, bracelet, flippers"
+				],
+				"sections": [
+					{
+						"name": "Chest before\nRestoration Wall",
+						"item_count": 1
+					},
+				],
+				"map_locations": [
+					{
+						"map": "past",
+						"x": 114,
+						"y": 210
+					},
+					{
+						"map": "present",
+						"x": 114,
+						"y": 210
+					}
+				]
+			},
+
+			{
+				"name": "Patch",
+				"access_rules": [
+					"$patch_nut, tuninut, ages",
+					"$patch_nut_hard, [$patch_nut], tuninut, ages",
+
+					"$patch_nut, tuninut, $destroy_bush, currents, bracelet, flippers",
+					"$patch_nut_hard, [$patch_nut], tuninut, $destroy_bush, currents, bracelet, flippers"
+				],
+				"sections": [
+					{
+						"name": "Restore\nthe nut",
+						"hosted_item": "repairednut",
+						"item_count": 0
+					},
+				],
+				"map_locations": [
+					{
+						"map": "past",
+						"x": 114,
+						"y": 114
+					},
+				]
+			},
+		]
+	},
+
+	{
+		"name": "Rolling Ridge West",
+		"chest_unopened_img": "images/chest.png",
+		"chest_opened_img": "images/chestopen.png",
+		"color": "#0049bf",
+		"children": [
+			{
+				"name": "Goron Elder",
+				"chest_unopened_img": "images/chest_past.png",
+				"chest_opened_img": "images/chestpastopen.png",
+				"color": "#ff7700",
+				"access_rules": [
+					"bombflower, feather, hook1",
+					"bombflower, ages, hook1",
+					"bombflower, $west_ridge_present, bracelet, echoes",
+					"bombflower, $west_ridge_present, ages"
+				],
+				"sections": [
+					{
+						"name": "Blast him open",
+						"item_count": 1
+					}
+				],
+				"map_locations": [
+					{
+						"map": "past",
+						"x": 274,
+						"y": 80
+					}
+				]
+			},
+			{
+				"name": "Rolling Ridge entrance",
+				"access_rules": [
+					"$west_ridge_present",
+				],
+				"sections": [
+					{
+						"name": "Bomb the\neast wall",
+						"access_rules": [
+							"bombs",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Stairs\nchest",
+						"item_count": 1
+					},
+					{
+						"name": "Surface\nstairs",
+						"item_count": 1
+					},
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 274,
+						"y": 65
+					}
+				]
+			},
+			{
+				"name": "West Rolling Ridge tree",
+				"color": "#ff7700",
+				"chest_unopened_img": "images/tree_pegasus.png",
+				"chest_opened_img": "images/tree_pegasus.png",
+				"access_rules": [
+					"bombflower, feather, hook1",
+					"currents, bracelet, feather, hook1",
+					"$west_ridge_present, bracelet, echoes",
+					"$west_ridge_present, ages"
+				],
+				"sections": [
+					{
+						"name": "Seeds",
+						"access_rules": [
+							"$harvest_seeds",
+							"{}"
+						],
+						"capture_item": "true",
+						"item_count": 1,
+						//"hosted_item": "tree_moblin",
+					}
+				],
+				"map_locations": [
+					{
+						"map": "past",
+						"x": 274,
+						"y": 17
+					}
+				]
+			},
+			{
+				"name": "Moblin Keep",
+				"access_rules": [
+					"$west_ridge_present",
+				],
+				"sections": [
+					{
+						"name": "Lower floor chest",
+						"access_rules": [
+							"feather, flippers",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Defeat the boss",
+						"access_rules": [
+							"satchel, pegasusseeds, bracelet",
+						],
+						"item_count": 1
+					},
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 306,
+						"y": 17
+					}
+				]
+			},
+		]
+	},
+
+	{
+		"name": "Rolling Ridge East (Present)",
+		"chest_unopened_img": "images/chest.png",
+		"chest_opened_img": "images/chestopen.png",
+		"color": "#0049bf",
+		"children": [
+			{
+				"name": "Goron caves (present)",
+				"sections": [
+					{
+						"name": "Goron\nDancing",
+						"access_rules": [
+							//from Lynna, swimming
+							"$isNotAutoTracking, $lynna, feather, mermaidsuit, currents",
+							"$isNotAutoTracking, $lynna, ages, mermaidsuit",
+
+							//from the upper caves
+							"$isNotAutoTracking, $west_ridge_present, satchel, pegasusseeds, bracelet, feather",
+
+							//AUTO_TODO
+							//from Lynna, swimming
+							"$isAutoTracking, $lynna, feather, mermaidsuit, currents, rupees:10",
+							"$isAutoTracking, $lynna, ages, mermaidsuit, rupees:10",
+
+							//from the upper caves
+							"$west_ridge_present, satchel, pegasusseeds, bracelet, feather, rupees:10",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Trade the Brisket\nwith the stairs Goron",
+						"access_rules": [
+							//from Lynna, swimming
+							"$lynna, feather, mermaidsuit, currents, emblem, brisket",
+							"$lynna, ages, mermaidsuit, emblem, brisket",
+
+							//from the upper caves
+							"$west_ridge_present, satchel, pegasusseeds, bracelet, feather, emblem, brisket",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Diamonds\nChest",
+						"access_rules": [
+							//from Lynna, swimming
+							"$lynna, feather, mermaidsuit, currents, hook1",
+							"$lynna, feather, mermaidsuit, currents, emblem, $max_jump:2",
+							"$lynna, ages, mermaidsuit, hook1",
+
+							//from the upper caves
+							"$west_ridge_present, satchel, pegasusseeds, bracelet, feather, currents, hook1",
+							"$west_ridge_present, satchel, pegasusseeds, bracelet, feather, ages",
+							"$west_ridge_present, satchel, pegasusseeds, bracelet, feather, emblem"
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Big Bang\nminigame",
+						"access_rules": [
+							//from Lynna, swimming
+							"$lynna, feather, mermaidsuit, currents, hook1, goronade",
+							"$lynna, feather, mermaidsuit, currents, emblem, goronade",
+							"$lynna, ages, mermaidsuit, hook1, goronade",
+
+							//from the upper caves
+							"$west_ridge_present, satchel, pegasusseeds, bracelet, feather, currents, hook1, goronade",
+							"$west_ridge_present, satchel, pegasusseeds, bracelet, feather, ages, goronade",
+							"$west_ridge_present, satchel, pegasusseeds, bracelet, feather, emblem, goronade"
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Highest floor\nchest",
+						"access_rules": [
+							//from Lynna, swimming
+							"$lynna, feather, mermaidsuit, currents, hook1",
+							"$lynna, feather, mermaidsuit, currents, emblem",
+							"$lynna, ages, mermaidsuit, hook1",
+
+							//from the upper cavess
+							"$west_ridge_present, satchel, pegasusseeds, bracelet, feather, currents, hook1",
+							"$west_ridge_present, satchel, pegasusseeds, bracelet, feather, ages",
+							"$west_ridge_present, satchel, pegasusseeds, bracelet, feather, emblem"
+						],
+						"item_count": 1
+					},
+				],
+
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 434,
+						"y": 97
+					}
+				]
+			},
+			{
+				"name": "Target carts minigame",
+				"access_rules": [
+					//from Lynna, swimming
+					"$lynna, feather, mermaidsuit, currents, hook1, currents",
+					"$lynna, ages, mermaidsuit, hook1",
+
+					//from Moblin cave
+					"$west_ridge_present, satchel, pegasusseeds, bracelet, feather, hook1, currents",
+				],
+				"sections": [
+					{
+						"name": "First reward",
+						"access_rules": [
+							"$isNotAutoTracking",
+							//AUTO_TODO
+							"$isAutoTracking, rupees:10"
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Second reward",
+						"access_rules": [
+							"$isNotAutoTracking",
+							//AUTO_TODO
+							"$isAutoTracking, rupees:10"
+						],
+						"item_count": 1
+					},
+				],
+
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 434,
+						"y": 50
+					}
+				]
+			},
+			{
+				"name": "D6 entrance",
+				"access_rules": [
+					"$lynna, feather, mermaidsuit, currents",
+					"$lynna, ages, mermaidsuit",
+				],
+				"sections": [
+					{
+						"name": "Underwater chest",
+						"item_count": 1
+					},
+				],
+
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 386,
+						"y": 97
+					}
+				]
+			},
+		]
+	},
+
+	{
+		"name": "Rolling Ridge East (Past)",
+		"chest_unopened_img": "images/chest_past.png",
+		"chest_opened_img": "images/chestpastopen.png",
+		"color": "#ff7700",
+		"children": [
+			{
+				"name": "Goron caves (past)",
+				"sections": [
+					{
+						"name": "Dancing with\nthe Letter",
+						"access_rules": [
+							//from Lynna, swimming
+							"$isNotAutoTracking, $lynna, feather, mermaidsuit, letter",
+							"$isNotAutoTracking, $lynna, ages, mermaidsuit, letter",
+
+							//from the upper cavess
+							"$isNotAutoTracking, $west_ridge_present, satchel, pegasusseeds, bracelet, feather, echoes, letter",
+
+							// AUTO_TODO
+							//from Lynna, swimming
+							"$isAutoTracking, $lynna, feather, mermaidsuit, letter, rupees:20",
+							"$isAutoTracking, $lynna, ages, mermaidsuit, letter, rupees:20",
+
+							//from the upper cavess
+							"$isAutoTracking, $west_ridge_present, satchel, pegasusseeds, bracelet, feather, echoes, letter, rupees:20",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Trade the Vase\nwith the stairs Goron",
+						"access_rules": [
+							//from Lynna, swimming
+							"$lynna, feather, mermaidsuit, emblem, vase",
+							"$lynna, ages, mermaidsuit, emblem, vase",
+
+							//from the upper caves
+							"$west_ridge_present, satchel, pegasusseeds, bracelet, feather, echoes, emblem, vase",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Bush room\nchest",
+						"access_rules": [
+							//from Lynna, swimming
+							"$lynna, feather, mermaidsuit, hook1",
+							"$lynna, ages, mermaidsuit, hook1",
+
+							//from the upper caves
+							"$west_ridge_present, satchel, pegasusseeds, bracelet, feather, echoes, hook1",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Trade Lava Juice\nwith the bush Goron",
+						"access_rules": [
+							//from Lynna, swimming
+							"$lynna, feather, mermaidsuit, hook1, lavajuice",
+							"$lynna, feather, mermaidsuit, emblem, $max_jump:1, lavajuice",
+							"$lynna, ages, mermaidsuit, hook1, lavajuice",
+
+							//from the upper caves
+							"$west_ridge_present, satchel, pegasusseeds, bracelet, feather, echoes, hook1, lavajuice",
+							"$west_ridge_present, satchel, pegasusseeds, bracelet, feather, ages, lavajuice",
+						],
+						"item_count": 1
+					},
+				],
+
+				"map_locations": [
+					{
+						"map": "past",
+						"x": 434,
+						"y": 97
+					}
+				]
+			},
+			{
+				"name": "East Ridge base",
+				"access_rules": [
+					//from Lynna, swimming
+					"$lynna, feather, mermaidsuit",
+					"$lynna, ages, mermaidsuit",
+
+					//from the upper caves
+					"$west_ridge_present, satchel, pegasusseeds, bracelet, feather",
+				],
+				"sections": [
+					{
+						"name": "Bombs chest",
+						"access_rules": [
+							"bombs"
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Diamonds chest",
+						"access_rules": [
+							"hook1"
+						],
+						"item_count": 1
+					},
+				],
+
+				"map_locations": [
+					{
+						"map": "past",
+						"x": 370,
+						"y": 82
+					}
+				]
+			},
+			{
+				"name": "Goron Head cave",
+				"access_rules": [
+					//from Lynna, swimming
+					"$lynna, feather, mermaidsuit, hook1, bombs",
+					"$lynna, ages, mermaidsuit, hook1, bombs",
+
+					//from the upper caves
+					"$west_ridge_present, satchel, pegasusseeds, bracelet, feather, ages, bombs",
+					"$west_ridge_present, satchel, pegasusseeds, bracelet, feather, echoes, hook1, bombs",
+				],
+				"sections": [
+					{
+						"name": "Chest",
+						"item_count": 1
+					},
+				],
+
+				"map_locations": [
+					{
+						"map": "past",
+						"x": 434,
+						"y": 17
+					}
+				]
+			},
+			{
+				"name": "Shooting gallery",
+				"access_rules": [
+					//from Lynna, swimming
+					"$lynna, feather, mermaidsuit, currents, hook1, bracelet, sword1",
+					"$lynna, ages, mermaidsuit, hook1, sword1",
+
+					//from Moblin cave
+					"$west_ridge_present, satchel, pegasusseeds, bracelet, feather, currents, hook1, sword1",
+				],
+				"sections": [
+					{
+						"name": "100 points",
+						"access_rules": [
+							"$isNotAutoTracking",
+							//AUTO_TODO
+							"$isAutoTracking, rupees:20"
+						],
+						"item_count": 1
+					},
+				],
+
+				"map_locations": [
+					{
+						"map": "past",
+						"x": 434,
+						"y": 50
+					}
+				]
+			},
+			{
+				"name": "Get bombs in Goron Shooting Gallery",
+				"access_rules": [
+					//from Lynna, swimming
+					"$lynna, feather, mermaidsuit, currents, hook1, bracelet, sword1",
+					"$lynna, ages, mermaidsuit, hook1, sword1",
+
+					//from Moblin cave
+					"$west_ridge_present, satchel, pegasusseeds, bracelet, feather, currents, hook1, sword1",
+				],
+				"sections": [
+				  {
+					"name": "200 points",
+					"access_rules": [
+						"[bombs]",
+					],
+					"item_count": 0,
+					"hosted_item": "bombs"
+				  },
+				],
+				"map_locations": [
+				  {
+					"map": "past",
+					"x": 418,
+					"y": 35
+				},
+				]
+			},
+
+			{
+				"name": "East Rolling Ridge tree",
+				"color": "#ff7700",
+				"chest_unopened_img": "images/tree_mystery.png",
+				"chest_opened_img": "images/tree_mystery.png",
+				"access_rules": [
+					//from Lynna, swimming
+					"$lynna, feather, mermaidsuit, currents, hook1, currents",
+					"$lynna, ages, mermaidsuit, hook1",
+					"$lynna, feather, mermaidsuit, hook1, satchel, galeseeds",
+					"$lynna, feather, mermaidsuit, emblem, satchel, galeseeds",
+
+					//from Moblin cave
+					"$west_ridge_present, satchel, pegasusseeds, bracelet, feather, currents, hook1",
+					"$west_ridge_present, satchel, pegasusseeds, bracelet, feather, ages",
+					"$west_ridge_present, satchel, pegasusseeds, bracelet, feather, emblem, galeseeds",
+				],
+				"sections": [
+					{
+						"name": "Seeds",
+						"access_rules": [
+							"$harvest_seeds",
+							"{}"
+						],
+						"capture_item": "true",
+						"item_count": 1,
+						//"hosted_item": "tree_ridge",
+					}
+				],
+				"map_locations": [
+					{
+						"map": "past",
+						"x": 434,
+						"y": 82
+					}
+				]
+			},
+		]
+	},
+
+	{
+		"name": "Zora Seas",
+		"chest_unopened_img": "images/chest.png",
+		"chest_opened_img": "images/chestopen.png",
+		"color": "#0049bf",
+		"access_rules": [
+			"mermaidsuit, ages, hook1",
+		],
+		"children": [
+			{
+				"name": "Zora Village tree",
+				"chest_unopened_img": "images/tree_gale.png",
+				"chest_opened_img": "images/tree_gale.png",
+				"sections": [
+					{
+						"name": "Seeds",
+						"access_rules": [
+							"$harvest_seeds",
+							"cleanseas, $dimitri",
+							"{}"
+						],
+						"capture_item": "true",
+						"item_count": 1,
+						//"hosted_item": "tree_zora",
+					}
+				],
+				"map_locations": [
+					{
+						"map": "past",
+						"x": 50,
+						"y": 402
+					},
+					{
+						"map": "present",
+						"x": 50,
+						"y": 402
+					}
+				]
+			},
+			{
+				"name": "Zora Village",
+				"sections": [
+					{
+						"name": "Isolated chest",
+						"item_count": 1
+					}
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 17,
+						"y": 402
+					}
+				]
+			},
+			{
+				"name": "Island cave",
+				"access_rules": [
+					"bombs, powerglove",
+				],
+				"sections": [
+					{
+						"name": "Sarcophagus chest",
+						"item_count": 1
+					}
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 17,
+						"y": 352
+					}
+				]
+			},
+			{
+				"name": "Zora Palace",
+				"sections": [
+					{
+						"name": "Entrance\nchest",
+						"item_count": 1
+					},
+					{
+						"name": "Cure King Zora\nin the past",
+						"access_rules": [
+							// Access to Syrup's Shop in Yoll Graveyard to buy a potion
+
+							"$isNotAutoTracking, $use_seeds, emberseeds, [d1key], flippers",
+							"$isNotAutoTracking, $use_seeds, emberseeds, [d1key], $max_jump:2",
+
+							//AUTO_TODO
+							// Access to Syrup's Shop in Yoll Graveyard to buy a potion
+
+							"$isAutoTracking, $use_seeds, emberseeds, potion, flippers",
+							"$isAutoTracking, $use_seeds, emberseeds, [d1key], [rupees:300], flippers",
+							"$isAutoTracking, $use_seeds, emberseeds, potion, $max_jump:2",
+							"$isAutoTracking, $use_seeds, emberseeds, [d1key], [rupees:300], $max_jump:2"
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Present King Zora\npermission",
+						"access_rules": [
+							"$isNotAutoTracking, $use_seeds, emberseeds, [d1key], flippers, cleanseas",
+							"$isNotAutoTracking, $use_seeds, emberseeds, [d1key], $max_jump:2, cleanseas",
+
+							//AUTO_TODO
+							"$isAutoTracking, $use_seeds, emberseeds, potion, flippers, cleanseas",
+							"$isAutoTracking, $use_seeds, emberseeds, [d1key], [rupees:300], flippers, cleanseas",
+							"$isAutoTracking, $use_seeds, emberseeds, potion, $max_jump:2, cleanseas",
+							"$isAutoTracking, $use_seeds, emberseeds, [d1key], [rupees:300], $max_jump:2, cleanseas"
+						],
+						"hosted_item": "enterjabu",
+						"item_count": 0
+					}
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 50,
+						"y": 352
+					}
+				]
+			},
+			{
+				"name": "Cursed fairy",
+				"color": "#ff7700",
+				"sections": [
+					{
+						"name": "Clean the seas",
+						"hosted_item": "cleanseas",
+						"access_rules": [
+							"powder"
+						],
+						"item_count": 0
+					},
+				],
+				"map_locations": [
+					{
+						"map": "past",
+						"x": 146,
+						"y": 337
+					}
+				]
+			},
+			{
+				"name": "Fairy's coast",
+				"sections": [
+					{
+						"name": "Lonely chest",
+						"item_count": 1
+					},
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 50,
+						"y": 322
+					}
+				]
+			},
+			{
+				"name": "Library (present)",
+				"access_rules": [
+					"librarykey",
+				],
+				"sections": [
+					{
+						"name": "Free item",
+						"item_count": 1
+					},
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 178,
+						"y": 337
+					}
+				]
+			},
+			{
+				"name": "Library (past)",
+				"chest_unopened_img": "images/chest_past.png",
+				"chest_opened_img": "images/chestpastopen.png",
+				"color": "#ff7700",
+				"access_rules": [
+					"librarykey",
+				],
+				"sections": [
+					{
+						"name": "Not so free item",
+						"capture_item": true,
+						"access_rules": [
+							"{}",
+							"book",
+							"feather, satchel, pegasusseeds, bombs, [book]",
+						],
+						"item_count": 1
+					},
+				],
+				"map_locations": [
+					{
+						"map": "past",
+						"x": 178,
+						"y": 337
+					}
+				]
+			},
+			{
+				"name": "Zora Seas South",
+				"access_rules": [
+					"cleanseas",
+				],
+				"sections": [
+					{
+						"name": "Lonely chest",
+						"item_count": 1
+					},
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 178,
+						"y": 434
+					}
+				]
+			},
+			{
+				"name": "Fisher's Island",
+				"chest_unopened_img": "images/chest_past.png",
+				"chest_opened_img": "images/chestpastopen.png",
+				"color": "#ff7700",
+				"access_rules": [
+					"hook2",
+				],
+				"sections": [
+					{
+						"name": "Underwater cave",
+						"item_count": 1
+					},
+				],
+				"map_locations": [
+					{
+						"map": "past",
+						"x": 178,
+						"y": 402
+					}
+				]
+			},
+			{
+				"name": "After Jabu Jabu",
+				"access_rules": [
+					"d7"
+				],
+				"sections": [
+					{
+						"name": "Zora reward",
+						"item_count": 1
+					},
+				],
+				"map_locations": [
+					{
+						"map": "present",
+						"x": 17,
+						"y": 337
+					}
+				]
+			},
+		]
+	},
+
+	{
+		"name": "Sea of Storms/No Return",
+		"chest_unopened_img": "images/chest_past.png",
+		"chest_opened_img": "images/chestpastopen.png",
+		"color": "#ff7700",
+		"children": [
+			{
+				"name": "Sea of Storms",
+				"access_rules": [
+					"$lynna, mermaidsuit, zorascale",
+				],
+				"sections": [
+					{
+						"name": "Underwater cave",
+						"item_count": 1
+					}
+				],
+				"map_locations": [
+					{
+						"map": "past",
+						"x": 242,
+						"y": 402
+					}
+				]
+			},
+			{
+				"name": "Pirate ship",
+				"access_rules": [
+					"$lynna, mermaidsuit, zorascale",
+				],
+				"sections": [
+					{
+						"name": "Captain's reward",
+						"item_count": 1
+					}
+				],
+				"map_locations": [
+					{
+						"map": "past",
+						"x": 226,
+						"y": 386
+					}
+				]
+			},
+			{
+				"name": "Sea of No Return",
+				"access_rules": [
+					"$crescent_past, eyeball, $kill_normal, $destroy_pot, bombs, [cane], mermaidsuit, feather, powerglove",
+				],
+				"sections": [
+					{
+						"name": "Sarcophagus chest",
+						"item_count": 1
+					}
+				],
+				"map_locations": [
+					{
+						"map": "past",
+						"x": 434,
+						"y": 210
+					}
+				]
+			},
+		]
+	},
+]
