@@ -103,8 +103,8 @@
 			{
 				"name": "Maku Tree",
 				"access_rules": [
-							"$destroy_bush_flute, shovel, $kill_hard",
-							"echoes, shovel, $kill_hard",
+							"$destroy_bush_flute, shovel, $kill_hard, d0sk:1",
+							"echoes, shovel, $kill_hard, d0sk:1",
 							"$ambi_palace_hard, $rescue_nayru_hard"
 						],
 				"sections": [
@@ -216,8 +216,29 @@
 						],
 				"sections": [
 					{
-						"name": "Blocks room\nsecret stairs",
+						"name": "Small Key Chest",
+						"access_rules":	[
+									"$destroy_bush, shovel, $kill_gel_hard",
+									"echoes, shovel, $kill_gel_hard",
+									"$ambi_palace, $rescue_nayru, d0sk:1",
+									"satchel, pegasusseeds, scentseeds, $ambi_palace_hard, $rescue_nayru_hard, d0sk:1"
+						],
 						"item_count": 1
+					},
+					{
+						"name": "Blocks room\nsecret stairs",
+						"access_rules":	[
+									"$destroy_bush, shovel, $kill_gel_hard, d0sk:1",
+									"echoes, shovel, $kill_gel_hard, d0sk:1",
+									"$ambi_palace_hard, $rescue_nayru_hard",
+									"satchel, pegasusseeds, scentseeds, $ambi_palace_hard, $rescue_nayru_hard"
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Maku Path\nsmall key",
+						"hosted_item": "d0sk",
+						"item_count": 0
 					}
 				],
 				"map_locations": [

@@ -494,6 +494,15 @@
   },
   
   /// DUNGEONS ///
+
+    // Maku Path
+    {
+      "name": "D0 Small Key",
+      "type": "consumable",
+      "img": "images/key.png",
+      "codes": "d0sk",
+      "max_quantity": 1
+    },
   
   // D1
   {

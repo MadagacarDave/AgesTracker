@@ -103,9 +103,9 @@
 			{
 				"name": "Maku Tree",
 				"access_rules": [
-							"$destroy_bush_flute, shovel, $kill_normal",
-							"$destroy_bush_flute, shovel, [$kill_normal], $kill_hard",
-							"echoes, shovel, $kill_normal",
+							"$destroy_bush_flute, shovel, $kill_normal, d0sk:1",
+							"$destroy_bush_flute, shovel, [$kill_normal], $kill_hard, d0sk:1",
+							"echoes, shovel, $kill_normal, d0sk:1",
 							"echoes, shovel, [$kill_normal], $kill_hard",
 							"$ambi_palace, $rescue_nayru",
 							"satchel, pegasusseeds, scentseeds, [$ambi_palace], $rescue_nayru",
@@ -220,8 +220,33 @@
 						],
 				"sections": [
 					{
-						"name": "Blocks room\nsecret stairs",
+						"name": "Small Key Chest",
+						"access_rules":	[
+									"$destroy_bush, shovel, $kill_gel",
+									"$destroy_bush, shovel, [$kill_gel], $kill_hard",
+									"echoes, shovel, $kill_gel",
+									"echoes, shovel, [$kill_gel], $kill_hard",
+									"$ambi_palace, $rescue_nayru, d0sk:1",
+									"satchel, pegasusseeds, scentseeds, [$ambi_palace], $rescue_nayru, d0sk:1"
+						],
 						"item_count": 1
+					},
+					{
+						"name": "Blocks room\nsecret stairs",
+						"access_rules":	[
+									"$destroy_bush, shovel, $kill_gel, d0sk:1",
+									"$destroy_bush, shovel, [$kill_gel], $kill_hard, d0sk:1",
+									"echoes, shovel, $kill_gel, d0sk:1",
+									"echoes, shovel, [$kill_gel], $kill_hard, d0sk:1",
+									"$ambi_palace, $rescue_nayru",
+									"satchel, pegasusseeds, scentseeds, [$ambi_palace], $rescue_nayru",
+						],
+						"item_count": 1
+					},
+					{
+						"name": "Maku Path\nsmall key",
+						"hosted_item": "d0sk",
+						"item_count": 0
 					}
 				],
 				"map_locations": [
