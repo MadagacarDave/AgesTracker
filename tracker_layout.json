@@ -370,7 +370,7 @@
 						"content": [
 							{
 								"type": "item",
-								"item": "d0sk",
+								"item": "spacer",
 								"width": 24,
 								"height": 24
 							},
@@ -397,7 +397,7 @@
 							},
 							{
 								"type": "item",
-								"item": "d0sk",
+								"item": "spacer",
 								"margin": "2,0,0,0",
 								"width": 24,
 								"height": 24
@@ -457,7 +457,7 @@
 						"content": [
 							{
 								"type": "item",
-								"item": "d0sk",
+								"item": "spacer",
 								"margin": "0,0,12,0",
 								"width": 24,
 								"height": 24
@@ -471,7 +471,7 @@
 							},
 							{
 								"type": "item",
-								"item": "d0sk",
+								"item": "spacer",
 								"margin": "0,0,25,0",
 								"width": 24,
 								"height": 24
