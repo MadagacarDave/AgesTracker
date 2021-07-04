@@ -106,7 +106,7 @@
 							"$destroy_bush_flute, shovel, $kill_normal, d0sk:1",
 							"$destroy_bush_flute, shovel, [$kill_normal], $kill_hard, d0sk:1",
 							"echoes, shovel, $kill_normal, d0sk:1",
-							"echoes, shovel, [$kill_normal], $kill_hard",
+							"echoes, shovel, [$kill_normal], $kill_hard, d0sk:1",
 							"$ambi_palace, $rescue_nayru",
 							"satchel, pegasusseeds, scentseeds, [$ambi_palace], $rescue_nayru",
 						],
@@ -223,9 +223,9 @@
 						"name": "Small Key Chest",
 						"access_rules":	[
 									"$destroy_bush, shovel, $kill_gel",
-									"$destroy_bush, shovel, [$kill_gel], $kill_hard",
+									"$destroy_bush, shovel, [$kill_gel], $kill_gel_hard",
 									"echoes, shovel, $kill_gel",
-									"echoes, shovel, [$kill_gel], $kill_hard",
+									"echoes, shovel, [$kill_gel], $kill_gel_hard",
 									"$ambi_palace, $rescue_nayru, d0sk:1",
 									"satchel, pegasusseeds, scentseeds, [$ambi_palace], $rescue_nayru, d0sk:1"
 						],
@@ -235,9 +235,9 @@
 						"name": "Blocks room\nsecret stairs",
 						"access_rules":	[
 									"$destroy_bush, shovel, $kill_gel, d0sk:1",
-									"$destroy_bush, shovel, [$kill_gel], $kill_hard, d0sk:1",
+									"$destroy_bush, shovel, [$kill_gel], $kill_gel_hard, d0sk:1",
 									"echoes, shovel, $kill_gel, d0sk:1",
-									"echoes, shovel, [$kill_gel], $kill_hard, d0sk:1",
+									"echoes, shovel, [$kill_gel], $kill_gel_hard, d0sk:1",
 									"$ambi_palace, $rescue_nayru",
 									"satchel, pegasusseeds, scentseeds, [$ambi_palace], $rescue_nayru",
 						],

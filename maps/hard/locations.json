@@ -220,7 +220,7 @@
 						"access_rules":	[
 									"$destroy_bush, shovel, $kill_gel_hard",
 									"echoes, shovel, $kill_gel_hard",
-									"$ambi_palace, $rescue_nayru, d0sk:1",
+									"$ambi_palace_hard, $rescue_nayru_hard, d0sk:1",
 									"satchel, pegasusseeds, scentseeds, $ambi_palace_hard, $rescue_nayru_hard, d0sk:1"
 						],
 						"item_count": 1
