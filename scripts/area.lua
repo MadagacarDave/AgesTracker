@@ -84,7 +84,7 @@ end
 function west_ridge_present()
 	return (has("feather") or has("ages")) and
 	((has("hook1") and has("currents")) or --From start
-	(lynna() and has("mermaidsuit") and has("currents") and max_jump() >= 2))
+	(lynna() and has("mermaidsuit") and has("currents") and has("feather")))
 end
 
 function west_ridge_past()
